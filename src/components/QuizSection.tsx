@@ -24,12 +24,12 @@ const QuizSection = () => {
   }, []);
 
   return (
-    <section className="py-20 md:py-28 px-6">
+    <section className="py-20 md:py-28 px-6" style={{ backgroundColor: '#4F46E5' }}>
       <div className="mx-auto max-w-3xl text-center mb-10">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-primary mb-3">
+        <h2 className="text-3xl md:text-4xl font-extrabold mb-3" style={{ color: '#FFFFFF' }}>
           Non sai da dove iniziare? ⚡
         </h2>
-        <p className="text-lg text-foreground">
+        <p className="text-lg" style={{ color: '#FFFFFF' }}>
           Rispondi a 8 domande e ti dico quale Sprint fa per te.
         </p>
       </div>
