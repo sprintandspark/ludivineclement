@@ -189,8 +189,8 @@ const ContactSection = () => {
 
         <p className="mt-6 text-center text-sm font-medium text-primary-foreground/60">
           Oppure scrivimi:{" "}
-          <a href="mailto:hello@ludivine.com" className="underline text-primary-foreground/80">
-            hello@ludivine.com
+          <a href="mailto:go.ludivineclement@gmail.com" className="underline text-primary-foreground/80">
+            go.ludivineclement@gmail.com
           </a>
         </p>
       </div>
