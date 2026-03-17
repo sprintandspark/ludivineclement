@@ -5,13 +5,13 @@ const cards = [
     emoji: "🎯",
     title: "Il Radar",
     description:
-      "Trova nuovi clienti in 14 giorni. Definiamo insieme il tuo cliente ideale, il messaggio giusto e i canali da usare. Ti consegno il playbook completo per partire da solo.",
+      "Trova nuovi clienti in 14 giorni. Definiamo insieme il tuo cliente ideale, il messaggio giusto e i canali da usare. Ti consegno il playbook completo per partire da solo. Valutiamo insieme anche se e quali canali pubblicitari (Meta Ads, TikTok, Google) fanno al caso tuo — e quali strategie di marketing potrebbero funzionare per la tua impresa.",
     price: "€1.200",
     cta: "Voglio il Radar →",
     bg: "bg-amber-50",
     border: "border border-amber-100",
     btnClass: "bg-accent text-accent-foreground",
-    badge: null,
+    badge: "💡 Include strategia ads",
   },
   {
     emoji: "👋",
