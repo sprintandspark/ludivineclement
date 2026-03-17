@@ -37,6 +37,19 @@ const cards = [
     btnClass: "bg-success text-success-foreground",
     badge: null,
   },
+  {
+    emoji: "🤖",
+    title: "AI? No Panico!",
+    subtitle: "Capire l'AI per far crescere la tua impresa — senza perderti nei tecnicismi",
+    description:
+      "L'AI può trasformare il tuo modo di lavorare, trovare clienti e gestire il business. Ma da dove si inizia? In 14 giorni ti porto da zero a operativo: strumenti giusti, casi pratici, zero fluff.",
+    price: "€1.000",
+    cta: "Voglio capire l'AI →",
+    bg: "bg-[#F5F3FF]",
+    border: "border border-[#7C3AED]",
+    btnClass: "bg-[#7C3AED] text-white",
+    badge: "⭐ Più richiesto del previsto",
+  },
 ];
 
 const SprintCards = () => (
@@ -52,7 +65,7 @@ const SprintCards = () => (
         Scegli il tuo Sprint
       </motion.h2>
 
-      <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
         {cards.map((card, i) => {
           const isIndigo = i === 1;
           return (
@@ -77,6 +90,15 @@ const SprintCards = () => (
               >
                 {card.title}
               </h3>
+              {card.subtitle && (
+                <p
+                  className={`mt-1 text-xs font-semibold italic ${
+                    isIndigo ? "text-primary-foreground/70" : "text-muted-foreground/80"
+                  }`}
+                >
+                  {card.subtitle}
+                </p>
+              )}
               <p
                 className={`mt-3 text-sm font-medium leading-relaxed ${
                   isIndigo ? "text-primary-foreground/80" : "text-muted-foreground"
