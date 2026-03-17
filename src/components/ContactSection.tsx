@@ -22,9 +22,9 @@ const ContactSection = () => {
     setSubmitted(true);
   };
 
-  const labelClass = "block text-sm font-bold text-primary mb-1 font-[Poppins]";
+  const labelClass = "block text-sm font-bold text-primary mb-1";
   const inputClass =
-    "w-full rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 transition font-[Poppins]";
+    "w-full rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 transition";
 
   return (
     <section id="contatti" className="py-24 md:py-48 bg-primary">
@@ -53,10 +53,10 @@ const ContactSection = () => {
         >
           {submitted ? (
             <div className="text-center py-12">
-              <p className="text-2xl md:text-3xl font-bold text-primary font-[Poppins]">
+              <p className="text-2xl md:text-3xl font-bold text-primary">
                 Perfetto! 🎉
               </p>
-              <p className="mt-4 text-base md:text-lg text-muted-foreground font-[Poppins]">
+              <p className="mt-4 text-base md:text-lg text-muted-foreground">
                 Ti rispondo al più presto. Intanto... preparati a correre! 🏃‍♀️⚡
               </p>
             </div>
@@ -179,7 +179,7 @@ const ContactSection = () => {
 
               <button
                 type="submit"
-                className="w-full rounded-xl bg-accent py-4 text-base font-bold text-foreground font-[Poppins] hover:brightness-90 transition-all duration-200 cursor-pointer"
+                className="w-full rounded-xl bg-accent py-4 text-base font-bold text-foreground hover:brightness-90 transition-all duration-200 cursor-pointer"
               >
                 Andiamo! ⚡
               </button>
