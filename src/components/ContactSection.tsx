@@ -22,9 +22,9 @@ const ContactSection = () => {
     setSubmitted(true);
   };
 
-  const labelClass = "block text-sm font-bold text-primary mb-1 font-[Poppins]";
+  const labelClass = "block text-sm font-bold text-primary mb-1";
   const inputClass =
-    "w-full rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 transition font-[Poppins]";
+    "w-full rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 transition";
 
   return (
     <section id="contatti" className="py-24 md:py-48 bg-primary">
