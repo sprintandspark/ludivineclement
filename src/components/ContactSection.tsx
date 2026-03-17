@@ -132,12 +132,12 @@ const ContactSection = () => {
                 {/* Telefono */}
                 <div>
                   <label className={labelClass}>
-                    Numero di telefono{" "}
-                    <span className="text-muted-foreground font-normal text-xs">(opzionale)</span>
+                    Numero di telefono <span className="text-accent">✱</span>
                   </label>
                   <input
                     type="text"
                     name="telefono"
+                    required
                     placeholder="Il tuo numero di telefono"
                     value={form.telefono}
                     onChange={handleChange}
