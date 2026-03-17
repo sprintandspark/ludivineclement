@@ -56,7 +56,7 @@ const ContactSection = () => {
               <p className="text-2xl md:text-3xl font-bold text-primary">
                 Perfetto! 🎉
               </p>
-              <p className="mt-4 text-base md:text-lg text-muted-foreground font-[Poppins]">
+              <p className="mt-4 text-base md:text-lg text-muted-foreground">
                 Ti rispondo al più presto. Intanto... preparati a correre! 🏃‍♀️⚡
               </p>
             </div>
