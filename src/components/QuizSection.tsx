@@ -35,7 +35,7 @@ const QuizSection = () => {
       </div>
       <div className="mx-auto max-w-3xl">
         <iframe
-          data-tally-src="https://tally.so/embed/RGLB19?alignLeft=1&transparentBackground=1&dynamicHeight=1"
+          data-tally-src="https://tally.so/embed/RGLB19?alignLeft=1&transparentBackground=0&dynamicHeight=1"
           loading="lazy"
           width="100%"
           height={700}
