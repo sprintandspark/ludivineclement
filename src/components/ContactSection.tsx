@@ -179,7 +179,7 @@ const ContactSection = () => {
 
               <button
                 type="submit"
-                className="w-full rounded-xl bg-accent py-4 text-base font-bold text-foreground font-[Poppins] hover:brightness-90 transition-all duration-200 cursor-pointer"
+                className="w-full rounded-xl bg-accent py-4 text-base font-bold text-foreground hover:brightness-90 transition-all duration-200 cursor-pointer"
               >
                 Andiamo! ⚡
               </button>
