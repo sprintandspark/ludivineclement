@@ -33,7 +33,7 @@ const QuizSection = () => {
           Rispondi a 8 domande e ti dico quale Sprint fa per te.
         </p>
       </div>
-      <div className="mx-auto max-w-3xl">
+      <div className="mx-auto max-w-3xl pb-10">
         <iframe
           data-tally-src="https://tally.so/embed/RGLB19?alignLeft=1&transparentBackground=0&dynamicHeight=1"
           loading="lazy"
