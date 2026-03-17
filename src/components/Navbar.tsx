@@ -27,8 +27,8 @@ const Navbar = () => {
       }`}
     >
       <div className="mx-auto w-full max-w-6xl px-6 flex items-center justify-between">
-        <a href="#" className="text-xl font-extrabold tracking-tighter text-foreground">
-          Ludivine Clement
+        <a href="#" className="flex items-center">
+          <img src={logo} alt="Ludivine Clement" className="h-10" />
         </a>
 
         {/* Desktop */}
