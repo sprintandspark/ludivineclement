@@ -53,7 +53,7 @@ const ContactSection = () => {
         >
           {submitted ? (
             <div className="text-center py-12">
-              <p className="text-2xl md:text-3xl font-bold text-primary font-[Poppins]">
+              <p className="text-2xl md:text-3xl font-bold text-primary">
                 Perfetto! 🎉
               </p>
               <p className="mt-4 text-base md:text-lg text-muted-foreground font-[Poppins]">
