@@ -90,6 +90,15 @@ const SprintCards = () => (
               >
                 {card.title}
               </h3>
+              {card.subtitle && (
+                <p
+                  className={`mt-1 text-xs font-semibold italic ${
+                    isIndigo ? "text-primary-foreground/70" : "text-muted-foreground/80"
+                  }`}
+                >
+                  {card.subtitle}
+                </p>
+              )}
               <p
                 className={`mt-3 text-sm font-medium leading-relaxed ${
                   isIndigo ? "text-primary-foreground/80" : "text-muted-foreground"
