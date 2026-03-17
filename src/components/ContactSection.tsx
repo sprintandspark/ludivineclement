@@ -37,7 +37,7 @@ const ContactSection = () => {
           className="text-center mb-12"
         >
           <h2 className="text-display text-3xl md:text-5xl text-primary-foreground">
-            Pronta a correre? ⚡
+            Partiamo? 🚀
           </h2>
           <p className="mt-4 text-base md:text-lg font-medium text-primary-foreground/80 max-w-[50ch] mx-auto">
             Compila il form e ti rispondo entro 24 ore. Nessun impegno, solo una chiacchierata! 😊
