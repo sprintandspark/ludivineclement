@@ -170,7 +170,7 @@ const ContactSection = () => {
                 <textarea
                   name="messaggio"
                   rows={4}
-                  placeholder="Raccontami un po'... di cosa hai bisogno? Nessun impegno, solo una chiacchierata! 😊"
+                  placeholder="Dove sei adesso e dove vuoi arrivare? Raccontami! ⚡"
                   value={form.messaggio}
                   onChange={handleChange}
                   className={`${inputClass} resize-none`}
