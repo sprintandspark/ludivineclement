@@ -7,11 +7,7 @@ const Footer = () => (
       <div className="flex items-center gap-3">
         <span>Ludivine Clement © 2026</span>
         <span className="hidden md:inline">·</span>
-        <a href="https://www.iubenda.com/privacy-policy/31082620" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Privacy Policy</a>
-<span className="hidden md:inline">·</span>
-        <Link to="/privacy-policy" className="hover:text-foreground transition-colors">Privacy Policy</Link>
-<span className="hidden md:inline">·</span>
-<a href="https://www.iubenda.com/privacy-policy/31082620/cookie-policy" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Cookie Policy</a>
+        <Link to="/privacy-policy" className="hover:text-foreground transition-colors">Privacy Policy & Cookie Policy</Link>
       </div>
       <span>P.IVA: in registrazione</span>
       <div className="flex gap-4">
