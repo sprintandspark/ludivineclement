@@ -56,11 +56,13 @@ const sections = [
           <li>Utilizzati per finalità diverse da quelle indicate</li>
         </ul>
         <p>I tuoi dati possono essere condivisi con:</p>
-        <ul>
-          <li>Google LLC (Google Sheets, Gmail) per la gestione delle comunicazioni e l'archiviazione dei dati — privacy policy disponibile su <a href="https://policies.google.com" target="_blank" rel="noopener noreferrer" className="text-primary underline">policies.google.com</a></li>
-          <li>Tally per la raccolta dei dati tramite form — privacy policy disponibile su <a href="https://tally.so/privacy" target="_blank" rel="noopener noreferrer" className="text-primary underline">tally.so/privacy</a></li>
-        </ul>
-      </>
+          <ul>
+            <li>Google LLC (Google Sheets, Gmail) per la gestione delle comunicazioni e l'archiviazione dei dati — privacy policy disponibile su <a href="https://policies.google.com" target="_blank" rel="noopener noreferrer" className="text-primary underline">policies.google.com</a></li>
+            <li>Tally BV per la raccolta dei dati tramite form (Belgio) — privacy policy disponibile su <a href="https://tally.so/privacy" target="_blank" rel="noopener noreferrer" className="text-primary underline">tally.so/privacy</a></li>
+            <li>GitHub Inc. per l'hosting del sito (Stati Uniti) — privacy policy disponibile su <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener noreferrer" className="text-primary underline">GitHub Privacy Statement</a></li>
+            <li>Google Ireland Limited per Google Fonts (Irlanda)</li>
+          </ul>
+        </>
     ),
   },
   {
@@ -90,7 +92,9 @@ const sections = [
   {
     title: "7. Cookie",
     content: (
-      <p>Questo sito utilizza cookie tecnici essenziali per il funzionamento del sito. Non utilizziamo cookie di profilazione o tracciamento di terze parti.</p>
+      <>
+       <p>Questo sito utilizza cookie tecnici essenziali per il funzionamento del sito. Per informazioni dettagliate sui cookie utilizzati, consulta la nostra <a href="https://www.iubenda.com/privacy-policy/31082620/cookie-policy" target="_blank" rel="noopener noreferrer" className="text-primary underline">Cookie Policy</a>.</p>
+      </>
     ),
   },
   {
@@ -121,7 +125,7 @@ const PrivacyPolicy = () => (
         INFORMATIVA SULLA PRIVACY
       </h1>
       <p className="text-lg font-semibold text-muted-foreground mb-2">(Privacy Policy)</p>
-      <p className="text-sm text-muted-foreground mb-12">Ultimo aggiornamento: marzo 2025</p>
+      <p className="text-sm text-muted-foreground mb-12">Ultimo aggiornamento: marzo 2026</p>
 
       <div className="space-y-10">
         {sections.map((s) => (
