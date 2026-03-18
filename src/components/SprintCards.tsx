@@ -5,7 +5,7 @@ const cards = [
     emoji: "🎯",
     title: "Il Radar",
     description:
-      "Hai un ottimo prodotto ma non sai come trovare i clienti giusti? In 14 giorni lavoriamo insieme per definire il tuo cliente ideale, costruire il messaggio di vendita e scegliere i canali più efficaci per la tua impresa. Valutiamo insieme anche se e quali canali pubblicitari (Meta Ads, TikTok, Google) fanno al caso tuo. Alla fine ricevi un playbook personalizzato — chiaro, concreto e tutto tuo.",
+      `Non sai come trovare i clienti giusti — o hai iniziato ma senza una strategia chiara? ⚡\n\nIn 14 giorni costruiamo insieme il tuo Radar: chi è il tuo cliente ideale, come parlargli, quali canali usare e quanto costa farlo. Valutiamo anche se Meta Ads, TikTok o Google fanno al caso tuo.\n\nRisultato: un playbook personalizzato che puoi usare da solo — e che sapresti spiegare a chiunque. Tutto tuo. 🎯`,
     price: "€1.200",
     cta: "Voglio il Radar →",
     bg: "bg-amber-50",
