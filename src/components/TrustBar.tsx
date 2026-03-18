@@ -4,7 +4,7 @@ const stats = [
   { emoji: "⚡", text: "14 giorni per sprint" },
   { emoji: "🌍", text: "IT · FR · EN" },
   { emoji: "📊", text: "80% conversion rate" },
-  { emoji: "🏙️", text: "London-trained" },
+  { emoji: "🏙️", text: "Cambridge-educated" },
 ];
 
 const TrustBar = () => (

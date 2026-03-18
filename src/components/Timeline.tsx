@@ -11,13 +11,13 @@ const steps = [
     num: "2",
     emoji: "⚡",
     title: "14 giorni di Sprint",
-    desc: "Lavoriamo insieme, intenso e focalizzato. Settimana 1: diagnosi. Settimana 2: esecuzione.",
+    desc: "Lavoriamo insieme, intenso e focalizzato. Settimana 1: diagnosi profonda. Settimana 2: costruzione e consegna. Ti chiedo impegno — perché questo Sprint lo facciamo insieme. 🤝",
   },
   {
     num: "3",
     emoji: "🎁",
     title: "Consegna & autonomia",
-    desc: "Ricevi tutto il materiale. Sei autonomo/a. Vuoi di più? Prenotiamo il prossimo Sprint.",
+    desc: "Ricevi tutto il materiale. Sei autonomo/a — e sapresti spiegarlo a chiunque. Un check-in gratuito dopo 30 giorni per vedere come stai andando. 🤍",
   },
 ];
 

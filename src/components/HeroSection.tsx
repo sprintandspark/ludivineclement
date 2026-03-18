@@ -26,12 +26,13 @@ const HeroSection = () => {
               In soli 14 giorni.
             </p>
             <p className="mt-6 max-w-[65ch] text-base md:text-lg font-medium leading-relaxed text-muted-foreground">
-              Ciao! Sono Ludivine. Porto il metodo di Londra e l'energia di Parigi nella tua
-              piccola impresa. Niente paroloni, solo Sprint di 2 settimane per trovare nuovi
-              clienti e conquistare l'estero. Ti va di correre? 🏃‍♀️
+              Mi sono adattata a 3 paesi, 3 lingue e una neonata. Se ho sopravvissuto a tutto questo — posso sicuramente aiutare la tua impresa a crescere. 😄⚡
             </p>
-            <p className="mt-2 text-sm font-medium text-muted-foreground/60 italic">
-              London-trained Growth Strategist.
+            <p className="mt-3 max-w-[65ch] text-base md:text-lg font-medium leading-relaxed text-muted-foreground">
+              Niente paroloni. Niente template. Solo il tuo Sprint, su misura. ⚡
+            </p>
+            <p className="mt-3 max-w-[65ch] text-base md:text-lg font-medium leading-relaxed text-muted-foreground">
+              Ti va di correre? 🏃‍♀️
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a
