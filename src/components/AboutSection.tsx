@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import headshot from "@/assets/ludivine-headshot.jpeg";
 
 const badges = [
   "📍 Based in Italy",
@@ -53,14 +54,12 @@ const AboutSection = () => (
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="flex items-center justify-center"
+          className="flex items-center justify-center order-first md:order-last"
         >
-          <div
-            className="w-64 h-64 md:w-80 md:h-80 rounded-full border border-dashed border-primary/40"
-            style={{
-              background:
-                "radial-gradient(circle at 60% 40%, hsl(243 75% 59% / 0.12), hsl(38 92% 50% / 0.08) 70%, transparent)",
-            }}
+          <img
+            src={headshot}
+            alt="Ludivine Clement"
+            className="w-64 h-auto md:w-80 rounded-[16px] object-cover shadow-lg"
           />
         </motion.div>
       </div>
