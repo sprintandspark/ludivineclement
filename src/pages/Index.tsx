@@ -16,8 +16,8 @@ const Index = () => (
     <HeroSection />
     <TrustBar />
     <SprintCards />
-    <MetodoSection />
     <QuizSection />
+    <MetodoSection />
     <Timeline />
     <AboutSection />
     <TestimonialPlaceholder />
