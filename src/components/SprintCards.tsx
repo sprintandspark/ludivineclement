@@ -5,7 +5,7 @@ const cards = [
     emoji: "🎯",
     title: "Il Radar",
     description:
-      `Non sai come trovare i clienti giusti — o hai iniziato ma senza una strategia chiara? ⚡\n\nIn 14 giorni costruiamo insieme il tuo Radar: chi è il tuo cliente ideale, come parlargli, quali canali usare e quanto costa farlo. Valutiamo anche se Meta Ads, TikTok o Google fanno al caso tuo.\n\nRisultato: un playbook personalizzato che puoi usare da solo — e che sapresti spiegare a chiunque. Tutto tuo. 🎯`,
+      `Non sai come trovare i clienti giusti? Costuiamo insieme la tua strategia. ⚡`,
     price: "€1.200",
     cta: "Voglio il Radar →",
     bg: "bg-amber-50",
@@ -17,7 +17,7 @@ const cards = [
     emoji: "🧘",
     title: "Zero Caos",
     description:
-      "La tua impresa funziona — ma sotto c'è un caos di fogli Excel, note sparse e processi improvvisati che ti rubano tempo ed energia ogni giorno. ⚡ In 14 giorni costruiamo insieme il tuo sistema: scopriamo cosa non funziona, esploriamo gli strumenti giusti per te e li mettiamo in moto insieme. Niente tecnologia complicata — solo strumenti che userai davvero. Risultato: un sistema organizzato e scalabile, tutto configurato e pronto all'uso. Con una panoramica completa dei costi — opzioni gratuite, a pagamento e tutto quello che c'è in mezzo. Tutto tuo. 🎯",
+      "La tua impresa funziona ma il caos ti frena? Costruiamo il tuo sistema. 🧘",
     price: "€1.800",
     cta: "Addio Stress →",
     bg: "bg-primary",
