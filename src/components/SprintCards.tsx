@@ -14,12 +14,12 @@ const cards = [
     badge: "💡 Include strategia ads",
   },
   {
-    emoji: "👋",
-    title: "Bye Bye Excel",
+    emoji: "🧘",
+    title: "Zero Caos",
     description:
-      "Installa un sistema di vendita moderno in 14 giorni. CRM, Apollo, email automatiche. Basta fogli caotici.",
+      "La tua impresa funziona — ma sotto c'è un caos di fogli Excel, note sparse e processi improvvisati che ti rubano tempo ed energia ogni giorno. ⚡ In 14 giorni costruiamo insieme il tuo sistema: scopriamo cosa non funziona, esploriamo gli strumenti giusti per te e li mettiamo in moto insieme. Niente tecnologia complicata — solo strumenti che userai davvero. Risultato: un sistema organizzato e scalabile, tutto configurato e pronto all'uso. Con una panoramica completa dei costi — opzioni gratuite, a pagamento e tutto quello che c'è in mezzo. Tutto tuo. 🎯",
     price: "€1.800",
-    cta: "Addio Excel →",
+    cta: "Addio Stress →",
     bg: "bg-primary",
     border: "",
     btnClass: "bg-background text-primary",
