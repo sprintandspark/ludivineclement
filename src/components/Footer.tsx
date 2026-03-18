@@ -9,6 +9,8 @@ const Footer = () => (
         <span className="hidden md:inline">·</span>
         <a href="https://www.iubenda.com/privacy-policy/31082620" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Privacy Policy</a>
 <span className="hidden md:inline">·</span>
+        <Link to="/privacy-policy" className="hover:text-foreground transition-colors">Privacy Policy</Link>
+<span className="hidden md:inline">·</span>
 <a href="https://www.iubenda.com/privacy-policy/31082620/cookie-policy" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Cookie Policy</a>
       </div>
       <span>P.IVA: in registrazione</span>
