@@ -47,7 +47,7 @@ const ContactSection = () => {
           className="rounded-[16px] bg-background p-8 md:p-10 shadow-xl"
         >
           <iframe
-            data-tally-src="https://tally.so/embed/LZ0aQ2?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+            data-tally-src="https://tally.so/embed/LZ0aQ2?alignLeft=1&hideTitle=1&transparentBackground=0&dynamicHeight=1"
             loading="lazy"
             width="100%"
             height={900}
