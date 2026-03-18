@@ -47,14 +47,14 @@ const ContactSection = () => {
           className="rounded-[16px] bg-background p-8 md:p-10 shadow-xl"
         >
           <iframe
-            data-tally-src="https://tally.so/embed/RGLB19?alignLeft=1&transparentBackground=1&dynamicHeight=1"
+            data-tally-src="https://tally.so/embed/LZ0aQ2?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
             loading="lazy"
             width="100%"
-            height={700}
+            height={900}
             frameBorder={0}
             marginHeight={0}
             marginWidth={0}
-            title="Contattami"
+            title="Contatti — Ludivine Clement"
             style={{ border: "none" }}
           />
         </motion.div>
