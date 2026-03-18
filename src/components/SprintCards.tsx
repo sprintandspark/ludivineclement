@@ -88,7 +88,7 @@ const cards = [
     bg: "bg-[#F5F3FF]",
     border: "border border-[#7C3AED]",
     btnClass: "bg-[#7C3AED] text-white",
-    badge: "🚀 Prezzo di lancio",
+    badge: "🚀 Offerta lancio — solo 3 posti a €150",
     featured: false,
   },
 ];
