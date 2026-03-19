@@ -4,10 +4,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import logo from "@/assets/logo.png";
 
 const navLinks = [
-  { label: "Chi sono", href: "#chi-sono" },
-  { label: "Il Metodo", href: "#il-metodo" },
   { label: "I Sprint", href: "#sprint" },
   { label: "Come funziona", href: "#come-funziona" },
+  { label: "Il Metodo", href: "#il-metodo" },
+  { label: "Chi sono", href: "#chi-sono" },
   { label: "Contatti", href: "#contatti" },
 ];
 
