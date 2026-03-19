@@ -5,19 +5,19 @@ const steps = [
     num: "1",
     emoji: "📞",
     title: "Discovery call gratuita",
-    desc: "30 minuti per capire dove sei e quale Sprint fa per te. Nessun impegno.",
+    desc: "30 minuti per capire dove sei e dove vuoi arrivare. Nessun impegno. ☕",
   },
   {
     num: "2",
     emoji: "⚡",
     title: "14 giorni di Sprint",
-    desc: "Lavoriamo insieme, intenso e focalizzato. Settimana 1: diagnosi profonda. Settimana 2: costruzione e consegna. Ti chiedo impegno — perché questo Sprint lo facciamo insieme. 🤝",
+    desc: "Lavoriamo insieme, intenso e focalizzato. Non è un corso — è un percorso. E lo facciamo insieme. 🤝",
   },
   {
     num: "3",
     emoji: "🎁",
     title: "Consegna & autonomia",
-    desc: "Ricevi tutto il materiale. Sei autonomo/a — e sapresti spiegarlo a chiunque. Un check-in gratuito dopo 30 giorni per vedere come stai andando. 🤍",
+    desc: "Ricevi tutto il materiale. Sei autonomo/a — e sapresti spiegarlo a chiunque. 🤍",
   },
 ];
 
