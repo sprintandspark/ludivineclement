@@ -36,24 +36,18 @@ const HeroSection = () => {
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a
-                href="#sprint"
+                href="#sprint-definition"
                 className="px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-bold text-sm hover:scale-[1.02] hover:shadow-xl transition-all duration-300"
+              >
+                Cos'è uno Sprint? →
+              </a>
+              <a
+                href="#sprint"
+                className="px-8 py-3.5 rounded-full border-2 border-primary text-primary font-bold text-sm hover:bg-primary/5 transition-all duration-300"
               >
                 Scegli il tuo Sprint →
               </a>
-              <a
-                href="#come-funziona"
-                className="px-8 py-3.5 rounded-full border-2 border-primary text-primary font-bold text-sm hover:bg-primary/5 transition-all duration-300"
-              >
-                Scopri di più
-              </a>
             </div>
-            <a
-              href="#sprint"
-              className="mt-4 inline-block text-sm font-medium text-primary hover:text-primary/80 transition-colors"
-            >
-              Scopri cosa sono gli Sprint ↓
-            </a>
           </motion.div>
 
           {/* Photo placeholder */}
