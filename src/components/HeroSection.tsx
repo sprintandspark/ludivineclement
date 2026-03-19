@@ -48,6 +48,12 @@ const HeroSection = () => {
                 Scopri di più
               </a>
             </div>
+            <a
+              href="#sprint"
+              className="mt-4 inline-block text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+            >
+              Scopri cosa sono gli Sprint ↓
+            </a>
           </motion.div>
 
           {/* Photo placeholder */}

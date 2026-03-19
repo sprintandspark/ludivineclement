@@ -25,11 +25,40 @@ const MetodoSection = () => (
         </span>
       </motion.h2>
 
-      <motion.p
+      {/* New intro paragraph */}
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.1 }}
+        className="text-base md:text-lg font-normal leading-relaxed text-foreground/70 space-y-4 text-left mb-8"
+      >
+        <p className="font-medium text-foreground/80">
+          Ti stai chiedendo perché 14 giorni? Perché uno Sprint?
+        </p>
+        <p>
+          Il concetto viene dal mondo agile: un periodo intensivo e focalizzato, con un obiettivo chiaro e un risultato concreto. Niente riunioni infinite. Niente analisi paralizzanti. Solo lavoro vero, fatto insieme.
+        </p>
+        <p>
+          Ma uno Sprint funziona solo se ci sei davvero. Se è il momento giusto. Se sei pronto/a a metterti in gioco.
+        </p>
+        <p>
+          Io non sono qui per ricostruire la tua impresa al posto tuo. Sono la tua guida, la tua confidente, l'occhio esterno che vede quello che tu non riesci a vedere. Il tuo avvocato del diavolo e il tuo più grande sostenitore.
+        </p>
+        <p className="font-bold text-foreground">Ma non sono te.</p>
+        <p>
+          In 14 giorni intensi ti mostro come farlo. Poi vai al tuo ritmo. E magari, lungo la strada, mi insegni qualcosa anche tu. 😊⚡
+        </p>
+      </motion.div>
+
+      {/* Amber separator */}
+      <div className="w-24 h-1 bg-accent rounded-full mx-auto mb-8" />
+
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.15 }}
         className="text-lg md:text-xl font-medium text-foreground/80 mb-12"
       >
         Non esiste una formula magica. Esiste quella giusta per te.
@@ -54,7 +83,7 @@ const MetodoSection = () => (
         <p>
           Ho costruito una famiglia in un paese che non era il mio. Ho dato alla luce mia figlia in italiano. Lei per ora risponde nella sua lingua — stiamo ancora traducendo. 😄
         </p>
-       <p>
+        <p>
           Da ogni scuola, ogni paese, ogni lingua ho imparato la stessa cosa:
         </p>
         <p className="text-xl font-bold text-foreground">
