@@ -13,7 +13,7 @@ const HeroSection = () => {
           >
             <h1 className="text-display text-[clamp(2.5rem,8vw,4.5rem)]">
               Diamo una scossa{" "}
-              <span className="text-primary">alla tua crescita.</span>{" "}
+              <span className="text-primary">al tuo business.</span>{" "}
               <motion.span
                 className="inline-block"
                 animate={{ scale: [1, 1.2, 1] }}
