@@ -58,7 +58,7 @@ const MetodoSection = () => (
           Da ogni scuola, ogni paese, ogni lingua ho imparato la stessa cosa:
         </p>
         <p className="text-xl font-bold text-foreground">
-          non esistono due storie uguali. E non esiste un metodo unico che funziona per tutti.
+          Non esistono due storie uguali. E non esiste un metodo unico che funziona per tutti.
         </p>
         <p>
           Ecco perché ogni Sprint inizia con una domanda semplice:
