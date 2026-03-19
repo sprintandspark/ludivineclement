@@ -55,7 +55,10 @@ const MetodoSection = () => (
           Ho costruito una famiglia in un paese che non era il mio. Ho dato alla luce mia figlia in italiano. Lei per ora risponde nella sua lingua — stiamo ancora traducendo. 😄
         </p>
        <p>
-          Da ogni scuola, ogni paese, ogni lingua ho imparato la stessa cosa: non esistono due storie uguali. E non esiste un metodo unico che funziona per tutti.
+          Da ogni scuola, ogni paese, ogni lingua ho imparato la stessa cosa:
+        </p>
+        <p className="text-xl font-bold text-foreground">
+          non esistono due storie uguali. E non esiste un metodo unico che funziona per tutti.
         </p>
         <p>
           Ecco perché ogni Sprint inizia con una domanda semplice:
