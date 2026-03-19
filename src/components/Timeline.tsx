@@ -22,7 +22,7 @@ const steps = [
 ];
 
 const Timeline = () => (
-  <section id="come-funziona" className="py-24 md:py-48 bg-muted/30">
+  <section id="come-funziona" className="py-24 md:py-28 bg-muted/30">
     <div className="mx-auto max-w-6xl px-6">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
