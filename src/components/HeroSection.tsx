@@ -29,7 +29,7 @@ const HeroSection = () => {
               Mi sono adattata a 3 paesi, 3 lingue e una neonata. Se ho sopravvissuta a tutto questo — posso sicuramente aiutare la tua impresa a crescere. 😄⚡
             </p>
             <p className="mt-3 max-w-[65ch] text-base md:text-lg font-medium leading-relaxed text-muted-foreground">
-              Niente paroloni. Niente template. Solo il tuo Sprint, su misura. ⚡
+              Niente paroloni. Niente copia-incolla. Solo il tuo Sprint, su misura. ⚡
             </p>
             <p className="mt-3 max-w-[65ch] text-base md:text-lg font-medium leading-relaxed text-muted-foreground">
               Ti va di correre? 🏃‍♀️
