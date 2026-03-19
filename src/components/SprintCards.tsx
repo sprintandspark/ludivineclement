@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import { Check } from "lucide-react";
+import { Check, ChevronDown, ChevronUp } from "lucide-react";
 
 const cards = [
   {
@@ -93,8 +93,17 @@ const cards = [
   },
 ];
 
+const addOnIncludes = [
+  "Logo e identità visiva",
+  "Sito professionale",
+  "Dominio e email",
+  "Form e questionario",
+  "Autonomia totale",
+];
+
 const SprintCards = () => {
   const [expanded, setExpanded] = useState<Record<number, boolean>>({});
+  const [accordionOpen, setAccordionOpen] = useState(false);
 
   const toggle = (i: number) =>
     setExpanded((prev) => ({ ...prev, [i]: !prev[i] }));
@@ -107,11 +116,66 @@ const SprintCards = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-display text-3xl md:text-5xl text-center mb-16"
+          className="text-display text-3xl md:text-5xl text-center mb-8"
         >
           Scegli il tuo Sprint
         </motion.h2>
 
+        {/* Intro one-liner */}
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="text-center text-base font-medium text-foreground/80 max-w-[700px] mx-auto mb-4"
+        >
+          Uno Sprint è un percorso intensivo di 14 giorni con un obiettivo chiaro, un metodo preciso e un risultato concreto. Veloce, ma con significato. ⚡
+        </motion.p>
+
+        {/* Expandable accordion */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.15 }}
+          className="text-center mb-16"
+        >
+          <button
+            onClick={() => setAccordionOpen(!accordionOpen)}
+            className="inline-flex items-center gap-1.5 text-[15px] font-medium text-primary hover:text-primary/80 transition-colors cursor-pointer"
+          >
+            {accordionOpen ? "Chiudi ↑" : "Cos'è uno Sprint? Scopri di più →"}
+          </button>
+          <AnimatePresence initial={false}>
+            {accordionOpen && (
+              <motion.div
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: "auto", opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                transition={{ duration: 0.35, ease: [0.4, 0, 0.2, 1] }}
+                className="overflow-hidden"
+              >
+                <div className="mt-6 max-w-[700px] mx-auto text-[15px] font-normal text-foreground/70 leading-relaxed space-y-4 text-left">
+                  <p>
+                    Il concetto di Sprint viene dal mondo agile e tech: un periodo intensivo e focalizzato, con un obiettivo chiaro e un risultato concreto alla fine. Niente riunioni infinite. Niente analisi paralizzanti. Solo lavoro vero, fatto insieme.
+                  </p>
+                  <p>
+                    Ma uno Sprint non funziona per tutti — funziona per chi è pronto. Per chi può dedicare tempo ed energia a questo percorso. Per chi vuole risposte ora, non tra tre mesi.
+                  </p>
+                  <p>
+                    Io non sono qui per ricostruire la tua impresa al posto tuo. Sono la tua guida, la tua confidente, l'occhio esterno che vede quello che tu non riesci a vedere. Il tuo avvocato del diavolo e il tuo più grande sostenitore.
+                  </p>
+                  <p className="font-bold text-foreground">Ma non sono te.</p>
+                  <p>
+                    In 14 giorni intensi — un percorso vero, non un corso — ti mostro come farlo. Poi vai al tuo ritmo. E magari, lungo la strada, mi insegni qualcosa anche tu. 😊⚡
+                  </p>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </motion.div>
+
+        {/* Sprint cards grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           {cards.map((card, i) => {
             const isIndigo = card.featured;
@@ -148,7 +212,6 @@ const SprintCards = () => {
                   {card.shortDesc}
                 </p>
 
-                {/* Expand/collapse content */}
                 <AnimatePresence initial={false}>
                   {isOpen && (
                     <motion.div
@@ -191,7 +254,6 @@ const SprintCards = () => {
                   )}
                 </AnimatePresence>
 
-                {/* Toggle link */}
                 <button
                   onClick={() => toggle(i)}
                   className={`mt-4 text-xs font-semibold cursor-pointer transition-colors ${
@@ -203,7 +265,6 @@ const SprintCards = () => {
                   {isOpen ? "Chiudi ↑" : "Scopri di più ↓"}
                 </button>
 
-                {/* Price */}
                 <div className="mt-6">
                   {card.price ? (
                     <p
@@ -239,6 +300,46 @@ const SprintCards = () => {
             );
           })}
         </div>
+
+        {/* Brand da Zero Add-on Banner */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="mt-12 md:mt-16 rounded-[16px] bg-[#EEF2FF] border-l-4 border-primary p-6 md:p-8"
+        >
+          <div className="grid md:grid-cols-[1fr_auto] gap-8">
+            {/* Left side */}
+            <div>
+              <p className="text-2xl mb-2">🚀</p>
+              <h3 className="text-lg font-bold text-primary">
+                Brand da Zero — Add-on
+              </h3>
+              <p className="mt-1 text-[18px] font-bold text-primary">
+                Non hai ancora un sito o un brand?
+              </p>
+              <p className="mt-3 text-[15px] font-normal text-foreground/70 leading-relaxed max-w-[550px]">
+                Durante il tuo Sprint costruiamo insieme la tua identità visiva, il tuo sito e tutto il setup digitale. Lo facciamo insieme — perché alla fine voglio che tu sappia farlo da solo/a. Nessuna dipendenza. Nessun costo di manutenzione. Solo autonomia. 🤍
+              </p>
+            </div>
+
+            {/* Right side */}
+            <div className="flex flex-col justify-between">
+              <ul className="space-y-2">
+                {addOnIncludes.map((item) => (
+                  <li key={item} className="flex items-center gap-2 text-sm text-foreground/70">
+                    <Check className="w-4 h-4 text-primary shrink-0" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <span className="mt-4 inline-block self-start md:self-end px-4 py-2 rounded-full bg-accent text-accent-foreground text-sm font-bold">
+                +€800 · aggiungibile a qualsiasi Sprint
+              </span>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
