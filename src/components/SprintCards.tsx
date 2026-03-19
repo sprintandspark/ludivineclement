@@ -158,7 +158,7 @@ const SprintCards = () => {
               >
                 <div className="mt-6 max-w-[700px] mx-auto text-[15px] font-normal text-foreground/70 leading-relaxed space-y-4 text-left">
                   <p>
-                    Il concetto di Sprint viene dal mondo agile e tech: un periodo intensivo e focalizzato, con un obiettivo chiaro e un risultato concreto alla fine. Niente riunioni infinite. Niente analisi paralizzanti. Solo lavoro vero, fatto insieme.
+                    Il concetto di Sprint viene dal mondo agile e tech: <strong>un periodo intensivo e focalizzato, con un obiettivo chiaro e un risultato concreto alla fine.</strong> Niente riunioni infinite. Niente analisi paralizzanti. Solo lavoro vero, fatto insieme.
                   </p>
                   <p>
                     Ma uno Sprint non funziona per tutti — funziona per chi è pronto. Per chi può dedicare tempo ed energia a questo percorso. Per chi vuole risposte ora, non tra tre mesi.
