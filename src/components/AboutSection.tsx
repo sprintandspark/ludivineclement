@@ -27,15 +27,17 @@ const AboutSection = () => (
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <p className="max-w-[65ch] text-base md:text-lg font-medium leading-relaxed text-muted-foreground">
-          Anni a Londra ad aiutare startup e scale-up a crescere — con metodo, dati e gli strumenti digitali giusti. Mercati UK, Francia e Italia.
-          </p>
-          <p className="max-w-[65ch] text-base md:text-lg font-medium leading-relaxed text-muted-foreground">
-          Una cosa l'ho vista ovunque: prodotti fantastici, processi commerciali improvvisati.
-          </p>
-          <p className="max-w-[65ch] text-base md:text-lg font-medium leading-relaxed text-muted-foreground">
-            Ho scelto Roma per portare il cambiamento. Sprint di 14 giorni, niente contratti infiniti e zero paroloni.
-          </p>
+          <div className="space-y-5">
+            <p className="max-w-[65ch] text-base md:text-lg font-medium leading-relaxed text-muted-foreground">
+              Anni a Londra ad aiutare startup e scale-up a crescere — con metodo, dati e gli strumenti digitali giusti. Mercati UK, Francia e Italia.
+            </p>
+            <p className="max-w-[65ch] text-base md:text-lg font-medium leading-relaxed text-muted-foreground">
+              Una cosa l'ho vista ovunque: prodotti fantastici, processi commerciali improvvisati.
+            </p>
+            <p className="max-w-[65ch] text-base md:text-lg font-medium leading-relaxed text-muted-foreground">
+              Ho scelto Roma per portare il cambiamento. Sprint di 14 giorni, niente contratti infiniti e zero paroloni.
+            </p>
+          </div>
           <div className="mt-8 flex flex-wrap gap-3">
             {badges.map((b) => (
               <span
