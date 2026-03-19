@@ -134,11 +134,12 @@ const SprintCards = () => {
 
         {/* Expandable accordion */}
         <motion.div
+          id="sprint-definition"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.15 }}
-          className="text-center mb-16"
+          className="text-center mb-16 scroll-mt-24"
         >
           <button
             onClick={() => setAccordionOpen(!accordionOpen)}
