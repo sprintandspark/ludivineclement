@@ -15,9 +15,14 @@ const MetodoSection = () => (
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className="text-display text-3xl md:text-5xl text-primary mb-4"
+        className="mb-4"
       >
-        Il mio metodo? Parto sempre da te. 🤍
+        <span className="block text-3xl md:text-5xl font-extrabold text-primary">
+          Il mio metodo?
+        </span>
+        <span className="block text-xl md:text-3xl font-medium text-foreground/80 mt-2">
+          Parto sempre da te. 🤍
+        </span>
       </motion.h2>
 
       <motion.p
@@ -43,17 +48,14 @@ const MetodoSection = () => (
         <p>
           Ho cambiato 13 scuole prima di arrivare all'Università di Cambridge — una delle istituzioni più prestigiose al mondo. E da ogni scuola, ogni paese, ogni cultura ho imparato la stessa cosa:
         </p>
-        <p className="text-xl font-bold text-foreground italic">
-          Non esistono due persone che imparano allo stesso modo.
-        </p>
         <p>
           Ho vissuto in 3 paesi. Ho imparato ogni volta la lingua da zero. Mi sono adattata alla cultura, al modo di pensare, al modo di lavorare.
         </p>
         <p>
           Ho costruito una famiglia in un paese che non era il mio. Ho dato alla luce mia figlia in italiano. Lei per ora risponde nella sua lingua — stiamo ancora traducendo. 😄
         </p>
-        <p>
-          Se c'è una cosa che tutto questo mi ha insegnato è che non esistono due imprese con gli stessi problemi. E non esiste un metodo unico che funziona per tutti.
+       <p>
+          Da ogni scuola, ogni paese, ogni lingua ho imparato la stessa cosa: non esistono due storie uguali. E non esiste un metodo unico che funziona per tutti.
         </p>
         <p>
           Ecco perché ogni Sprint inizia con una domanda semplice:
