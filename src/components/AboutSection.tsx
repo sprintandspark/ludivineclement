@@ -28,14 +28,13 @@ const AboutSection = () => (
           transition={{ duration: 0.5 }}
         >
           <p className="max-w-[65ch] text-base md:text-lg font-medium leading-relaxed text-muted-foreground">
-            Ho trascorso anni a Londra ad aiutare startup e scale-up a crescere velocemente —
-            con metodo, dati e gli strumenti digitali giusti. Ho lavorato su mercati UK, Francia
-            e Italia, e ho visto che le piccole imprese italiane hanno spesso prodotti fantastici
-            ma processi commerciali improvvisati.
+          Anni a Londra ad aiutare startup e scale-up a crescere — con metodo, dati e gli strumenti digitali giusti. Mercati UK, Francia e Italia.
           </p>
-          <p className="mt-4 max-w-[65ch] text-base md:text-lg font-medium leading-relaxed text-muted-foreground">
-            Sono tornata per cambiare questo. Con Sprint di 14 giorni, niente contratti infiniti
-            e zero paroloni.
+          <p className="max-w-[65ch] text-base md:text-lg font-medium leading-relaxed text-muted-foreground">
+          Una cosa l'ho vista ovunque: prodotti fantastici, processi commerciali improvvisati.
+          </p>
+          <p className="max-w-[65ch] text-base md:text-lg font-medium leading-relaxed text-muted-foreground">
+            Ho scelto Roma per portare il cambiamento. Sprint di 14 giorni, niente contratti infiniti e zero paroloni.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             {badges.map((b) => (
