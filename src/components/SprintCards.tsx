@@ -109,7 +109,7 @@ const SprintCards = () => {
     setExpanded((prev) => ({ ...prev, [i]: !prev[i] }));
 
   return (
-    <section id="sprint" className="py-24 md:py-48">
+    <section id="sprint" className="py-24 md:py-28">
       <div className="mx-auto max-w-6xl px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
