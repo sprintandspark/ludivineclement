@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import TrustBar from "@/components/TrustBar";
+import PerChiSection from "@/components/PerChiSection";
 import SprintCards from "@/components/SprintCards";
 import MetodoSection from "@/components/MetodoSection";
 import QuizSection from "@/components/QuizSection";
@@ -15,6 +16,7 @@ const Index = () => (
     <Navbar />
     <HeroSection />
     <TrustBar />
+    <PerChiSection />
     <SprintCards />
     <Timeline />
     <QuizSection />
