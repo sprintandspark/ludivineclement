@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-
 const HeroSection = () => {
   return (
     <section className="pt-32 pb-24 md:pt-44 md:pb-48">
@@ -35,29 +34,13 @@ const HeroSection = () => {
               Ti va di correre? 🏃‍♀️
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              
-                href="#sprint-definition"
-                className="px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-bold text-sm hover:scale-[1.02] hover:shadow-xl transition-all duration-300"
-              >
-                Cos'è uno Sprint? →
-              </a>
-              
-                href="#sprint"
-                className="px-8 py-3.5 rounded-full border-2 border-primary text-primary font-bold text-sm hover:bg-primary/5 transition-all duration-300"
-              >
-                Scegli il tuo Sprint →
-              </a>
+              <a href="#sprint-definition" className="px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-bold text-sm hover:scale-[1.02] hover:shadow-xl transition-all duration-300">Cos'è uno Sprint? →</a>
+              <a href="#sprint" className="px-8 py-3.5 rounded-full border-2 border-primary text-primary font-bold text-sm hover:bg-primary/5 transition-all duration-300">Scegli il tuo Sprint →</a>
             </div>
             <div className="mt-4">
-              
-                href="#per-chi"
-                className="text-sm font-medium text-primary/70 hover:text-primary transition-colors"
-              >
-                Scopri se è per te →
-              </a>
+              <a href="#per-chi" className="text-sm font-medium text-primary/70 hover:text-primary transition-colors">Scopri se è per te →</a>
             </div>
           </motion.div>
-
           {/* Photo placeholder */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -78,5 +61,4 @@ const HeroSection = () => {
     </section>
   );
 };
-
 export default HeroSection;
