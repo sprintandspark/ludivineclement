@@ -35,11 +35,13 @@ const HeroSection = () => {
               Ti va di correre? 🏃‍♀️
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
+              
                 href="#sprint-definition"
                 className="px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-bold text-sm hover:scale-[1.02] hover:shadow-xl transition-all duration-300"
               >
                 Cos'è uno Sprint? →
               </a>
+              
                 href="#sprint"
                 className="px-8 py-3.5 rounded-full border-2 border-primary text-primary font-bold text-sm hover:bg-primary/5 transition-all duration-300"
               >
@@ -47,6 +49,7 @@ const HeroSection = () => {
               </a>
             </div>
             <div className="mt-4">
+              
                 href="#per-chi"
                 className="text-sm font-medium text-primary/70 hover:text-primary transition-colors"
               >
