@@ -27,7 +27,7 @@ const PerChiSection = () => (
         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         className="text-3xl md:text-4xl font-extrabold text-primary text-center mb-3"
       >
-        Per chi è questo?
+        Scopri se è fatto per te
       </motion.h2>
 
       <motion.p
