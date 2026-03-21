@@ -6,7 +6,7 @@ const yesItems = [
   "Hai un'idea e vuoi lanciarla nel modo giusto",
   "Sei un creativo/a con talento ma poca visibilità",
   "Vuoi entrare in nuovi mercati (Francia, UK)",
-  "Vuoi capire l'AI prima che ti superi",
+  "Vuoi capire l'IA prima che ti superi",
   "Sei pronto/a a lavorarci insieme — davvero",
 ];
 
