@@ -18,8 +18,8 @@ const noItems = [
 ];
 
 const PerChiSection = () => (
-  <section className="py-20 md:py-28 bg-background px-6">
-    <div className="mx-auto max-w-[700px]">
+    <section id="per-chi" className="py-20 md:py-28 bg-background px-6">   
+      <div className="mx-auto max-w-[700px]">
       <motion.h2
         initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}
