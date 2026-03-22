@@ -95,7 +95,7 @@ const AccordionItem = ({
     >
       <span
         className="font-bold text-primary"
-        style={{ fontFamily: "Poppins, sans-serif", fontSize: "18px" }}
+        style={{ fontFamily: "Plus Jakarta Sans, sans-serif", fontSize: "18px" }}
       >
         {item.term}
       </span>
@@ -118,7 +118,7 @@ const AccordionItem = ({
           <div className="pb-6 space-y-4">
             <p
               style={{
-                fontFamily: "Poppins, sans-serif",
+                fontFamily: "Plus Jakarta Sans, sans-serif",
                 fontSize: "16px",
                 color: "#1a1a2e",
               }}
@@ -129,7 +129,7 @@ const AccordionItem = ({
               <span
                 className="font-bold"
                 style={{
-                  fontFamily: "Poppins, sans-serif",
+                  fontFamily: "Plus Jakarta Sans, sans-serif",
                   fontSize: "15px",
                   color: "#F59E0B",
                 }}
@@ -139,7 +139,7 @@ const AccordionItem = ({
               <span
                 className="italic"
                 style={{
-                  fontFamily: "Poppins, sans-serif",
+                  fontFamily: "Plus Jakarta Sans, sans-serif",
                   fontSize: "15px",
                   color: "#1a1a2e",
                 }}
@@ -151,7 +151,7 @@ const AccordionItem = ({
               <span
                 className="font-medium"
                 style={{
-                  fontFamily: "Poppins, sans-serif",
+                  fontFamily: "Plus Jakarta Sans, sans-serif",
                   fontSize: "13px",
                   color: "#9CA3AF",
                 }}
@@ -160,7 +160,7 @@ const AccordionItem = ({
               </span>
               <span
                 style={{
-                  fontFamily: "Poppins, sans-serif",
+                  fontFamily: "Plus Jakarta Sans, sans-serif",
                   fontSize: "13px",
                   color: "#9CA3AF",
                 }}
@@ -190,14 +190,14 @@ const Glossario = () => {
         <div className="mx-auto max-w-6xl px-6">
           <h1
             className="font-bold text-4xl md:text-5xl mb-4"
-            style={{ fontFamily: "Poppins, sans-serif", color: "#1a1a2e" }}
+            style={{ fontFamily: "Plus Jakarta Sans, sans-serif", color: "#1a1a2e" }}
           >
             Glossario ⚡
           </h1>
           <p
             className="max-w-2xl mx-auto"
             style={{
-              fontFamily: "Poppins, sans-serif",
+              fontFamily: "Plus Jakarta Sans, sans-serif",
               fontSize: "16px",
               color: "#6B7280",
             }}
@@ -223,7 +223,7 @@ const Glossario = () => {
           <p
             className="text-center mt-12"
             style={{
-              fontFamily: "Poppins, sans-serif",
+              fontFamily: "Plus Jakarta Sans, sans-serif",
               fontSize: "13px",
               color: "#9CA3AF",
             }}
