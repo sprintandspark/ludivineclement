@@ -185,7 +185,7 @@ const Glossario = () => {
       {/* Hero */}
       <section
         className="pt-32 pb-16 text-center"
-        style={{ backgroundColor: "#FAFAF7" }}
+        style={{ backgroundColor: "#FFFFFF" }}
       >
         <div className="mx-auto max-w-6xl px-6">
           <h1
@@ -209,7 +209,7 @@ const Glossario = () => {
       </section>
 
       {/* Accordion */}
-      <section className="py-16 bg-white">
+      <section className="py-16" style={{ backgroundColor: "#FFFFFF" }}>
         <div className="mx-auto max-w-3xl px-6">
           {glossaryTerms.map((item, i) => (
             <AccordionItem
