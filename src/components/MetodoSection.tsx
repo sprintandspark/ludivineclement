@@ -10,7 +10,7 @@ const pills = [
 const MetodoSection = () => (
   <section id="il-metodo" className="py-24 md:py-28 bg-background">
     <div className="mx-auto max-w-[700px] px-6 text-center">
-      <motion.h2
+     <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -18,7 +18,8 @@ const MetodoSection = () => (
         className="mb-4"
       >
         <span className="block text-3xl md:text-5xl font-extrabold text-primary">
-          Il Metodo Sprint & Spark
+          Il Metodo{" "}
+          <span className="font-normal italic">Sprint & Spark</span>
         </span>
         <span className="block text-xl md:text-3xl font-medium text-foreground/80 mt-2">
           Parto sempre da te. 🤍
