@@ -3,37 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      var path = new URLSearchParams(window.location.search).get('path');
+      if (path) {
+        window.history.replaceState(null, '', path);
+      }
+    </script>
     <title>Ludivine Clement | Strategia di crescita in 14 Giorni</title>
     <meta name="description" content="Strategia commerciale, vendite e mercati esteri per imprese ambiziose. Sprint intensivi da 14 giorni con metodo testato a Londra. Zero paroloni. ⚡">
     <meta name="author" content="Ludivine Clement" />
-    
-    
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <meta property="og:title" content="Ludivine Clement | Strategia di crescita in 14 Giorni">
-  <meta name="twitter:title" content="Ludivine Clement | Strategia di crescita in 14 Giorni">
-  <meta property="og:description" content="Strategia commerciale, vendite e mercati esteri per imprese ambiziose. Sprint intensivi da 14 giorni con metodo testato a Londra. Zero paroloni. ⚡">
-  <meta name="twitter:description" content="Strategia commerciale, vendite e mercati esteri per imprese ambiziose. Sprint intensivi da 14 giorni con metodo testato a Londra. Zero paroloni. ⚡">
-  <meta property="og:image" content="https://ludivineclement.com/og-image.jpg">
-  <meta name="twitter:image" content="https://ludivineclement.com/og-image.jpg">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VKZQQZT1D2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('consent', 'default', {
-    'analytics_storage': 'granted',
-    'ad_storage': 'denied',
-    'wait_for_update': 0
-  });
-  gtag('js', new Date());
-</script>
-
-<!-- Iubenda cookie banner -->
-<script type="text/javascript" src="https://embeds.iubenda.com/widgets/e9cf1edf-1390-4381-8c38-a77440a3b18c.js"></script>
+    <meta name="twitter:title" content="Ludivine Clement | Strategia di crescita in 14 Giorni">
+    <meta property="og:description" content="Strategia commerciale, vendite e mercati esteri per imprese ambiziose. Sprint intensivi da 14 giorni con metodo testato a Londra. Zero paroloni. ⚡">
+    <meta name="twitter:description" content="Strategia commerciale, vendite e mercati esteri per imprese ambiziose. Sprint intensivi da 14 giorni con metodo testato a Londra. Zero paroloni. ⚡">
+    <meta property="og:image" content="https://ludivineclement.com/og-image.jpg">
+    <meta name="twitter:image" content="https://ludivineclement.com/og-image.jpg">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VKZQQZT1D2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'analytics_storage': 'granted',
+        'ad_storage': 'denied',
+        'wait_for_update': 0
+      });
+      gtag('js', new Date());
+    </script>
+    <!-- Iubenda cookie banner -->
+    <script type="text/javascript" src="https://embeds.iubenda.com/widgets/e9cf1edf-1390-4381-8c38-a77440a3b18c.js"></script>
   </head>
   <body>
     <div id="root"></div>
