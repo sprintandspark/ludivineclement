@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
 const navLinks = [
-  { label: "Gli Sprint", href: "#sprint" },
-  { label: "Come funziona", href: "#come-funziona" },
-  { label: "Il Metodo", href: "#il-metodo" },
-  { label: "Chi sono", href: "#chi-sono" },
+  { label: "Gli Sprint", href: "/#sprint" },
+  { label: "Come funziona", href: "/#come-funziona" },
+  { label: "Il Metodo", href: "/#il-metodo" },
+  { label: "Chi sono", href: "/#chi-sono" },
   { label: "Glossario", href: "/glossario" },
-  { label: "Contatti", href: "#contatti" },
+  { label: "Contatti", href: "/#contatti" },
 ];
 
 const Navbar = () => {
@@ -105,7 +105,7 @@ const Navbar = () => {
                 )
               )}
               <a
-                href="#contatti"
+                href="/#contatti"
                 className="px-6 py-2.5 rounded-full bg-primary text-primary-foreground font-bold text-sm"
                 onClick={() => setMobileOpen(false)}
               >
