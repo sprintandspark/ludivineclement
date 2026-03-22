@@ -193,7 +193,7 @@ const Glossario = () => {
         >
           Manca un termine? Scrivimi →{" "}
           
-            href="mailto:go.ludivineclement@gmail.com"
+            <a href="mailto:go.ludivineclement@gmail.com"
             className="underline hover:text-primary transition-colors"
           >
             go.ludivineclement@gmail.com
