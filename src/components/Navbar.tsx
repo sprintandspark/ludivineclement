@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
 const navLinks = [
@@ -8,6 +9,7 @@ const navLinks = [
   { label: "Come funziona", href: "#come-funziona" },
   { label: "Il Metodo", href: "#il-metodo" },
   { label: "Chi sono", href: "#chi-sono" },
+  { label: "Glossario", href: "/glossario" },
   { label: "Contatti", href: "#contatti" },
 ];
 
@@ -34,15 +36,25 @@ const Navbar = () => {
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="text-sm font-semibold text-foreground/70 hover:text-foreground transition-colors"
-            >
-              {link.label}
-            </a>
-          ))}
+          {navLinks.map((link) =>
+            link.href.startsWith("/") ? (
+              <Link
+                key={link.href}
+                to={link.href}
+                className="text-sm font-semibold text-foreground/70 hover:text-foreground transition-colors"
+              >
+                {link.label}
+              </Link>
+            ) : (
+              <a
+                key={link.href}
+                href={link.href}
+                className="text-sm font-semibold text-foreground/70 hover:text-foreground transition-colors"
+              >
+                {link.label}
+              </a>
+            )
+          )}
           <a
             href="#contatti"
             className="px-6 py-2.5 rounded-full bg-primary text-primary-foreground font-bold text-sm hover:scale-[1.02] hover:shadow-lg transition-all duration-300"
@@ -71,16 +83,27 @@ const Navbar = () => {
             className="absolute top-20 left-0 right-0 bg-background shadow-lg md:hidden"
           >
             <div className="flex flex-col items-center gap-4 py-6">
-              {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  className="text-sm font-semibold text-foreground/70"
-                  onClick={() => setMobileOpen(false)}
-                >
-                  {link.label}
-                </a>
-              ))}
+              {navLinks.map((link) =>
+                link.href.startsWith("/") ? (
+                  <Link
+                    key={link.href}
+                    to={link.href}
+                    className="text-sm font-semibold text-foreground/70"
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    className="text-sm font-semibold text-foreground/70"
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    {link.label}
+                  </a>
+                )
+              )}
               <a
                 href="#contatti"
                 className="px-6 py-2.5 rounded-full bg-primary text-primary-foreground font-bold text-sm"
