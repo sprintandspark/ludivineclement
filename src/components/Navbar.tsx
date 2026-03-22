@@ -8,6 +8,7 @@ const navLinks = [
   { label: "Come funziona", href: "#come-funziona" },
   { label: "Il Metodo", href: "#il-metodo" },
   { label: "Chi sono", href: "#chi-sono" },
+  { label: "Glossario", href: "/glossario" },
   { label: "Contatti", href: "#contatti" },
 ];
 
