@@ -5,14 +5,13 @@ import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
 const navLinks = [
-  { label: "Gli Sprint", href: "/#sprint" },
-  { label: "Come funziona", href: "/#come-funziona" },
-  { label: "Il Metodo", href: "/#il-metodo" },
-  { label: "Chi sono", href: "/#chi-sono" },
-  { label: "Glossario", href: "/glossario" },
-  { label: "Contatti", href: "/#contatti" },
+  { label: "Gli Sprint", href: "https://ludivineclement.com/#sprint" },
+  { label: "Come funziona", href: "https://ludivineclement.com/#come-funziona" },
+  { label: "Il Metodo", href: "https://ludivineclement.com/#il-metodo" },
+  { label: "Chi sono", href: "https://ludivineclement.com/#chi-sono" },
+  { label: "Glossario", href: "https://ludivineclement.com/glossario" },
+  { label: "Contatti", href: "https://ludivineclement.com/#contatti" },
 ];
-
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -56,7 +55,7 @@ const Navbar = () => {
             )
           )}
           <a
-            href="#contatti"
+            href="https://ludivineclement.com/#contatti"
             className="px-6 py-2.5 rounded-full bg-primary text-primary-foreground font-bold text-sm hover:scale-[1.02] hover:shadow-lg transition-all duration-300"
           >
             Prenota una call →
@@ -105,7 +104,7 @@ const Navbar = () => {
                 )
               )}
               <a
-                href="/#contatti"
+                href="https://ludivineclement.com/#contatti"
                 className="px-6 py-2.5 rounded-full bg-primary text-primary-foreground font-bold text-sm"
                 onClick={() => setMobileOpen(false)}
               >
