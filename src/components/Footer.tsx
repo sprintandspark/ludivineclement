@@ -8,6 +8,8 @@ const Footer = () => (
         <span>Ludivine Clement © 2026</span>
         <span className="hidden md:inline">·</span>
         <Link to="/privacy-policy" className="hover:text-foreground transition-colors">Privacy Policy & Cookie Policy</Link>
+        <span className="hidden md:inline">·</span>
+        <Link to="/glossario" className="hover:text-foreground transition-colors">Glossario</Link>
       </div>
       <span>P.IVA: in registrazione</span>
       <div className="flex gap-4">
