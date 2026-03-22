@@ -18,7 +18,7 @@ const MetodoSection = () => (
         className="mb-4"
       >
         <span className="block text-3xl md:text-5xl font-extrabold text-primary">
-          Il mio metodo?
+          Il Metodo Sprint & Spark
         </span>
         <span className="block text-xl md:text-3xl font-medium text-foreground/80 mt-2">
           Parto sempre da te. 🤍
