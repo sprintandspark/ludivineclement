@@ -7,7 +7,7 @@ import logo from "@/assets/logo.png";
 const navLinks = [
   { label: "Gli Sprint", href: "https://ludivineclement.com/#sprint" },
   { label: "Come funziona", href: "https://ludivineclement.com/#come-funziona" },
-  { label: "Il Metodo", href: "https://ludivineclement.com/#il-metodo" },
+  { label: "Il Metodo Sprint & Spark", href: "https://ludivineclement.com/#il-metodo" },
   { label: "Chi sono", href: "https://ludivineclement.com/#chi-sono" },
   { label: "Glossario", href: "https://ludivineclement.com/glossario" },
   { label: "Contatti", href: "https://ludivineclement.com/#contatti" },
