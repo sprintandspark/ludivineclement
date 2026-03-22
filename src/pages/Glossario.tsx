@@ -1,4 +1,4 @@
-import { useState } from "react";
+import  { useState, useEffect } from "react";
 import { ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -161,9 +161,34 @@ const AccordionItem = ({
 
 const Glossario = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-
+useEffect(() => {
+    document.title = "Glossario di Business | Sprint & Spark — Ludivine Clement";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", "Cos'è un funnel? Cosa significa KPI? Il glossario dei termini business spiegati in italiano, con esempi concreti. Senza paroloni.");
+    }
+    return () => {
+      document.title = "Ludivine Clement | Strategia di crescita in 14 Giorni";
+    };
+  }, []);
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": glossaryTerms.map((item) => ({
+      "@type": "Question",
+      "name": `Cos'è ${item.term}?`,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.definition + " Esempio: " + item.example,
+      },
+    })),
+  };
   return (
     <div className="min-h-screen bg-background">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="mx-auto max-w-3xl px-6 py-12 md:py-20">
         <Link
           to="/"
