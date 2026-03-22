@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import Navbar from "@/components/Navbar";
+import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
 
 const glossaryTerms = [
@@ -88,14 +88,14 @@ const AccordionItem = ({
   isOpen: boolean;
   onToggle: () => void;
 }) => (
-  <div className="border-b" style={{ borderColor: "#E5E7EB" }}>
+  <div className="border-b" style={{ borderColor: "#E2E8F0" }}>
     <button
       onClick={onToggle}
       className="w-full flex items-center justify-between py-5 text-left"
     >
       <span
         className="font-bold text-primary"
-        style={{ fontFamily: "Plus Jakarta Sans, sans-serif", fontSize: "18px" }}
+        style={{ fontSize: "18px" }}
       >
         {item.term}
       </span>
@@ -116,33 +116,19 @@ const AccordionItem = ({
           className="overflow-hidden"
         >
           <div className="pb-6 space-y-4">
-            <p
-              style={{
-                fontFamily: "Plus Jakarta Sans, sans-serif",
-                fontSize: "16px",
-                color: "#1a1a2e",
-              }}
-            >
+            <p style={{ fontSize: "16px", color: "#0F172A" }}>
               {item.definition}
             </p>
             <div className="pl-4">
               <span
                 className="font-bold"
-                style={{
-                  fontFamily: "Plus Jakarta Sans, sans-serif",
-                  fontSize: "15px",
-                  color: "#F59E0B",
-                }}
+                style={{ fontSize: "15px", color: "#F59E0B" }}
               >
                 Esempio:{" "}
               </span>
               <span
                 className="italic"
-                style={{
-                  fontFamily: "Plus Jakarta Sans, sans-serif",
-                  fontSize: "15px",
-                  color: "#1a1a2e",
-                }}
+                style={{ fontSize: "15px", color: "#0F172A" }}
               >
                 {item.example}
               </span>
@@ -150,21 +136,11 @@ const AccordionItem = ({
             <div>
               <span
                 className="font-medium"
-                style={{
-                  fontFamily: "Plus Jakarta Sans, sans-serif",
-                  fontSize: "13px",
-                  color: "#9CA3AF",
-                }}
+                style={{ fontSize: "13px", color: "#64748B" }}
               >
                 Quando si usa:{" "}
               </span>
-              <span
-                style={{
-                  fontFamily: "Plus Jakarta Sans, sans-serif",
-                  fontSize: "13px",
-                  color: "#9CA3AF",
-                }}
-              >
+              <span style={{ fontSize: "13px", color: "#64748B" }}>
                 {item.when}
               </span>
             </div>
@@ -179,68 +155,54 @@ const Glossario = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <>
-      <Navbar />
+    <div className="min-h-screen bg-background">
+      <div className="mx-auto max-w-3xl px-6 py-12 md:py-20">
+        <Link
+          to="/"
+          className="inline-flex items-center text-sm font-semibold text-primary hover:underline mb-10"
+        >
+          ← Torna al sito
+        </Link>
 
-      {/* Hero */}
-      <section
-        className="pt-32 pb-16 text-center"
-        style={{ backgroundColor: "#FFFFFF" }}
-      >
-        <div className="mx-auto max-w-6xl px-6">
-          <h1
-            className="font-bold text-4xl md:text-5xl mb-4"
-            style={{ fontFamily: "Plus Jakarta Sans, sans-serif", color: "#1a1a2e" }}
-          >
-            Glossario ⚡
-          </h1>
-          <p
-            className="max-w-2xl mx-auto"
-            style={{
-              fontFamily: "Plus Jakarta Sans, sans-serif",
-              fontSize: "16px",
-              color: "#6B7280",
-            }}
-          >
-            Le parole del business che usi (o che sentirai usare). Spiegate come
-            si deve — senza paroloni.
-          </p>
-        </div>
-      </section>
+        <h1
+          className="font-bold text-4xl md:text-5xl mb-4"
+          style={{ color: "#0F172A" }}
+        >
+          Glossario ⚡
+        </h1>
+        <p
+          className="max-w-2xl mb-16"
+          style={{ fontSize: "16px", color: "#64748B" }}
+        >
+          Le parole del business che usi (o che sentirai usare). Spiegate come
+          si deve — senza paroloni.
+        </p>
 
-      {/* Accordion */}
-      <section className="py-16" style={{ backgroundColor: "#FFFFFF" }}>
-        <div className="mx-auto max-w-3xl px-6">
-          {glossaryTerms.map((item, i) => (
-            <AccordionItem
-              key={item.term}
-              item={item}
-              isOpen={openIndex === i}
-              onToggle={() => setOpenIndex(openIndex === i ? null : i)}
-            />
-          ))}
+        {glossaryTerms.map((item, i) => (
+          <AccordionItem
+            key={item.term}
+            item={item}
+            isOpen={openIndex === i}
+            onToggle={() => setOpenIndex(openIndex === i ? null : i)}
+          />
+        ))}
 
-          <p
-            className="text-center mt-12"
-            style={{
-              fontFamily: "Plus Jakarta Sans, sans-serif",
-              fontSize: "13px",
-              color: "#9CA3AF",
-            }}
+        <p
+          className="text-center mt-12"
+          style={{ fontSize: "13px", color: "#64748B" }}
+        >
+          Manca un termine? Scrivimi →{" "}
+          
+            href="mailto:go.ludivineclement@gmail.com"
+            className="underline hover:text-primary transition-colors"
           >
-            Manca un termine? Scrivimi →{" "}
-            <a
-              href="mailto:go.ludivineclement@gmail.com"
-              className="underline hover:text-primary transition-colors"
-            >
-              go.ludivineclement@gmail.com
-            </a>
-          </p>
-        </div>
-      </section>
+            go.ludivineclement@gmail.com
+          </a>
+        </p>
+      </div>
 
       <Footer />
-    </>
+    </div>
   );
 };
 
