@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import GlossaryTooltip from "@/components/GlossaryTooltip";
 
 const pills = [
   "🎯 Approccio su misura",
@@ -38,10 +39,14 @@ const MetodoSection = () => (
           Ti stai chiedendo perché 14 giorni? Perché uno Sprint?
         </p>
         <p>
-          Il concetto viene dal mondo agile: un periodo intensivo e focalizzato, con un obiettivo chiaro e un risultato concreto. Niente riunioni infinite. Niente analisi paralizzanti. Solo lavoro vero, fatto insieme.
+          Il concetto viene dal mondo{" "}
+          <GlossaryTooltip term="Agile">agile</GlossaryTooltip>
+          : un periodo intensivo e focalizzato, con un obiettivo chiaro e un risultato concreto. Niente riunioni infinite. Niente analisi paralizzanti. Solo lavoro vero, fatto insieme.
         </p>
-        <p>
-          Ma uno Sprint funziona solo se ci sei davvero. Se è il momento giusto. Se sei pronto/a a metterti in gioco.
+       <p>
+          Ma uno{" "}
+          <GlossaryTooltip term="Sprint">Sprint</GlossaryTooltip>
+          {" "}funziona solo se ci sei davvero. Se è il momento giusto. Se sei pronto/a a metterti in gioco.
         </p>
         <p>
           Io non sono qui per ricostruire la tua impresa al posto tuo. Sono la tua guida, la tua confidente, l'occhio esterno che vede quello che tu non riesci a vedere. Il tuo avvocato del diavolo e il tuo più grande sostenitore.
