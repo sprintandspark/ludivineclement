@@ -31,7 +31,7 @@ const CookieBanner = () => {
           Questo sito utilizza cookie tecnici e analitici per migliorare 
           la tua esperienza. Leggi la nostra{" "}
           <Link
-            to="/privacy-policy"
+            to="https://ludivineclement.com/privacy-policy"
             style={{ color: "#F59E0B", textDecoration: "underline" }}
           >
             Privacy Policy
