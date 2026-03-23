@@ -70,8 +70,15 @@ const GlossaryTooltip = ({ term, children }: Props) => {
             onMouseLeave={() => setOpen(false)}
           >
             {/* Term */}
-            <p
+             <p
               className="font-bold mb-1"
               style={{ color: "#4F46E5", fontSize: "15px" }}
             >
-              {data.term}
+              {data.term}{" "}
+              <span
+                className="italic font-normal"
+                style={{ color: "#64748B", fontSize: "12px" }}
+              >
+                (it. {data.italian})
+              </span>
+            </p>
