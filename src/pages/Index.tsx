@@ -18,7 +18,6 @@ const Index = () => {
     if (typeof (window as any).gtag !== 'undefined') {
       (window as any).gtag('config', 'G-VKZQQZT1D2', {
         'page_path': window.location.pathname,
-        'debug_mode': true
       });
     }
   }, []);
