@@ -30,7 +30,7 @@ const Navbar = () => {
     >
       <div className="mx-auto w-full max-w-6xl px-6 flex items-center justify-between">
         <a href="https://ludivineclement.com" className="flex items-center">
-          <img src={logo} alt="Ludivine Clement" className="h-18" />
+          <img src={logo} alt="Ludivine Clement" className="h-12" />
         </a>
 
         {/* Desktop */}
