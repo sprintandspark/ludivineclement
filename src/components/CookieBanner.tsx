@@ -1,21 +1,38 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 
 const CookieBanner = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const accepted = localStorage.getItem("cookieConsent");
-    if (!accepted) setVisible(true);
+    const consent = localStorage.getItem("cookieConsent");
+    if (!consent) {
+      setVisible(true);
+    } else if (consent === "true") {
+      if (typeof (window as any).gtag !== 'undefined') {
+        (window as any).gtag('consent', 'update', {
+          'analytics_storage': 'granted'
+        });
+      }
+    }
   }, []);
 
   const accept = () => {
     localStorage.setItem("cookieConsent", "true");
+    if (typeof (window as any).gtag !== 'undefined') {
+      (window as any).gtag('consent', 'update', {
+        'analytics_storage': 'granted'
+      });
+    }
     setVisible(false);
   };
 
   const decline = () => {
     localStorage.setItem("cookieConsent", "false");
+    if (typeof (window as any).gtag !== 'undefined') {
+      (window as any).gtag('consent', 'update', {
+        'analytics_storage': 'denied'
+      });
+    }
     setVisible(false);
   };
 
@@ -30,12 +47,11 @@ const CookieBanner = () => {
         <p style={{ color: "#E2E8F0", fontSize: "13px", lineHeight: "1.6" }}>
           Questo sito utilizza cookie tecnici e analitici per migliorare 
           la tua esperienza. Leggi la nostra{" "}
-          <Link
-            to="https://ludivineclement.com/privacy-policy"
+        <a href="https://ludivineclement.com/privacy-policy"
             style={{ color: "#F59E0B", textDecoration: "underline" }}
-          >
+        >
             Privacy Policy
-          </Link>
+          </a>
           .
         </p>
         <div className="flex gap-3 shrink-0">
