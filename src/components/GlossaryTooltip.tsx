@@ -37,7 +37,8 @@ const GlossaryTooltip = ({ term, children }: Props) => {
       <span
         className="cursor-pointer"
         style={{
-          borderBottom: "2px solid #F59E0B",
+          color: "#4F46E5",
+          borderBottom: "2px dotted #4F46E5",
           paddingBottom: "1px",
         }}
         onMouseEnter={() => setOpen(true)}
@@ -48,61 +49,29 @@ const GlossaryTooltip = ({ term, children }: Props) => {
       </span>
 
       {open && (
-        <div
-          ref={tooltipRef}
-          className="absolute z-50 left-0 mt-2 w-72 rounded-xl shadow-xl border"
-          style={{
-            backgroundColor: "#FFFFFF",
-            borderColor: "#E2E8F0",
-            padding: "16px",
-            top: "100%",
-          }}
-          onMouseEnter={() => setOpen(true)}
-          onMouseLeave={() => setOpen(false)}
-        >
-          {/* Term */}
-          <p
-            className="font-bold mb-1"
-            style={{ color: "#4F46E5", fontSize: "15px" }}
+        <>
+          {/* Invisible bridge between word and box */}
+          <div
+            className="absolute left-0 w-full"
+            style={{ top: "100%", height: "8px" }}
+            onMouseEnter={() => setOpen(true)}
+          />
+
+          <div
+            ref={tooltipRef}
+            className="absolute z-50 left-0 w-72 rounded-xl shadow-xl border"
+            style={{
+              backgroundColor: "#FFFFFF",
+              borderColor: "#E2E8F0",
+              padding: "16px",
+              top: "calc(100% + 8px)",
+            }}
+            onMouseEnter={() => setOpen(true)}
+            onMouseLeave={() => setOpen(false)}
           >
-            {data.term}
-            {" "}
-            <span
-              className="italic font-normal"
-              style={{ color: "#64748B", fontSize: "12px" }}
+            {/* Term */}
+            <p
+              className="font-bold mb-1"
+              style={{ color: "#4F46E5", fontSize: "15px" }}
             >
-              (it. {data.italian})
-            </span>
-          </p>
-
-          {/* Definition */}
-          <p
-            className="mb-3"
-            style={{ color: "#0F172A", fontSize: "13px", lineHeight: "1.5" }}
-          >
-            {data.definition}
-          </p>
-
-          {/* Example */}
-          <p
-            className="italic mb-3"
-            style={{ color: "#64748B", fontSize: "12px", lineHeight: "1.5" }}
-          >
-            {data.example}
-          </p>
-
-          {/* Link */}
-          <Link
-            to="/glossario"
-            className="font-bold text-xs"
-            style={{ color: "#4F46E5" }}
-          >
-            Vedi glossario →
-          </Link>
-        </div>
-      )}
-    </span>
-  );
-};
-
-export default GlossaryTooltip;
+              {data.term}
