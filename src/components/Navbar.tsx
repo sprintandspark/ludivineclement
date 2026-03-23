@@ -30,7 +30,7 @@ const Navbar = () => {
     >
       <div className="mx-auto w-full max-w-6xl px-6 flex items-center justify-between">
         <a href="https://ludivineclement.com" className="flex items-center">
-          <img src={logo} alt="Ludivine Clement" style={{ height: "80px", width: "auto" }} />        </a>
+          <img src={logo} alt="Ludivine Clement" style={{ height: "90px", width: "auto" }} />        </a>
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
