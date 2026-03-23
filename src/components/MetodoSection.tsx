@@ -9,8 +9,8 @@ const pills = [
 ];
 
 const MetodoSection = () => (
-  <section id="il-metodo" className="py-24 md:py-28 bg-background">
-    <div className="mx-auto max-w-[700px] px-6 text-center">
+<section id="il-metodo" className="py-16 md:py-20 bg-background">
+  <div className="mx-auto max-w-[700px] px-6 text-center">
      <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
