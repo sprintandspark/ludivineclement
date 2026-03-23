@@ -9,8 +9,8 @@ const badges = [
 ];
 
 const AboutSection = () => (
-  <section id="chi-sono" className="py-24 md:py-48">
-    <div className="mx-auto max-w-6xl px-6">
+<section id="chi-sono" className="py-16 md:py-24">
+  <div className="mx-auto max-w-6xl px-6">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
