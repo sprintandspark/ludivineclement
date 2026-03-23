@@ -63,7 +63,7 @@ const cards = [
       "Valutazione: hai bisogno di un team locale? Supporto legale? Un partner?",
       "Lista di 30 contatti qualificati nel mercato target",
       "Localizzazione materiali di vendita",
-      { text: "", term: "Playbook", termDisplay: "Playbook", rest: " di market entry* consegnato a fine sprint" },
+      { text: "", term: "Playbook", termDisplay: "Playbook", rest: " consegnato a fine sprint — include strategia di ", term2: "Market Entry", termDisplay2: "market entry", rest2: "" },
     ],
     footnotes: [
       { term: "Playbook", note: "il tuo manuale operativo — le procedure e strategie che funzionano per il tuo business, messe su carta." },
@@ -115,7 +115,8 @@ const addOnIncludes = [
   "Autonomia totale",
 ];
 
-type Bullet = string | { text: string; term: string; termDisplay: string; rest: string };
+type Bullet = string | { text: string; term: string; termDisplay: string; rest: string; term2?: string; termDisplay2?: string; rest2?: string;
+};
 type Footnote = { term: string; note: string };
 
 const renderBullet = (b: Bullet, isIndigo: boolean) => {
@@ -127,6 +128,12 @@ const renderBullet = (b: Bullet, isIndigo: boolean) => {
         {b.termDisplay}*
       </span>
       {b.rest}
+      {b.term2 && (
+        <span style={{ color: "#4F46E5", fontStyle: "italic" }}>
+          {b.termDisplay2}*
+        </span>
+      )}
+      {b.rest2}
     </span>
   );
 };
