@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
 const TestimonialPlaceholder = () => (
-  <section className="py-24 md:py-32">
-    <div className="mx-auto max-w-3xl px-6">
+<section className="py-12 md:py-16">
+  <div className="mx-auto max-w-3xl px-6">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
