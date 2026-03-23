@@ -11,6 +11,7 @@ import AboutSection from "@/components/AboutSection";
 import TestimonialPlaceholder from "@/components/TestimonialPlaceholder";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import CookieBanner from "@/components/CookieBanner";
 
 const Index = () => {
   useEffect(() => {
@@ -35,6 +36,7 @@ const Index = () => {
       <AboutSection />
       <TestimonialPlaceholder />
       <ContactSection />
+      <CookieBanner />
       <Footer />
     </>
   );
