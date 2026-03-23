@@ -1,6 +1,8 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { Check, ChevronDown, ChevronUp } from "lucide-react";
+import { Link } from "react-router-dom";
+import GlossaryTooltip from "@/components/GlossaryTooltip";
 
 const cards = [
   {
@@ -9,11 +11,15 @@ const cards = [
     shortDesc: "Non sai come trovare i clienti giusti? Costruiamo insieme la tua strategia commerciale. ⚡",
     bullets: [
       "Sessione di diagnosi approfondita del tuo business",
-      "Definizione del tuo cliente ideale (ICP)",
+      { text: "Definizione del tuo cliente ideale (", term: "ICP", termDisplay: "ICP", rest: ")" },
       "Messaggio di vendita e canali giusti per te",
       "Valutazione ads (Meta, TikTok, Google)",
-      "Playbook personalizzato consegnato a fine sprint",
+      { text: "", term: "Playbook", termDisplay: "Playbook", rest: " personalizzato consegnato a fine sprint" },
       "Un sistema che sapresti spiegare a chiunque",
+    ],
+    footnotes: [
+      { term: "ICP", note: "il profilo del tuo cliente ideale — quella persona che ha esattamente il problema che tu risolvi." },
+      { term: "Playbook", note: "il tuo manuale operativo — le procedure e strategie che funzionano per il tuo business, messe su carta." },
     ],
     bonusLine: "1 check-in gratuito dopo 30 giorni 🤍",
     price: "€1.200",
@@ -36,6 +42,7 @@ const cards = [
       "Sistema organizzato e scalabile pronto all'uso",
       "Un sistema che sapresti spiegare a chiunque",
     ],
+    footnotes: [],
     bonusLine: "1 check-in gratuito dopo 30 giorni 🤍",
     price: "€1.500",
     cta: "Addio stress →",
@@ -56,7 +63,11 @@ const cards = [
       "Valutazione: hai bisogno di un team locale? Supporto legale? Un partner?",
       "Lista di 30 contatti qualificati nel mercato target",
       "Localizzazione materiali di vendita",
-      "Playbook di market entry consegnato a fine sprint",
+      { text: "", term: "Playbook", termDisplay: "Playbook", rest: " di market entry* consegnato a fine sprint" },
+    ],
+    footnotes: [
+      { term: "Playbook", note: "il tuo manuale operativo — le procedure e strategie che funzionano per il tuo business, messe su carta." },
+      { term: "Market Entry", note: "la strategia con cui un'azienda entra in un mercato nuovo. Non si improvvisa." },
     ],
     bonusLine: "1 check-in gratuito dopo 2-3 mesi 🤍",
     price: "€2.200",
@@ -75,10 +86,13 @@ const cards = [
       "Sessione 1-to-1 da 90 minuti su misura per il tuo business",
       "Prima capiamo cosa stai cercando di fare",
       "Esploriamo insieme gli strumenti AI più utili per te",
-      "Prompt templates pronti all'uso per il tuo settore",
+      { text: "", term: "Prompt", termDisplay: "Prompt", rest: " templates pronti all'uso per il tuo settore" },
       "Check-in dopo 1 settimana per vedere come stai andando",
       "Video personalizzato con risorse per restare aggiornato/a",
       "Una guida su dove guardare per non restare mai indietro",
+    ],
+    footnotes: [
+      { term: "Prompt", note: "un'istruzione che dai a uno strumento AI per ottenere un risultato specifico. Più è chiaro, migliore è l'output." },
     ],
     bonusLine: "1 check-in gratuito dopo 30 giorni 🤍",
     price: null,
@@ -101,6 +115,22 @@ const addOnIncludes = [
   "Autonomia totale",
 ];
 
+type Bullet = string | { text: string; term: string; termDisplay: string; rest: string };
+type Footnote = { term: string; note: string };
+
+const renderBullet = (b: Bullet, isIndigo: boolean) => {
+  if (typeof b === "string") return <span>{b}</span>;
+  return (
+    <span>
+      {b.text}
+      <span style={{ color: "#4F46E5", fontStyle: "italic" }}>
+        {b.termDisplay}*
+      </span>
+      {b.rest}
+    </span>
+  );
+};
+
 const SprintCards = () => {
   const [expanded, setExpanded] = useState<Record<number, boolean>>({});
   const [accordionOpen, setAccordionOpen] = useState(false);
@@ -121,7 +151,6 @@ const SprintCards = () => {
           Scegli il tuo Sprint
         </motion.h2>
 
-        {/* Intro one-liner */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -132,7 +161,6 @@ const SprintCards = () => {
           Uno Sprint è un percorso intensivo di 14 giorni con un obiettivo chiaro, un metodo preciso e un risultato concreto. Veloce, ma con significato. ⚡
         </motion.p>
 
-        {/* Expandable accordion */}
         <motion.div
           id="sprint-definition"
           initial={{ opacity: 0, y: 20 }}
@@ -158,7 +186,9 @@ const SprintCards = () => {
               >
                 <div className="mt-6 max-w-[700px] mx-auto text-[15px] font-normal text-foreground/70 leading-relaxed space-y-4 text-left">
                   <p>
-                    Il concetto di Sprint viene dal mondo agile e tech: <strong>un periodo intensivo e focalizzato, con un obiettivo chiaro e un risultato concreto alla fine.</strong> Niente riunioni infinite. Niente analisi paralizzanti. Solo lavoro vero, fatto insieme.
+                    Il concetto di Sprint viene dal mondo{" "}
+                    <GlossaryTooltip term="Agile">agile</GlossaryTooltip>
+                    {" "}e tech: <strong>un periodo intensivo e focalizzato, con un obiettivo chiaro e un risultato concreto alla fine.</strong> Niente riunioni infinite. Niente analisi paralizzanti. Solo lavoro vero, fatto insieme.
                   </p>
                   <p>
                     Ma uno Sprint non funziona per tutti — funziona per chi è pronto. Per chi può dedicare tempo ed energia a questo percorso. Per chi vuole risposte ora, non tra tre mesi.
@@ -176,7 +206,6 @@ const SprintCards = () => {
           </AnimatePresence>
         </motion.div>
 
-        {/* Sprint cards grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           {cards.map((card, i) => {
             const isIndigo = card.featured;
@@ -223,9 +252,9 @@ const SprintCards = () => {
                       className="overflow-hidden"
                     >
                       <ul className="mt-4 space-y-2">
-                        {card.bullets.map((b) => (
+                        {card.bullets.map((b, bi) => (
                           <li
-                            key={b}
+                            key={bi}
                             className={`flex items-start gap-2 text-sm ${
                               isIndigo ? "text-primary-foreground/90" : "text-foreground/80"
                             }`}
@@ -235,7 +264,7 @@ const SprintCards = () => {
                                 isIndigo ? "text-primary-foreground" : "text-primary"
                               }`}
                             />
-                            <span>{b}</span>
+                            {renderBullet(b, isIndigo)}
                           </li>
                         ))}
                         <li
@@ -251,6 +280,41 @@ const SprintCards = () => {
                           <span>{card.bonusLine}</span>
                         </li>
                       </ul>
+
+                      {/* Footnotes */}
+                      {card.footnotes.length > 0 && (
+                        <div
+                          className="mt-4 pt-3 space-y-1"
+                          style={{ borderTop: "1px solid rgba(0,0,0,0.08)" }}
+                        >
+                          {card.footnotes.map((fn: Footnote) => (
+                            <p
+                              key={fn.term}
+                              style={{
+                                fontSize: "11px",
+                                color: isIndigo ? "rgba(255,255,255,0.6)" : "#64748B",
+                                lineHeight: "1.5",
+                              }}
+                            >
+                              *{" "}
+                              <span style={{ fontStyle: "italic", color: isIndigo ? "rgba(255,255,255,0.8)" : "#4F46E5" }}>
+                                {fn.term}
+                              </span>
+                              {" "}— {fn.note}{" "}
+                              <Link
+                                to="/glossario"
+                                style={{
+                                  color: isIndigo ? "rgba(255,255,255,0.8)" : "#4F46E5",
+                                  fontWeight: 600,
+                                  textDecoration: "underline",
+                                }}
+                              >
+                                Vedi glossario →
+                              </Link>
+                            </p>
+                          ))}
+                        </div>
+                      )}
                     </motion.div>
                   )}
                 </AnimatePresence>
@@ -291,7 +355,7 @@ const SprintCards = () => {
                   )}
                 </div>
 
-                <a
+                
                   href="#contatti"
                   className={`mt-6 inline-block px-6 py-3 rounded-full font-bold text-sm ${card.btnClass} hover:scale-[1.02] hover:shadow-lg transition-all duration-300`}
                 >
@@ -311,7 +375,6 @@ const SprintCards = () => {
           className="mt-12 md:mt-16 rounded-[16px] bg-[#EEF2FF] border-l-4 border-primary p-6 md:p-8"
         >
           <div className="grid md:grid-cols-[1fr_auto] gap-8">
-            {/* Left side */}
             <div>
               <p className="text-2xl mb-2">🚀</p>
               <h3 className="text-lg font-bold text-primary">
@@ -324,8 +387,6 @@ const SprintCards = () => {
                 Durante il tuo Sprint costruiamo insieme la tua identità visiva, il tuo sito e tutto il setup digitale. Lo facciamo insieme — perché alla fine voglio che tu sappia farlo da solo/a. Nessuna dipendenza. Nessun costo di manutenzione. Solo autonomia. 🤍
               </p>
             </div>
-
-            {/* Right side */}
             <div className="flex flex-col justify-between">
               <ul className="space-y-2">
                 {addOnIncludes.map((item) => (
