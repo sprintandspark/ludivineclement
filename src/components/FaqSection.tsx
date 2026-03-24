@@ -88,9 +88,24 @@ const FaqSection = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggle = (i: number) => setOpenIndex(openIndex === i ? null : i);
-
+  const faqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": faqItems.map((item) => ({
+        "@type": "Question",
+        "name": typeof item.q === "string" ? item.q : "",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": typeof item.a === "string" ? item.a : item.q,
+        },
+      })),
+    };
   return (
     <section id="faq" className="py-20 bg-background">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="mx-auto w-full max-w-6xl px-6">
         <h2 className="text-3xl md:text-4xl font-extrabold text-center text-primary mb-3">
           Domande frequenti
