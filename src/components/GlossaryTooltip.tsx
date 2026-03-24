@@ -70,6 +70,7 @@ const GlossaryTooltip = ({ term, children }: Props) => {
 
   const tooltip = open ? (
     <div
+      data-glossary-tooltip
       style={{
         position: "absolute",
         top: position.top,
