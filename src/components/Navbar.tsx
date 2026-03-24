@@ -116,14 +116,14 @@ const Navbar = () => {
 
           {/* Contatti */}
           
-            href="https://ludivineclement.com/#contatti"
+           <a href="https://ludivineclement.com/#contatti"
             className="text-sm font-semibold text-foreground/70 hover:text-foreground transition-colors"
           >
             Contatti
           </a>
 
           
-            href="https://ludivineclement.com/#contatti"
+           <a href="https://ludivineclement.com/#contatti"
             className="px-6 py-2.5 rounded-full bg-primary text-primary-foreground font-bold text-sm hover:scale-[1.02] hover:shadow-lg transition-all duration-300"
           >
             Prenota una call →
@@ -163,7 +163,7 @@ const Navbar = () => {
               <div className="w-full border-t border-border/50" />
               <a href="https://ludivineclement.com/#contatti" className="text-sm font-semibold text-foreground/70" onClick={() => setMobileOpen(false)}>Contatti</a>
               
-                href="https://ludivineclement.com/#contatti"
+              <a  href="https://ludivineclement.com/#contatti"
                 className="px-6 py-2.5 rounded-full bg-primary text-primary-foreground font-bold text-sm"
                 onClick={() => setMobileOpen(false)}
               >
