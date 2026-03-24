@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Check, X } from "lucide-react";
+import GlossaryTooltip from "@/components/GlossaryTooltip";
 
 const yesItems = [
   "Hai un'impresa e vuoi farla crescere",
@@ -16,7 +17,18 @@ const noItems = [
   "Cerchi risultati senza impegno",
   "Hai bisogno di un'agenzia che gestisca i tuoi canali",
 ];
-
+const renderYesItem = (item: string) => {
+  if (item === "Vuoi capire l'IA prima che ti superi") {
+    return (
+      <>
+        Vuoi capire l'{" "}
+        <GlossaryTooltip term="IA (Intelligenza Artificiale)">IA</GlossaryTooltip>
+        {" "}prima che ti superi
+      </>
+    );
+  }
+  return <>{item}</>;
+};
 const PerChiSection = () => (
 <section id="per-chi" className="py-20 md:py-20 bg-background px-6">
   <div className="mx-auto max-w-[700px]">
@@ -53,7 +65,7 @@ const PerChiSection = () => (
             {yesItems.map((item) => (
               <li key={item} className="flex items-start gap-2.5 text-[15px] text-foreground">
                 <Check className="w-4 h-4 text-primary mt-1 shrink-0" />
-                <span>{item}</span>
+                <span>{renderYesItem(item)}</span>
               </li>
             ))}
           </ul>
