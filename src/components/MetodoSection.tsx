@@ -26,6 +26,15 @@ const MetodoSection = () => (
           Parto sempre da te. 🤍
         </span>
       </motion.h2>
+    
+    <p className="mb-6" style={{ fontSize: "15px", fontStyle: "italic", color: "#64748B", lineHeight: "1.7" }}>
+          <span style={{ color: "#F59E0B", fontWeight: "700", fontStyle: "normal", borderBottom: "2px solid #F59E0B", paddingBottom: "1px" }}>Sprint</span>
+          {" "}perché lavoriamo veloci, intensi e focalizzati.{" "}
+          <span style={{ color: "#F59E0B", fontWeight: "700", fontStyle: "normal", borderBottom: "2px solid #F59E0B", paddingBottom: "1px" }}>Spark</span>
+          {" "}
+          <span style={{ fontSize: "13px", fontStyle: "italic", color: "#F59E0B", opacity: 0.7 }}>(it. scintilla)</span>
+          {" "}— perché non porto io la luce. La luce è già tua. Io accendo solo la scintilla. ⚡
+        </p>
 
       {/* New intro paragraph */}
       <motion.div
