@@ -33,7 +33,7 @@ const MetodoSection = () => (
           <span style={{ color: "#F59E0B", fontWeight: "700", fontStyle: "normal", borderBottom: "2px solid #F59E0B", paddingBottom: "1px" }}>Spark</span>
           {" "}
           <span style={{ fontSize: "13px", fontStyle: "italic", color: "#64748B", opacity: 0.7 }}>(it. scintilla)</span>
-          {" "}— perché non porto io la luce. La luce è già tua. Io accendo solo la scintilla.
+          {" "}— perché non porto io la luce. La luce è già tua. Io ti aiuto ad accendere la tua scintilla.
         </p>
 
       {/* New intro paragraph */}
