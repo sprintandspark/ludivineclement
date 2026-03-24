@@ -1,5 +1,4 @@
 import { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { createPortal } from "react-dom";
 import { glossaryTerms } from "@/data/glossaryTerms";
 
@@ -93,13 +92,14 @@ const updatePosition = () => {
       >
         {data.example}
       </p>
-      <Link
-        to="/glossario"
+        <a href="https://ludivineclement.com/glossario"
+        target="_blank"
+        rel="noopener noreferrer"
         className="font-bold text-xs"
         style={{ color: "#4F46E5" }}
       >
         Vedi glossario →
-      </Link>
+      </a>
     </div>
   ) : null;
 
