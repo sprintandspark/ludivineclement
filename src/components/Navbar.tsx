@@ -11,6 +11,8 @@ const navLinks = [
   { label: "Chi sono", href: "https://ludivineclement.com/#chi-sono" },
   { label: "Glossario", href: "https://ludivineclement.com/glossario" },
   { label: "Contatti", href: "https://ludivineclement.com/#contatti" },
+  { label: "FAQ", href: "https://ludivineclement.com/#faq" },
+  { label: "Glossario", href: "https://ludivineclement.com/glossario" },
 ];
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);

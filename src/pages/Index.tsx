@@ -10,6 +10,7 @@ import Timeline from "@/components/Timeline";
 import AboutSection from "@/components/AboutSection";
 import TestimonialPlaceholder from "@/components/TestimonialPlaceholder";
 import ContactSection from "@/components/ContactSection";
+import FaqSection from "@/components/FaqSection";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
 
@@ -35,6 +36,7 @@ const Index = () => {
       <AboutSection />
       <TestimonialPlaceholder />
       <ContactSection />
+      <FaqSection />
       <CookieBanner />
       <Footer />
     </>
