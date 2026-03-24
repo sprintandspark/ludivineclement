@@ -81,11 +81,11 @@ const cards = [
   {
     emoji: "🤖",
     title: "AI? No Panico!",
-    shortDesc: "L'AI non è una moda — è il futuro del tuo lavoro quotidiano. Impara quello che serve a TE. 🤖",
+    shortDesc: "L'IA non è una moda — è il futuro del tuo lavoro quotidiano. Impara quello che serve a TE. 🤖",
     bullets: [
       "Sessione 1-to-1 da 90 minuti su misura per il tuo business",
       "Prima capiamo cosa stai cercando di fare",
-      "Esploriamo insieme gli strumenti AI più utili per te",
+      "Esploriamo insieme gli strumenti IA più utili per te",
       { text: "", term: "Prompt", termDisplay: "Prompt", rest: " templates pronti all'uso per il tuo settore" },
       "Check-in dopo 1 settimana per vedere come stai andando",
       "Video personalizzato con risorse per restare aggiornato/a",
@@ -98,7 +98,7 @@ const cards = [
     price: null,
     priceOld: "€250",
     priceNew: "€150",
-    cta: "Voglio capire l'AI →",
+    cta: "Voglio capire l'IA →",
     bg: "bg-[#F5F3FF]",
     border: "border border-[#7C3AED]",
     btnClass: "bg-[#7C3AED] text-white",
