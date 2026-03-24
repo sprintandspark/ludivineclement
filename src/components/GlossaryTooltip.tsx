@@ -27,17 +27,11 @@ const GlossaryTooltip = ({ term, children }: Props) => {
     return () => document.removeEventListener("mousedown", handleClick);
   }, []);
 
-  const updatePosition = () => {
+const updatePosition = () => {
     if (ref.current) {
       const rect = ref.current.getBoundingClientRect();
-      const tooltipHeight = 200;
-      const spaceBelow = window.innerHeight - rect.bottom;
-      const showAbove = spaceBelow < tooltipHeight + 20;
-
       setPosition({
-        top: showAbove
-          ? rect.top + window.scrollY - tooltipHeight - 8
-          : rect.bottom + window.scrollY + 8,
+        top: rect.bottom + window.scrollY + 8,
         left: Math.min(
           rect.left + window.scrollX,
           window.innerWidth - 300
@@ -45,7 +39,6 @@ const GlossaryTooltip = ({ term, children }: Props) => {
       });
     }
   };
-
   const handleMouseEnter = () => {
     updatePosition();
     setOpen(true);
