@@ -5,11 +5,11 @@ import { ChevronDown } from "lucide-react";
 const faqItems = [
   {
     q: "Cosa succede esattamente durante i 14 giorni?",
-    a: "Lavoriamo insieme in modo intensivo su un obiettivo preciso. Ogni Sprint inizia con una sessione di diagnosi approfondita, seguita da sessioni di lavoro, feedback e revisioni. Alla fine ricevi un deliverable concreto — che sia un playbook, una strategia o un sistema — pronto da usare il giorno dopo.",
+    a: "Lavoriamo insieme in modo intensivo su un obiettivo preciso. La maggior parte degli Sprint dura 14 giorni, ma la durata può variare in base allo Sprint scelto. Ogni percorso inizia con una sessione di diagnosi approfondita, seguita da sessioni di lavoro, feedback e revisioni. Alla fine ricevi qualcosa di concreto — che sia un playbook, una strategia o un sistema — pronto da usare il giorno dopo.",
   },
   {
     q: "Quanto tempo devo dedicare ogni giorno?",
-    a: "Dipende dallo Sprint scelto, ma in media 1-2 ore al giorno. Non di più. L'idea è che tu continui a gestire la tua attività mentre lavoriamo insieme — non che sparisca per due settimane.",
+    a: "Durante lo Sprint, ti consiglio di riservare almeno 1-2 ore al giorno — ma puoi fare di più se vuoi! L'idea è che io ti accompagni con task quotidiani e promemoria per mantenere il ritmo. Una volta finito lo Sprint, trovi il tuo passo in base alle tue disponibilità. L'obiettivo non è stravolgerti la vita — è farti avanzare, un passo alla volta. 😊⚡",
   },
   {
     q: "Cosa ricevo alla fine dello Sprint?",
@@ -17,7 +17,7 @@ const faqItems = [
   },
   {
     q: "Posso fare uno Sprint se ho appena aperto la mia attività?",
-    a: "Dipende. Se hai già un'idea chiara di cosa fai e per chi, sì. Se sei ancora nella fase \"non so da dove cominciare\", parliamone prima — voglio assicurarmi che lo Sprint sia il momento giusto per te.",
+    a: "Assolutamente sì — ma dipende da dove sei. Se stai partendo da zero, il percorso ideale potrebbe essere il Brand da Zero + Il Radar: costruiamo insieme la tua identità e la tua strategia commerciale fin dall'inizio. Se invece hai già qualcosa ma non sai come farlo crescere, c'è uno Sprint fatto apposta per te. Scrivimi — troviamo insieme il punto di partenza giusto.",
   },
   {
     q: "Lavori solo con aziende italiane?",
