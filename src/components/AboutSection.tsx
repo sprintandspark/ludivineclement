@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import headshot from "@/assets/ludivine-headshot.jpeg";
+import GlossaryTooltip from "@/components/GlossaryTooltip";
 
 const badges = [
   "📍 Based in Italy",
@@ -29,7 +30,9 @@ const AboutSection = () => (
         >
           <div className="space-y-5">
             <p className="max-w-[65ch] text-base md:text-lg font-medium leading-relaxed text-muted-foreground">
-              Anni a Londra ad aiutare startup e scale-up a crescere — con metodo, dati e gli strumenti digitali giusti. Mercati UK, Francia e Italia.
+              Anni a Londra ad aiutare{" "}
+              <GlossaryTooltip term="Startup / Scaleup">startup e scale-up</GlossaryTooltip>
+              {" "}a crescere — con metodo, dati e gli strumenti digitali giusti. Mercati UK, Francia e Italia.
             </p>
             <p className="max-w-[65ch] text-base md:text-lg font-medium leading-relaxed text-muted-foreground">
               Una cosa l'ho vista ovunque: prodotti fantastici, processi commerciali improvvisati.
