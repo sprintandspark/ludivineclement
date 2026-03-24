@@ -11,6 +11,7 @@ const GlossaryTooltip = ({ term, children }: Props) => {
   const [open, setOpen] = useState(false);
   const [position, setPosition] = useState({ top: 0, left: 0 });
   const ref = useRef<HTMLSpanElement>(null);
+  const closeTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const data = glossaryTerms.find(
     (t) => t.term.toLowerCase() === term.toLowerCase()
@@ -26,7 +27,7 @@ const GlossaryTooltip = ({ term, children }: Props) => {
     return () => document.removeEventListener("mousedown", handleClick);
   }, []);
 
-const updatePosition = () => {
+  const updatePosition = () => {
     if (ref.current) {
       const rect = ref.current.getBoundingClientRect();
       setPosition({
@@ -38,9 +39,24 @@ const updatePosition = () => {
       });
     }
   };
+
   const handleMouseEnter = () => {
+    if (closeTimeout.current) clearTimeout(closeTimeout.current);
     updatePosition();
     setOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    closeTimeout.current = setTimeout(() => setOpen(false), 150);
+  };
+
+  const handleTooltipMouseEnter = () => {
+    if (closeTimeout.current) clearTimeout(closeTimeout.current);
+    setOpen(true);
+  };
+
+  const handleTooltipMouseLeave = () => {
+    closeTimeout.current = setTimeout(() => setOpen(false), 150);
   };
 
   const handleClick = () => {
@@ -65,8 +81,8 @@ const updatePosition = () => {
         boxShadow: "0 10px 25px rgba(0,0,0,0.12)",
         zIndex: 9999,
       }}
-      onMouseEnter={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
+      onMouseEnter={handleTooltipMouseEnter}
+      onMouseLeave={handleTooltipMouseLeave}
     >
       <p
         className="font-bold mb-1"
@@ -92,6 +108,7 @@ const updatePosition = () => {
       >
         {data.example}
       </p>
+      
         <a href="https://ludivineclement.com/glossario"
         target="_blank"
         rel="noopener noreferrer"
@@ -113,7 +130,7 @@ const updatePosition = () => {
           paddingBottom: "1px",
         }}
         onMouseEnter={handleMouseEnter}
-        onMouseLeave={() => setOpen(false)}
+        onMouseLeave={handleMouseLeave}
         onClick={handleClick}
       >
         {children}
