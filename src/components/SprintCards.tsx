@@ -85,14 +85,15 @@ const cards = [
     bullets: [
       "Sessione 1-to-1 da 90 minuti su misura per il tuo business",
       "Prima capiamo cosa stai cercando di fare",
-      "Esploriamo insieme gli strumenti IA più utili per te",
+      { text: "Esploriamo insieme gli strumenti ", term: "IA (Intelligenza Artificiale)", termDisplay: "IA", rest: " più utili per te" },      
       { text: "", term: "Prompt", termDisplay: "Prompt", rest: " templates pronti all'uso per il tuo settore" },
       "Check-in dopo 1 settimana per vedere come stai andando",
       "Video personalizzato con risorse per restare aggiornato/a",
       "Una guida su dove guardare per non restare mai indietro",
     ],
     footnotes: [
-      { term: "Prompt", note: "un'istruzione che dai a uno strumento AI per ottenere un risultato specifico. Più è chiaro, migliore è l'output." },
+  { term: "IA (Intelligenza Artificiale)", note: "tecnologie che elaborano informazioni e svolgono compiti complessi in modo autonomo. Non sostituisce il tuo cervello — lo amplifica." },
+      { term: "Prompt", note: "un'istruzione che dai a uno strumento IA per ottenere un risultato specifico. Più è chiaro, migliore è l'output." },
     ],
     bonusLine: "1 check-in gratuito dopo 30 giorni 🤍",
     price: null,
