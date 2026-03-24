@@ -17,9 +17,11 @@ const GlossaryTooltip = ({ term, children }: Props) => {
     (t) => t.term.toLowerCase() === term.toLowerCase()
   );
 
-  useEffect(() => {
+ useEffect(() => {
     const handleClick = (e: MouseEvent) => {
       if (ref.current && !ref.current.contains(e.target as Node)) {
+        const tooltipEl = document.querySelector('[data-glossary-tooltip]');
+        if (tooltipEl && tooltipEl.contains(e.target as Node)) return;
         setOpen(false);
       }
     };
