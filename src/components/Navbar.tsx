@@ -72,6 +72,7 @@ const Navbar = () => {
                   <a href="https://ludivineclement.com/#sprint" className={dropdownItemClass}>Gli Sprint</a>
                   <a href="https://ludivineclement.com/#come-funziona" className={dropdownItemClass}>Come funziona</a>
                   <a href="https://ludivineclement.com/#il-metodo" className={dropdownItemClass}>Il Metodo Sprint & Spark</a>
+                  <a href="https://ludivineclement.com/#quiz" className={dropdownItemClass}> Quiz - Trova il tuo Sprint ⚡ </a>
                 </motion.div>
               )}
             </AnimatePresence>
