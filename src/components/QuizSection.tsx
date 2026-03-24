@@ -24,7 +24,7 @@ const QuizSection = () => {
   }, []);
 
   return (
-    <section className="py-20 md:py-28 px-6" style={{ backgroundColor: '#4F46E5' }}>
+  <section id="quiz" className="py-20 md:py-28 px-6" style={{ backgroundColor: '#4F46E5' }}>
       <div className="mx-auto max-w-3xl text-center mb-10">
         <h2 className="text-3xl md:text-4xl font-extrabold mb-3" style={{ color: '#FFFFFF' }}>
           Non sai da dove iniziare? ⚡
