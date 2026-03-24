@@ -48,7 +48,7 @@ const GlossaryTooltip = ({ term, children }: Props) => {
         <>
           <div
             className="absolute left-0 w-full"
-            style={{ top: "100%", height: "8px" }}
+            style={{ bottom: "100%", height: "8px" }}
             onMouseEnter={() => setOpen(true)}
           />
           <div
@@ -58,7 +58,8 @@ const GlossaryTooltip = ({ term, children }: Props) => {
               backgroundColor: "#FFFFFF",
               borderColor: "#E2E8F0",
               padding: "16px",
-              top: "calc(100% + 8px)",
+              bottom: "calc(100% + 8px)",
+              top: "auto",
             }}
             onMouseEnter={() => setOpen(true)}
             onMouseLeave={() => setOpen(false)}
