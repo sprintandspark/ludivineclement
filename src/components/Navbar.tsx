@@ -79,7 +79,7 @@ const Navbar = () => {
 
           {/* Chi sono */}
           
-            href="https://ludivineclement.com/#chi-sono"
+          <a href="https://ludivineclement.com/#chi-sono"
             className="text-sm font-semibold text-foreground/70 hover:text-foreground transition-colors"
           >
             Chi sono
