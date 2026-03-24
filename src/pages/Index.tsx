@@ -15,11 +15,19 @@ import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
 
 const Index = () => {
-  useEffect(() => {
+ useEffect(() => {
     if (typeof (window as any).gtag !== 'undefined') {
       (window as any).gtag('config', 'G-VKZQQZT1D2', {
-        'page_path': window.location.pathname,
+        'page_path': window.location.pathname
       });
+    }
+    // Handle anchor scrolling on page load
+    const hash = window.location.hash;
+    if (hash) {
+      setTimeout(() => {
+        const el = document.querySelector(hash);
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }, 500);
     }
   }, []);
 
