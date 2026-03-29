@@ -30,17 +30,17 @@ const cards = [
     badge: "💡 Include strategia ads",
     featured: false,
   },
-  {
+{
     emoji: "🧘",
     title: "Zero Caos",
     shortDesc: "La tua impresa funziona ma il caos ti frena? Costruiamo il tuo sistema. 🧘",
     bullets: [
-      "Audit completo dei tuoi processi attuali",
+      { type: "tooltip", before: "", tooltipTerm: "Audit", tooltipDisplay: "Audit", after: " completo dei tuoi processi attuali" },
       "Selezione degli strumenti giusti per te",
       "Setup e configurazione fatto insieme",
       "Panoramica costi (gratuito vs pagamento)",
-      "Sistema organizzato e scalabile pronto all'uso",
-      "Un sistema che sapresti spiegare a chiunque",
+      { type: "tooltip", before: "", tooltipTerm: "Sistema", tooltipDisplay: "Sistema", after: " organizzato e scalabile pronto all'uso" },
+       "Un sistema che sapresti spiegare a chiunque" },
     ],
     footnotes: [],
     bonusLine: "1 check-in gratuito dopo 30 giorni 🤍",
