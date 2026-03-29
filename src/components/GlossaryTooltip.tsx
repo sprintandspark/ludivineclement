@@ -5,9 +5,10 @@ import { glossaryTerms } from "@/data/glossaryTerms";
 interface Props {
   term: string;
   children: React.ReactNode;
+  variant?: "default" | "light";
 }
 
-const GlossaryTooltip = ({ term, children }: Props) => {
+const GlossaryTooltip = ({ term, children, variant = "default" }: Props) => {
   const [open, setOpen] = useState(false);
   const [position, setPosition] = useState({ top: 0, left: 0 });
   const ref = useRef<HTMLSpanElement>(null);
@@ -17,7 +18,7 @@ const GlossaryTooltip = ({ term, children }: Props) => {
     (t) => t.term.toLowerCase() === term.toLowerCase()
   );
 
- useEffect(() => {
+  useEffect(() => {
     const handleClick = (e: MouseEvent) => {
       if (ref.current && !ref.current.contains(e.target as Node)) {
         const tooltipEl = document.querySelector('[data-glossary-tooltip]');
@@ -68,6 +69,8 @@ const GlossaryTooltip = ({ term, children }: Props) => {
 
   if (!data) return <>{children}</>;
 
+  const triggerColor = variant === "light" ? "#F59E0B" : "#4F46E5";
+
   const tooltip = open ? (
     <div
       data-glossary-tooltip
@@ -112,7 +115,7 @@ const GlossaryTooltip = ({ term, children }: Props) => {
         {data.example}
       </p>
       
-        <a href="https://ludivineclement.com/glossario"
+        href="https://ludivineclement.com/glossario"
         target="_blank"
         rel="noopener noreferrer"
         className="font-bold text-xs"
@@ -128,8 +131,8 @@ const GlossaryTooltip = ({ term, children }: Props) => {
       <span
         className="cursor-pointer"
         style={{
-          color: "#4F46E5",
-          borderBottom: "2px dotted #4F46E5",
+          color: triggerColor,
+          borderBottom: `2px dotted ${triggerColor}`,
           paddingBottom: "1px",
         }}
         onMouseEnter={handleMouseEnter}
