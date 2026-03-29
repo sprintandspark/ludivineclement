@@ -115,7 +115,7 @@ const GlossaryTooltip = ({ term, children, variant = "default" }: Props) => {
         {data.example}
       </p>
       
-        href="https://ludivineclement.com/glossario"
+        <a href="https://ludivineclement.com/glossario"
         target="_blank"
         rel="noopener noreferrer"
         className="font-bold text-xs"
