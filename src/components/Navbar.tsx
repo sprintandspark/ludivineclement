@@ -72,14 +72,13 @@ const Navbar = () => {
                   <a href="https://ludivineclement.com/#sprint" className={dropdownItemClass}>Gli Sprint</a>
                   <a href="https://ludivineclement.com/#come-funziona" className={dropdownItemClass}>Come funziona</a>
                   <a href="https://ludivineclement.com/#il-metodo" className={dropdownItemClass}>Il Metodo Sprint & Spark</a>
-                  <a href="https://ludivineclement.com/#quiz" className={dropdownItemClass}> Quiz - Trova il tuo Sprint ⚡ </a>
+                  <a href="https://ludivineclement.com/#quiz" className={dropdownItemClass}>Quiz - Trova il tuo Sprint ⚡</a>
                 </motion.div>
               )}
             </AnimatePresence>
           </div>
 
           {/* Chi sono */}
-          
           <a href="https://ludivineclement.com/#chi-sono"
             className="text-sm font-semibold text-foreground/70 hover:text-foreground transition-colors"
           >
@@ -116,15 +115,13 @@ const Navbar = () => {
           </div>
 
           {/* Contatti */}
-          
-           <a href="https://ludivineclement.com/#contatti"
+          <a href="https://ludivineclement.com/#contatti"
             className="text-sm font-semibold text-foreground/70 hover:text-foreground transition-colors"
           >
             Contatti
           </a>
 
-          
-           <a href="https://ludivineclement.com/#contatti"
+          <a href="https://ludivineclement.com/#contatti"
             className="px-6 py-2.5 rounded-full bg-primary text-primary-foreground font-bold text-sm hover:scale-[1.02] hover:shadow-lg transition-all duration-300"
           >
             Prenota una call →
@@ -155,6 +152,7 @@ const Navbar = () => {
               <a href="https://ludivineclement.com/#sprint" className="text-sm font-semibold text-foreground/70" onClick={() => setMobileOpen(false)}>Gli Sprint</a>
               <a href="https://ludivineclement.com/#come-funziona" className="text-sm font-semibold text-foreground/70" onClick={() => setMobileOpen(false)}>Come funziona</a>
               <a href="https://ludivineclement.com/#il-metodo" className="text-sm font-semibold text-foreground/70" onClick={() => setMobileOpen(false)}>Il Metodo Sprint & Spark</a>
+              <a href="https://ludivineclement.com/#quiz" className="text-sm font-semibold text-foreground/70" onClick={() => setMobileOpen(false)}>Quiz - Trova il tuo Sprint ⚡</a>
               <div className="w-full border-t border-border/50" />
               <a href="https://ludivineclement.com/#chi-sono" className="text-sm font-semibold text-foreground/70" onClick={() => setMobileOpen(false)}>Chi sono</a>
               <div className="w-full border-t border-border/50" />
@@ -163,8 +161,7 @@ const Navbar = () => {
               <a href="https://ludivineclement.com/glossario" className="text-sm font-semibold text-foreground/70" onClick={() => setMobileOpen(false)}>Glossario</a>
               <div className="w-full border-t border-border/50" />
               <a href="https://ludivineclement.com/#contatti" className="text-sm font-semibold text-foreground/70" onClick={() => setMobileOpen(false)}>Contatti</a>
-              
-              <a  href="https://ludivineclement.com/#contatti"
+              <a href="https://ludivineclement.com/#contatti"
                 className="px-6 py-2.5 rounded-full bg-primary text-primary-foreground font-bold text-sm"
                 onClick={() => setMobileOpen(false)}
               >
