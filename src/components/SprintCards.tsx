@@ -15,7 +15,7 @@ const cards = [
       "Messaggio di vendita e canali giusti per te",
       "Valutazione ads (Meta, TikTok, Google)",
       { text: "", term: "Playbook", termDisplay: "Playbook", rest: " personalizzato consegnato a fine sprint" },
-      "Un sistema che sapresti spiegare a chiunque",
+      { type: "tooltip", before: "Un ", tooltipTerm: "Sistema", tooltipDisplay: "sistema", after: " che sapresti spiegare a chiunque" },
     ],
     footnotes: [
       { term: "ICP", note: "il profilo del tuo cliente ideale — quella persona che ha esattamente il problema che tu risolvi." },
@@ -30,7 +30,7 @@ const cards = [
     badge: "💡 Include strategia ads",
     featured: false,
   },
-{
+  {
     emoji: "🧘",
     title: "Zero Caos",
     shortDesc: "La tua impresa funziona ma il caos ti frena? Costruiamo il tuo sistema. 🧘",
@@ -40,7 +40,7 @@ const cards = [
       "Setup e configurazione fatto insieme",
       "Panoramica costi (gratuito vs pagamento)",
       { type: "tooltip", before: "", tooltipTerm: "Sistema", tooltipDisplay: "Sistema", after: " organizzato e scalabile pronto all'uso" },
-       "Un sistema che sapresti spiegare a chiunque" },
+      "Un sistema che sapresti spiegare a chiunque",
     ],
     footnotes: [],
     bonusLine: "1 check-in gratuito dopo 30 giorni 🤍",
@@ -85,14 +85,14 @@ const cards = [
     bullets: [
       "Sessione 1-to-1 da 90 minuti su misura per il tuo business",
       "Prima capiamo cosa stai cercando di fare",
-      { text: "Esploriamo insieme gli strumenti ", term: "IA (Intelligenza Artificiale)", termDisplay: "IA", rest: " più utili per te" },      
+      { text: "Esploriamo insieme gli strumenti ", term: "IA (Intelligenza Artificiale)", termDisplay: "IA", rest: " più utili per te" },
       { text: "", term: "Prompt", termDisplay: "Prompt", rest: " templates pronti all'uso per il tuo settore" },
       "Check-in dopo 1 settimana per vedere come stai andando",
       "Video personalizzato con risorse per restare aggiornato/a",
       "Una guida su dove guardare per non restare mai indietro",
     ],
     footnotes: [
-  { term: "IA (Intelligenza Artificiale)", note: "tecnologie che elaborano informazioni e svolgono compiti complessi in modo autonomo. Non sostituisce il tuo cervello — lo amplifica." },
+      { term: "IA (Intelligenza Artificiale)", note: "tecnologie che elaborano informazioni e svolgono compiti complessi in modo autonomo. Non sostituisce il tuo cervello — lo amplifica." },
       { term: "Prompt", note: "un'istruzione che dai a uno strumento IA per ottenere un risultato specifico. Più è chiaro, migliore è l'output." },
     ],
     bonusLine: "1 check-in gratuito dopo 30 giorni 🤍",
@@ -116,27 +116,45 @@ const addOnIncludes = [
   "Autonomia totale",
 ];
 
-type Bullet = string | { text: string; term: string; termDisplay: string; rest: string; term2?: string; termDisplay2?: string; rest2?: string;
-};
+type Bullet =
+  | string
+  | { text: string; term: string; termDisplay: string; rest: string; term2?: string; termDisplay2?: string; rest2?: string }
+  | { type: "tooltip"; before: string; tooltipTerm: string; tooltipDisplay: string; after: string };
+
 type Footnote = { term: string; note: string };
 
 const renderBullet = (b: Bullet, isIndigo: boolean) => {
   if (typeof b === "string") return <span>{b}</span>;
-  return (
-    <span>
-      {b.text}
-      <span style={{ color: "#4F46E5", fontStyle: "italic" }}>
-        {b.termDisplay}*
+
+  if ("type" in b && b.type === "tooltip") {
+    return (
+      <span>
+        {b.before}
+        <GlossaryTooltip term={b.tooltipTerm}>{b.tooltipDisplay}</GlossaryTooltip>
+        {b.after}
       </span>
-      {b.rest}
-      {b.term2 && (
+    );
+  }
+
+  if ("term" in b) {
+    return (
+      <span>
+        {b.text}
         <span style={{ color: "#4F46E5", fontStyle: "italic" }}>
-          {b.termDisplay2}*
+          {b.termDisplay}*
         </span>
-      )}
-      {b.rest2}
-    </span>
-  );
+        {b.rest}
+        {b.term2 && (
+          <span style={{ color: "#4F46E5", fontStyle: "italic" }}>
+            {b.termDisplay2}*
+          </span>
+        )}
+        {b.rest2}
+      </span>
+    );
+  }
+
+  return null;
 };
 
 const SprintCards = () => {
@@ -362,7 +380,8 @@ const SprintCards = () => {
                     </p>
                   )}
                 </div>
-                 <a href="#contatti"
+                
+                  href="#contatti"
                   className={`mt-6 inline-block px-6 py-3 rounded-full font-bold text-sm ${card.btnClass} hover:scale-[1.02] hover:shadow-lg transition-all duration-300`}
                 >
                   {card.cta}
