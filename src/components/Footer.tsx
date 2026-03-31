@@ -1,5 +1,6 @@
 import { Linkedin, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
+import { trackEvent } from "@/lib/analytics";
 
 const Footer = () => (
   <footer className="py-8 border-t border-border/50">
@@ -7,17 +8,38 @@ const Footer = () => (
       <div className="flex items-center gap-3">
         <span>Ludivine Clement © 2026</span>
         <span className="hidden md:inline">·</span>
-        <Link to="/privacy-policy" className="hover:text-foreground transition-colors">Privacy Policy & Cookie Policy</Link>
+        <Link 
+          to="/privacy-policy" 
+          className="hover:text-foreground transition-colors"
+          onClick={() => trackEvent("footer_click", { link: "privacy_policy" })}
+          >
+          Privacy Policy & Cookie Policy
+        </Link>
+        
         <span className="hidden md:inline">·</span>
-        <Link to="/glossario" className="hover:text-foreground transition-colors">Glossario</Link>
+        <Link
+          to="/glossario"
+          className="hover:text-foreground transition-colors"
+          onClick={() => trackEvent("footer_click", { link: "glossario" })}
+        >
+          Glossario
+        </Link>
       </div>
       <span>P.IVA: in registrazione</span>
       <div className="flex gap-4">
-        <a href="https://www.linkedin.com/in/ludivine-clement/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-foreground transition-colors">
+        <a href="https://www.linkedin.com/in/ludivine-clement/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-foreground transition-colors"
+          onClick={() => trackEvent("footer_click", { link: "linkedin" })}>
           <Linkedin size={18} />
         </a>
-        <a href="https://www.instagram.com/sprintandspark" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-foreground transition-colors">
+        <a href="https://www.instagram.com/sprintandspark"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+          className="hover:text-foreground transition-colors"
+          onClick={() => trackEvent("footer_click", { link: "instagram" })}
+        >
           <Instagram size={18} />
+        </a>
         </a>
       </div>
     </div>
