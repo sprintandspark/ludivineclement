@@ -35,24 +35,24 @@ const HeroSection = () => {
               Ti va di correre? 🏃‍♀️
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              href="#sprint-definition"
+              <a href="#sprint-definition"
               className="px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-bold text-sm hover:scale-[1.02] hover:shadow-xl transition-all duration-300"
               onClick={() => trackEvent("cta_click", { section: "hero", action: "what_is_sprint" })}
-            >
+              >
               Cos'è uno Sprint? →
             </a>
-              href="#sprint"
+              <a href="#sprint"
               className="px-8 py-3.5 rounded-full border-2 border-primary text-primary font-bold text-sm hover:bg-primary/5 transition-all duration-300"
               onClick={() => trackEvent("cta_click", { section: "hero", action: "choose_sprint" })}
-            >
+              >
                 Scegli il tuo Sprint →
               </a>
             </div>
             <div className="mt-4">
-                href="#per-chi"
+                <a href="#per-chi"
                 className="text-sm font-medium text-primary/70 hover:text-primary transition-colors"
                 onClick={() => trackEvent("cta_click", { section: "hero", action: "per_chi" })}
-              >
+                  >
                 Scopri se è per te →
               </a>
             </div>
