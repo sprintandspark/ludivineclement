@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Check } from "lucide-react";
 import { Link } from "react-router-dom";
 import GlossaryTooltip from "@/components/GlossaryTooltip";
+import { trackEvent } from "@/lib/analytics";
 
 const cards = [
   {
@@ -309,12 +310,16 @@ const SprintCards = () => {
                     </p>
                   )}
                 </div>
-                
                   <a href="https://ludivineclement.com/#contatti"
-                  className={`mt-6 inline-block px-6 py-3 rounded-full font-bold text-sm ${card.btnClass} hover:scale-[1.02] hover:shadow-lg transition-all duration-300`}
-                >
-                  {card.cta}
-                </a>
+                className={`mt-6 inline-block px-6 py-3 rounded-full font-bold text-sm ${card.btnClass} hover:scale-[1.02] hover:shadow-lg transition-all duration-300`}
+                onClick={() => trackEvent("cta_click", {
+                  section: "sprint_cards",
+                  sprint: card.title.toLowerCase().replace(/[^a-z0-9]/g, "_").replace(/_+/g, "_"),
+                  page: "home"
+                })}
+                  >
+                {card.cta}
+              </a>
               </motion.div>
             );
           })}
