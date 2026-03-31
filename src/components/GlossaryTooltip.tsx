@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { glossaryTerms } from "@/data/glossaryTerms";
+import { trackEvent } from "@/lib/analytics";
 
 interface Props {
   term: string;
@@ -120,6 +121,7 @@ const GlossaryTooltip = ({ term, children, variant = "default" }: Props) => {
         rel="noopener noreferrer"
         className="font-bold text-xs"
         style={{ color: "#4F46E5" }}
+        onClick={() => trackEvent("glossary_click", { term: term, source: "tooltip" })}
       >
         Vedi glossario →
       </a>
