@@ -1,8 +1,9 @@
-import { useState, useEffect, useRef } from "react";
+  import { useState, useEffect, useRef } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
+import { trackEvent } from "@/lib/analytics";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -69,22 +70,23 @@ const Navbar = () => {
                   onMouseEnter={() => setSprintOpen(true)}
                   onMouseLeave={() => setSprintOpen(false)}
                 >
-                  <a href="https://ludivineclement.com/#sprint" className={dropdownItemClass}>Gli Sprint</a>
-                  <a href="https://ludivineclement.com/#come-funziona" className={dropdownItemClass}>Come funziona</a>
-                  <a href="https://ludivineclement.com/#il-metodo" className={dropdownItemClass}>Il Metodo Sprint & Spark</a>
-                  <a href="https://ludivineclement.com/#quiz" className={dropdownItemClass}>Quiz - Trova il tuo Sprint ⚡</a>
+                <a href="https://ludivineclement.com/#sprint" className={dropdownItemClass} onClick={() => trackEvent("nav_click", { link: "gli_sprint", device: "desktop" })}>Gli Sprint</a>
+                <a href="https://ludivineclement.com/#come-funziona" className={dropdownItemClass} onClick={() => trackEvent("nav_click", { link: "come_funziona", device: "desktop" })}>Come funziona</a>
+                <a href="https://ludivineclement.com/#il-metodo" className={dropdownItemClass} onClick={() => trackEvent("nav_click", { link: "il_metodo", device: "desktop" })}>Il Metodo Sprint & Spark</a>
+                <a href="https://ludivineclement.com/#quiz" className={dropdownItemClass} onClick={() => trackEvent("nav_click", { link: "quiz", device: "desktop" })}>Quiz - Trova il tuo Sprint ⚡</a>
                 </motion.div>
               )}
             </AnimatePresence>
           </div>
 
           {/* Chi sono */}
-          <a href="https://ludivineclement.com/#chi-sono"
+           <a href="https://ludivineclement.com/#chi-sono"
             className="text-sm font-semibold text-foreground/70 hover:text-foreground transition-colors"
-          >
+            onClick={() => trackEvent("nav_click", { link: "chi_sono", device: "desktop" })}
+            >
             Chi sono
           </a>
-
+          
           {/* Risorse dropdown */}
           <div ref={risorseRef} className="relative">
             <button
@@ -107,8 +109,12 @@ const Navbar = () => {
                   onMouseEnter={() => setRisorseOpen(true)}
                   onMouseLeave={() => setRisorseOpen(false)}
                 >
-                  <a href="https://ludivineclement.com/#faq" className={dropdownItemClass}>FAQ</a>
-                  <a href="https://ludivineclement.com/glossario" className={dropdownItemClass}>Glossario</a>
+                  <a href="https://ludivineclement.com/#faq" className={dropdownItemClass} onClick={() => trackEvent("nav_click", { link: "faq", device: "desktop" })}>
+                    FAQ
+                  </a>
+                  <a href="https://ludivineclement.com/glossario" className={dropdownItemClass} onClick={() => trackEvent("nav_click", { link: "glossario", device: "desktop" })}>
+                    Glossario
+                  </a>
                 </motion.div>
               )}
             </AnimatePresence>
@@ -116,13 +122,15 @@ const Navbar = () => {
 
           {/* Contatti */}
           <a href="https://ludivineclement.com/#contatti"
-            className="text-sm font-semibold text-foreground/70 hover:text-foreground transition-colors"
-          >
+              className="text-sm font-semibold text-foreground/70 hover:text-foreground transition-colors"
+              onClick={() => trackEvent("nav_click", { link: "contatti", device: "desktop" })}
+            >
             Contatti
           </a>
 
           <a href="https://ludivineclement.com/#contatti"
             className="px-6 py-2.5 rounded-full bg-primary text-primary-foreground font-bold text-sm hover:scale-[1.02] hover:shadow-lg transition-all duration-300"
+            onClick={() => trackEvent("nav_click", { link: "prenota_call_cta", device: "desktop" })}
           >
             Prenota una call →
           </a>
@@ -148,22 +156,60 @@ const Navbar = () => {
             className="absolute top-20 left-0 right-0 bg-background shadow-lg md:hidden"
           >
             <div className="flex flex-col items-center gap-4 py-6">
-              <p className="text-xs font-bold text-muted-foreground uppercase tracking-wider">Gli Sprint</p>
-              <a href="https://ludivineclement.com/#sprint" className="text-sm font-semibold text-foreground/70" onClick={() => setMobileOpen(false)}>Gli Sprint</a>
-              <a href="https://ludivineclement.com/#come-funziona" className="text-sm font-semibold text-foreground/70" onClick={() => setMobileOpen(false)}>Come funziona</a>
-              <a href="https://ludivineclement.com/#il-metodo" className="text-sm font-semibold text-foreground/70" onClick={() => setMobileOpen(false)}>Il Metodo Sprint & Spark</a>
-              <a href="https://ludivineclement.com/#quiz" className="text-sm font-semibold text-foreground/70" onClick={() => setMobileOpen(false)}>Quiz - Trova il tuo Sprint ⚡</a>
+              <p className="text-xs font-bold text-muted-foreground uppercase tracking-wider"
+                >
+                Gli Sprint
+              </p>
+              <a href="https://ludivineclement.com/#sprint" className="text-sm font-semibold text-foreground/70" 
+                onClick={() => { setMobileOpen(false); trackEvent("nav_click", { link: "gli_sprint", device: "mobile" }); }}
+                >
+                Gli Sprint
+              </a>
+              <a href="https://ludivineclement.com/#come-funziona" className="text-sm font-semibold text-foreground/70" 
+                onClick={() => { setMobileOpen(false); trackEvent("nav_click", { link: "come_funziona", device: "mobile" }); }}
+                >
+                Come funziona
+              </a>
+              <a href="https://ludivineclement.com/#il-metodo" className="text-sm font-semibold text-foreground/70" 
+                onClick={() => { setMobileOpen(false); trackEvent("nav_click", { link: "il_metodo", device: "mobile" }); }}
+                >
+                Il Metodo Sprint & Spark
+              </a>
+              <a href="https://ludivineclement.com/#quiz" className="text-sm font-semibold text-foreground/70" 
+                onClick={() => { setMobileOpen(false); trackEvent("nav_click", { link: "quiz", device: "mobile" }); }}
+                >
+                Quiz - Trova il tuo Sprint ⚡
+              </a>
               <div className="w-full border-t border-border/50" />
-              <a href="https://ludivineclement.com/#chi-sono" className="text-sm font-semibold text-foreground/70" onClick={() => setMobileOpen(false)}>Chi sono</a>
+              <a href="https://ludivineclement.com/#chi-sono" className="text-sm font-semibold text-foreground/70" 
+                onClick={() => { setMobileOpen(false); trackEvent("nav_click", { link: "chi_sono", device: "mobile" }); }}
+                >
+                Chi sono
+              </a>
               <div className="w-full border-t border-border/50" />
-              <p className="text-xs font-bold text-muted-foreground uppercase tracking-wider">Risorse</p>
-              <a href="https://ludivineclement.com/#faq" className="text-sm font-semibold text-foreground/70" onClick={() => setMobileOpen(false)}>FAQ</a>
-              <a href="https://ludivineclement.com/glossario" className="text-sm font-semibold text-foreground/70" onClick={() => setMobileOpen(false)}>Glossario</a>
+              <p className="text-xs font-bold text-muted-foreground uppercase tracking-wider"
+                >
+                Risorse
+              </p>
+              <a href="https://ludivineclement.com/#faq" className="text-sm font-semibold text-foreground/70" 
+                onClick={() => { setMobileOpen(false); trackEvent("nav_click", { link: "faq", device: "mobile" }); }}
+                >
+                FAQ
+              </a>
+              <a href="https://ludivineclement.com/glossario" className="text-sm font-semibold text-foreground/70" 
+                onClick={() => { setMobileOpen(false); trackEvent("nav_click", { link: "glossario", device: "mobile" }); }}
+                >
+                Glossario
+              </a>
               <div className="w-full border-t border-border/50" />
-              <a href="https://ludivineclement.com/#contatti" className="text-sm font-semibold text-foreground/70" onClick={() => setMobileOpen(false)}>Contatti</a>
+              <a href="https://ludivineclement.com/#contatti" className="text-sm font-semibold text-foreground/70" 
+                onClick={() => { setMobileOpen(false); trackEvent("nav_click", { link: "contatti", device: "mobile" }); }}
+                >
+                Contatti
+              </a>
               <a href="https://ludivineclement.com/#contatti"
                 className="px-6 py-2.5 rounded-full bg-primary text-primary-foreground font-bold text-sm"
-                onClick={() => setMobileOpen(false)}
+                onClick={() => { setMobileOpen(false); trackEvent("nav_click", { link: "prenota_call_cta", device: "mobile" }); }}
               >
                 Prenota una call →
               </a>
