@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import { trackEvent } from "@/lib/analytics";
 
 const ContactSection = () => {
   useEffect(() => {
@@ -21,6 +22,22 @@ const ContactSection = () => {
     document.body.appendChild(s);
   }, []);
 
+  const formRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          trackEvent("contact_form_view", { page: "home" });
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 }
+    );
+    if (formRef.current) observer.observe(formRef.current);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section id="contatti" className="py-24 md:py-48 bg-primary">
       <div className="mx-auto max-w-2xl px-6">
@@ -38,7 +55,6 @@ const ContactSection = () => {
             Compila il form e ti rispondo entro 24 ore. Nessun impegno, solo una chiacchierata! 😊
           </p>
         </motion.div>
-
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -46,19 +62,20 @@ const ContactSection = () => {
           transition={{ duration: 0.5, delay: 0.15 }}
           className="rounded-[16px]"
         >
-          <iframe
-            data-tally-src="https://tally.so/embed/LZ0aQ2?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-            loading="lazy"
-            width="100%"
-            height={900}
-            frameBorder={0}
-            marginHeight={0}
-            marginWidth={0}
-            title="Contatti — Ludivine Clement"
-            style={{ border: "none" }}
-          />
+          <div ref={formRef}>
+            <iframe
+              data-tally-src="https://tally.so/embed/LZ0aQ2?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+              loading="lazy"
+              width="100%"
+              height={900}
+              frameBorder={0}
+              marginHeight={0}
+              marginWidth={0}
+              title="Contatti — Ludivine Clement"
+              style={{ border: "none" }}
+            />
+          </div>
         </motion.div>
-
         <p className="mt-6 text-center text-sm font-medium text-primary-foreground/60">
           Oppure scrivimi:{" "}
           <a href="mailto:go.ludivineclement@gmail.com" className="underline text-primary-foreground/80">
