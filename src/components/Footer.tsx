@@ -40,7 +40,6 @@ const Footer = () => (
         >
           <Instagram size={18} />
         </a>
-        </a>
       </div>
     </div>
   </footer>
