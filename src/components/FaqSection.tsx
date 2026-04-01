@@ -160,10 +160,10 @@ const FaqSection = () => {
           <p className="mt-8 text-center text-sm text-muted-foreground">
             Hai altre domande? Scrivimi →{" "}
             
-             <a href="mailto:go.ludivineclement@gmail.com"
+             <a href="mailto:ciao@sprintandspark.com"
               className="text-accent underline hover:text-accent/80 transition-colors"
             >
-              go.ludivineclement@gmail.com
+              ciao@sprintandspark.com
             </a>
           </p>
         </div>
