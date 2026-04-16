@@ -14,6 +14,7 @@ const TrustBar = () => (
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         className="flex flex-wrap justify-center gap-8 text-center"
+        >
         {stats.map((s) => (
           <div key={s.text} className="flex items-center justify-center gap-2">
             <span className="text-lg">{s.emoji}</span>
