@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 const stats = [
   { emoji: "⚡", text: "14 giorni per sprint" },
   { emoji: "🌍", text: "IT · FR · EN" },
-  { emoji: "📊", text: "80% conversion rate" },
   { emoji: "🏙️", text: "Cambridge-educated" },
 ];
 
