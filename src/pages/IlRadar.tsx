@@ -146,7 +146,7 @@ const IlRadar = () => {
         <div className="mx-auto max-w-6xl px-6 text-center">
           <h1 className="text-display text-4xl md:text-6xl mb-8">🎯 Il Radar</h1>
           <p className="max-w-2xl mx-auto text-base md:text-lg leading-relaxed mb-6">
-            Sai cosa fai. Ma quando devi spiegarlo — a un cliente, sui social, in una bio — le parole non vengono. O vengono, ma non funzionano.
+            Sai cosa fai. Ma quando devi spiegarlo a un cliente, sui social, in una bio — le parole non vengono. O vengono, ma non funzionano.
           </p>
           <p className="max-w-2xl mx-auto text-base md:text-lg leading-relaxed mb-8">
             Il Radar è lo sprint di 14 giorni che parte da lì — e ti porta a una strategia che sai eseguire da sola/o.
@@ -165,7 +165,7 @@ const IlRadar = () => {
             "So cosa faccio. Ma non so come dirlo."
           </h2>
           <p className="text-foreground text-base md:text-lg leading-relaxed mb-6">
-            È la frase che sento più spesso. Arriva detta in mille modi diversi:
+            È la frase che sento più spesso. Mi viene detta in mille modi diversi:
           </p>
 
           <div className="space-y-3 mb-8">
