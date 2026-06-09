@@ -1,6 +1,6 @@
 import  { useState, useEffect } from "react";
 import { ChevronDown } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
 import { glossaryTerms } from "@/data/glossaryTerms";
@@ -40,48 +40,44 @@ const AccordionItem = ({
         }`}
       />
     </button>
-    <AnimatePresence>
-      {isOpen && (
-        <motion.div
-          initial={{ height: 0, opacity: 0 }}
-          animate={{ height: "auto", opacity: 1 }}
-          exit={{ height: 0, opacity: 0 }}
-          transition={{ duration: 0.3, ease: "easeInOut" }}
-          className="overflow-hidden"
-        >
-          <div className="pb-6 space-y-4">
-            <p style={{ fontSize: "16px", color: "#0F172A" }}>
-              {item.definition}
-            </p>
-            <div className="pl-4">
-              <span
-                className="font-bold"
-                style={{ fontSize: "15px", color: "#F59E0B" }}
-              >
-                Esempio:{" "}
-              </span>
-              <span
-                className="italic"
-                style={{ fontSize: "15px", color: "#0F172A" }}
-              >
-                {item.example}
-              </span>
-            </div>
-            <div>
-              <span
-                className="font-medium"
-                style={{ fontSize: "13px", color: "#64748B" }}
-              >
-                Quando si usa:{" "}
-              </span>
-              <span style={{ fontSize: "13px", color: "#64748B" }}>
-                {item.when}
-              </span>
-            </div>
-          </div>
-        </motion.div>
-      )}
-    </AnimatePresence>
+    <div
+      style={{
+        maxHeight: isOpen ? "600px" : "0",
+        overflow: "hidden",
+        transition: "max-height 0.3s ease-in-out",
+      }}
+    >
+      <div className="pb-6 space-y-4">
+        <p style={{ fontSize: "16px", color: "#0F172A" }}>
+          {item.definition}
+        </p>
+        <div className="pl-4">
+          <span
+            className="font-bold"
+            style={{ fontSize: "15px", color: "#F59E0B" }}
+          >
+            Esempio:{" "}
+          </span>
+          <span
+            className="italic"
+            style={{ fontSize: "15px", color: "#0F172A" }}
+          >
+            {item.example}
+          </span>
+        </div>
+        <div>
+          <span
+            className="font-medium"
+            style={{ fontSize: "13px", color: "#64748B" }}
+          >
+            Quando si usa:{" "}
+          </span>
+          <span style={{ fontSize: "13px", color: "#64748B" }}>
+            {item.when}
+          </span>
+        </div>
+      </div>
+    </div>
   </div>
 );
 
