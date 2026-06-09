@@ -255,7 +255,7 @@ const SprintCards = () => {
                                 isIndigo ? "text-primary-foreground" : "text-primary"
                               }`}
                             />
-                            {renderBullet(b, isIndigo)}
+                            {renderBullet(b as Bullet, isIndigo)}
                           </li>
                         ))}
                         <li
