@@ -19,7 +19,7 @@ const AccordionItem = ({
       onClick={onToggle}
       className="w-full flex items-center justify-between py-5 text-left"
     >
-      <span className="flex items-baseline gap-2">
+      <h2 className="flex items-baseline gap-2" style={{ margin: 0 }}>
         <span
           className="font-bold text-primary"
           style={{ fontSize: "18px" }}
@@ -27,12 +27,12 @@ const AccordionItem = ({
           {item.term}
         </span>
         <span
-          className="italic"
+          className="italic font-normal"
           style={{ fontSize: "13px", color: "#64748B" }}
         >
           (it. {item.italian})
         </span>
-      </span>
+      </h2>
       <ChevronDown
         size={20}
         className={`text-primary shrink-0 transition-transform duration-300 ${
@@ -87,16 +87,18 @@ const AccordionItem = ({
 
 const Glossario = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-useEffect(() => {
+
+  useEffect(() => {
     document.title = "Glossario di Business | Sprint & Spark — Ludivine Clement";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Cos'è un funnel? Cosa significa KPI? Il glossario dei termini business spiegati in italiano, con esempi concreti. Senza paroloni.");
+      metaDesc.setAttribute("content", "Cos'è un funnel? Cosa significa KPI? Dal funnel al posizionamento, dalla discovery call allo stack: 30 termini di business spiegati in italiano con esempi concreti. Senza paroloni.");
     }
     return () => {
-      document.title = "Ludivine Clement | Strategia di crescita in 14 Giorni";
+      document.title = "Sprint & Spark — Consulenza per Piccole Imprese in 14 Giorni | Ludivine Clement";
     };
   }, []);
+
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -109,6 +111,7 @@ useEffect(() => {
       },
     })),
   };
+
   return (
     <div className="min-h-screen bg-background">
       <script
@@ -130,11 +133,17 @@ useEffect(() => {
           Glossario ⚡
         </h1>
         <p
-          className="max-w-2xl mb-16"
+          className="max-w-2xl mb-4"
           style={{ fontSize: "16px", color: "#64748B" }}
         >
           Le parole del business che usi (o che sentirai usare). Spiegate come
           si deve — senza paroloni.
+        </p>
+        <p
+          className="max-w-2xl mb-16"
+          style={{ fontSize: "15px", color: "#64748B" }}
+        >
+          Dal funnel al KPI, dal posizionamento alla discovery call: 30 termini di business spiegati in italiano con esempi concreti — per piccole imprese e professionisti.
         </p>
 
         {glossaryTerms.map((item, i) => (
@@ -151,11 +160,10 @@ useEffect(() => {
           style={{ fontSize: "13px", color: "#64748B" }}
         >
           Manca un termine? Scrivimi →{" "}
-          
-            <a href="mailto:go.ludivineclement@gmail.com"
+          <a href="mailto:ciao@sprintandspark.com"
             className="underline hover:text-primary transition-colors"
           >
-            go.ludivineclement@gmail.com
+            ciao@sprintandspark.com
           </a>
         </p>
       </div>
