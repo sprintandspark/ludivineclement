@@ -116,6 +116,28 @@ const IlRadar = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Il Radar",
+            "description": "Sprint di 14 giorni per definire la tua strategia commerciale: chi sei, chi è il tuo cliente ideale, e come raggiungerlo.",
+            "provider": {
+              "@type": "Organization",
+              "name": "Sprint & Spark",
+              "url": "https://ludivineclement.com"
+            },
+            "areaServed": "Italia",
+            "offers": {
+              "@type": "Offer",
+              "price": "1200",
+              "priceCurrency": "EUR"
+            }
+          })
+        }}
+      />
       <Navbar />
 
       {/* SECTION 1 — Hero */}
