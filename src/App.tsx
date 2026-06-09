@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound.tsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
 import Glossario from "./pages/Glossario.tsx";
 import IlRadar from "./pages/IlRadar.tsx";
+import ZeroCaos from "./pages/ZeroCaos.tsx";
 const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -20,6 +21,7 @@ const App = () => (
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/glossario" element={<Glossario />} />
           <Route path="/il-radar" element={<IlRadar />} />
+          <Route path="/zero-caos" element={<ZeroCaos />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
