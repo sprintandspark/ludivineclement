@@ -3,6 +3,7 @@ import { ChevronDown, Check, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import GlossaryTooltip from "@/components/GlossaryTooltip";
 
 const TALLY_URL = "https://tally.so/r/LZ0aQ2";
 
@@ -214,7 +215,7 @@ const ZeroCaos = () => {
           </h2>
           <div className="space-y-5 text-foreground text-base md:text-lg leading-relaxed">
             <p>
-              Zero Caos è uno sprint di 14 giorni in cui prendiamo il tuo modo di lavorare — quello vero, con tutto il caos — e lo trasformiamo in un sistema che funziona.
+              Zero Caos è uno <GlossaryTooltip term="Sprint">sprint</GlossaryTooltip> di 14 giorni in cui prendiamo il tuo modo di lavorare — quello vero, con tutto il caos — e lo trasformiamo in un sistema che funziona.
             </p>
             <p>
               Prima settimana: <strong>analizziamo e scegliamo</strong>. Mappiamo tutto quello che usi oggi, capiamo cosa funziona e cosa no, e selezioniamo gli strumenti giusti per te — non i più famosi, quelli che hanno senso per il tuo lavoro.
@@ -223,7 +224,7 @@ const ZeroCaos = () => {
               Seconda settimana: <strong>configuriamo e costruiamo</strong>. Ogni strumento viene configurato insieme, collegato agli altri, e integrato in una routine settimanale che puoi gestire da sola/o. Niente rimane teorico — alla fine, il sistema è attivo e funzionante.
             </p>
             <p>
-              Alla fine hai il tuo Manuale Operativo: un documento che spiega il tuo sistema passo per passo, con video Loom personalizzati per ogni strumento. Non un manuale generico. Il tuo, costruito intorno al tuo business.
+              Alla fine hai il tuo <GlossaryTooltip term="Manuale Operativo">Manuale Operativo</GlossaryTooltip>: un documento che spiega il tuo sistema passo per passo, con video Loom personalizzati per ogni strumento. Non un manuale generico. Il tuo, costruito intorno al tuo business.
             </p>
             <p>
               Funziona sia che tu abbia un'attività avviata nel caos, sia che tu stia partendo e voglia partire organizzata/o fin dal primo giorno.
@@ -244,7 +245,7 @@ const ZeroCaos = () => {
                 Settimana 1 · Analisi & Setup
               </h3>
               <p className="text-foreground leading-relaxed mb-4">
-                Partiamo da una prima chiamata per capire come lavori oggi — ogni strumento, ogni passaggio, ogni cosa che perdi per strada. Faccio un audit completo dei tuoi processi e dei tuoi strumenti, e insieme scegliamo lo stack definitivo: gli strumenti che terrai, quelli nuovi, e quelli da eliminare.
+                Partiamo da una prima chiamata per capire come lavori oggi — ogni strumento, ogni passaggio, ogni cosa che perdi per strada. Faccio un <GlossaryTooltip term="Audit">audit</GlossaryTooltip> completo dei tuoi processi e dei tuoi strumenti, e insieme scegliamo lo <GlossaryTooltip term="Stack">stack</GlossaryTooltip> definitivo: gli strumenti che terrai, quelli nuovi, e quelli da eliminare.
               </p>
               <p className="text-foreground leading-relaxed">
                 A metà sprint ci ritroviamo per verificare come ti trovi con i nuovi strumenti e confermare la direzione.
@@ -255,7 +256,7 @@ const ZeroCaos = () => {
                 Settimana 2 · Configurazione & Consegna
               </h3>
               <p className="text-foreground leading-relaxed mb-4">
-                Configuriamo ogni strumento insieme — il tuo gestionale clienti, il sistema di prenotazione, i pagamenti, la comunicazione. Costruiamo le connessioni tra gli strumenti, definiamo le tue routine settimanali, e mettiamo tutto in un sistema completo che gira da solo.
+                Configuriamo ogni strumento insieme — il tuo <GlossaryTooltip term="Gestionale clienti">gestionale clienti</GlossaryTooltip>, il sistema di prenotazione, i pagamenti, la comunicazione. Costruiamo le connessioni tra gli strumenti, definiamo le tue <GlossaryTooltip term="Routine">routine</GlossaryTooltip> settimanali, e mettiamo tutto in un <GlossaryTooltip term="Sistema">sistema</GlossaryTooltip> completo che gira da solo.
               </p>
               <p className="text-foreground leading-relaxed">
                 Ultima chiamata: revisione del Manuale Operativo pagina per pagina, consegna ufficiale.
