@@ -254,7 +254,7 @@ const IlRadar = () => {
                 Settimana 2 · Come farsi trovare
               </h3>
               <p className="text-foreground leading-relaxed mb-4">
-                Costruiamo il tuo messaggio — chi sei in 30 secondi. Scegliamo i canali giusti e creiamo un <GlossaryTooltip term="Sistema">sistema</GlossaryTooltip> settimanale che puoi gestire da sola/o. Configuriamo insieme gli strumenti <GlossaryTooltip term="IA">IA</GlossaryTooltip> che hanno senso per te. E mettiamo tutto in un piano concreto per i prossimi 90 giorni.
+                Costruiamo il tuo messaggio — chi sei in 30 secondi. Scegliamo i canali giusti e creiamo un <GlossaryTooltip term="Sistema">sistema</GlossaryTooltip> settimanale che puoi gestire da sola/o. Configuriamo insieme gli strumenti <GlossaryTooltip term="IA (Intelligenza Artificiale)">IA</GlossaryTooltip> che hanno senso per te. E mettiamo tutto in un piano concreto per i prossimi 90 giorni.
               </p>
               <p className="text-foreground leading-relaxed">
                 Ultima chiamata: revisione del Playbook pagina per pagina, consegna ufficiale.
