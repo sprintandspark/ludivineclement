@@ -3,6 +3,7 @@ import { ChevronDown, Check, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import GlossaryTooltip from "@/components/GlossaryTooltip";
 
 const TALLY_URL = "https://tally.so/r/LZ0aQ2";
 
@@ -213,7 +214,7 @@ const IlRadar = () => {
             Cos'è Il Radar?
           </h2>
           <div className="space-y-5 text-foreground text-base md:text-lg leading-relaxed">
-            <p>Il Radar è uno sprint di 14 giorni che affronta queste tre domande nell'ordine giusto.</p>
+            <p>Il Radar è uno <GlossaryTooltip term="Sprint">sprint</GlossaryTooltip> di 14 giorni che affronta queste tre domande nell'ordine giusto.</p>
             <p>
               Prima settimana: <strong>chi sei e per chi lo fai</strong>. Partiamo dal tuo business — o dalla tua idea — e lo guardiamo dall'esterno. Analizziamo chi opera nello stesso spazio, definiamo cosa ti rende diversa/o, e costruiamo il profilo della persona giusta per quello che offri.
             </p>
@@ -221,7 +222,7 @@ const IlRadar = () => {
               Seconda settimana: <strong>come farsi trovare</strong>. Costruiamo il tuo messaggio, scegliamo i canali che hanno senso per te, creiamo un sistema settimanale che puoi gestire da sola/o, e mettiamo tutto in un piano concreto per i prossimi 90 giorni.
             </p>
             <p>
-              Alla fine hai un Playbook personalizzato: un documento operativo con la tua strategia pronta da eseguire. Non un PDF generico. Il tuo, scritto per il tuo business, con il tuo nome sopra.
+              Alla fine hai un <GlossaryTooltip term="Playbook">Playbook</GlossaryTooltip> personalizzato: un documento operativo con la tua strategia pronta da eseguire. Non un PDF generico. Il tuo, scritto per il tuo business, con il tuo nome sopra.
             </p>
             <p>
               Funziona sia che tu abbia un'attività con clienti, sia che tu stia partendo da zero. Il punto di partenza è diverso, il metodo è lo stesso.
@@ -242,7 +243,7 @@ const IlRadar = () => {
                 Settimana 1 · Chi sei e per chi
               </h3>
               <p className="text-foreground leading-relaxed mb-4">
-                Partiamo da una prima chiamata per capire dove sei oggi — che tu abbia già dei clienti o solo un'idea. Analizzo chi opera nello stesso spazio, definiamo insieme chi sei e cosa ti rende diversa/o, e costruiamo il profilo del tuo/a cliente ideale — chi è, come si comporta, dove lo/a trovi.
+                Partiamo da una prima chiamata per capire dove sei oggi — che tu abbia già dei clienti o solo un'idea. Analizzo chi opera nello stesso spazio, definiamo insieme chi sei e cosa ti rende diversa/o, e costruiamo il profilo del tuo/a <GlossaryTooltip term="Target/ICP">cliente ideale</GlossaryTooltip> — chi è, come si comporta, dove lo/a trovi.
               </p>
               <p className="text-foreground leading-relaxed">
                 A metà sprint ci ritroviamo per verificare tutto e riallinearci.
@@ -253,7 +254,7 @@ const IlRadar = () => {
                 Settimana 2 · Come farsi trovare
               </h3>
               <p className="text-foreground leading-relaxed mb-4">
-                Costruiamo il tuo messaggio — chi sei in 30 secondi. Scegliamo i canali giusti e creiamo un sistema settimanale che puoi gestire da sola/o. Configuriamo insieme gli strumenti IA che hanno senso per te. E mettiamo tutto in un piano concreto per i prossimi 90 giorni.
+                Costruiamo il tuo messaggio — chi sei in 30 secondi. Scegliamo i canali giusti e creiamo un <GlossaryTooltip term="Sistema">sistema</GlossaryTooltip> settimanale che puoi gestire da sola/o. Configuriamo insieme gli strumenti <GlossaryTooltip term="IA">IA</GlossaryTooltip> che hanno senso per te. E mettiamo tutto in un piano concreto per i prossimi 90 giorni.
               </p>
               <p className="text-foreground leading-relaxed">
                 Ultima chiamata: revisione del Playbook pagina per pagina, consegna ufficiale.
