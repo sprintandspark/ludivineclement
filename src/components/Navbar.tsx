@@ -133,7 +133,7 @@ const Navbar = () => {
             Contatti
           </a>
 
-          <a href="https://ludivineclement.com/#contatti"
+          <a href="https://ludivineclement.com/prenota"
             className="px-6 py-2.5 rounded-full bg-primary text-primary-foreground font-bold text-sm hover:scale-[1.02] hover:shadow-lg transition-all duration-300"
             onClick={() => trackEvent("nav_click", { link: "prenota_call_cta", device: "desktop" })}
           >
