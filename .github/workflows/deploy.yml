@@ -26,6 +26,7 @@ jobs:
           mkdir -p dist/il-radar && cp dist/index.html dist/il-radar/index.html
           mkdir -p dist/privacy-policy && cp dist/index.html dist/privacy-policy/index.html
           mkdir -p dist/zero-caos && cp dist/index.html dist/zero-caos/index.html
+          mkdir -p dist/ai-no-panico && cp dist/index.html dist/ai-no-panico/index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
