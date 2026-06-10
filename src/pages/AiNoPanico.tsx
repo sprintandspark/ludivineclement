@@ -53,7 +53,6 @@ const faqs = [
   {
     q: "Come funziona il video personalizzato?",
     a: "Dopo l'ultimo incontro, registro un video su misura per te: ti mostro il tuo set-up, i tuoi strumenti configurati, e come usarli. Puoi riguardarlo ogni volta che ne hai bisogno.",
-
   },
   {
     q: "Quanto durano gli incontri?",
@@ -74,7 +73,8 @@ const faqs = [
 ];
 
 const CtaButton = ({ className = "", variant = "light" }: { className?: string; variant?: string }) => (
-    <a href={TALLY_URL}
+  
+   <a href={TALLY_URL}
     className={`inline-block rounded-full px-8 py-3.5 text-sm font-bold hover:scale-[1.02] hover:shadow-xl transition-all duration-300 ${
       variant === "dark" ? "bg-primary text-white" : "bg-background text-primary"
     } ${className}`}
@@ -86,16 +86,16 @@ const CtaButton = ({ className = "", variant = "light" }: { className?: string; 
 const AiNoPanico = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-useEffect(() => {
-  document.title = "AI? No Panico! — Strumenti IA su Misura per il Tuo Business | Sprint & Spark";
-  const metaDesc = document.querySelector('meta[name="description"]');
-  if (metaDesc) {
-    metaDesc.setAttribute("content", "AI? No Panico! è la sessione personalizzata in 3 incontri per configurare gli strumenti IA giusti per il tuo business. Senza corsi generici. Su misura.");
-  }
-  return () => {
-    document.title = "Sprint & Spark — Consulenza per Piccole Imprese in 14 Giorni | Ludivine Clement";
-  };
-}, []);
+  useEffect(() => {
+    document.title = "AI? No Panico! — Strumenti IA su Misura per il Tuo Business | Sprint & Spark";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", "AI? No Panico! è la sessione personalizzata in 3 incontri per configurare gli strumenti IA giusti per il tuo business. Senza corsi generici. Su misura.");
+    }
+    return () => {
+      document.title = "Sprint & Spark — Consulenza per Piccole Imprese in 14 Giorni | Ludivine Clement";
+    };
+  }, []);
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -111,8 +111,7 @@ useEffect(() => {
     "@context": "https://schema.org",
     "@type": "Service",
     name: "AI? No Panico!",
-    description:
-      "Sessione di lavoro personalizzata in 3 incontri per configurare gli strumenti IA giusti per il tuo business.",
+    description: "Sessione di lavoro personalizzata in 3 incontri per configurare gli strumenti IA giusti per il tuo business.",
     provider: {
       "@type": "Organization",
       name: "Sprint & Spark",
@@ -138,31 +137,26 @@ useEffect(() => {
       />
       <Navbar />
 
-      {/* S1 — Hero */}
+      {/* SECTION 1 — Hero */}
       <section className="bg-primary text-primary-foreground pt-32 pb-24 md:pt-40 md:pb-32">
         <div className="mx-auto max-w-6xl px-6 text-center">
-          <span className="inline-block rounded-full border border-primary-foreground/30 px-4 py-1.5 text-xs font-semibold mb-6">
-            🤖 AI? No Panico!
-          </span>
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
-            L'intelligenza artificiale spiegata nel modo che ha senso per te.
-          </h1>
+          <h1 className="text-display text-4xl md:text-6xl mb-8">🤖 AI? No Panico!</h1>
           <p className="max-w-2xl mx-auto text-base md:text-lg leading-relaxed mb-6">
-            3 incontri · su misura
+            L'intelligenza artificiale spiegata nel modo che ha senso per te.
           </p>
           <p className="text-sm font-semibold text-primary-foreground/80 mb-10">
-            €150 — Offerta lancio 🚀
+            €150 · 3 incontri · Offerta lancio 🚀
           </p>
           <CtaButton />
         </div>
       </section>
 
-      {/* S2 — Il problema */}
+      {/* SECTION 2 — Il problema */}
       <section className="bg-background py-20 md:py-28">
         <div className="mx-auto max-w-3xl px-6">
-          <p className="italic text-foreground border-l-4 border-primary pl-4 py-1 text-lg md:text-xl mb-8">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-foreground text-center mb-8">
             "Ogni settimana esce qualcosa di nuovo. Ho già smesso di stare al passo."
-          </p>
+          </h2>
 
           <div className="bg-muted border-l-4 border-accent rounded-2xl p-6 md:p-8 mb-10">
             <p className="text-xl md:text-2xl font-bold text-foreground leading-snug">
@@ -170,7 +164,7 @@ useEffect(() => {
             </p>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-4 mb-8">
             {problems.map((p, i) => (
               <div key={i} className="border border-border rounded-xl p-5 flex gap-4">
                 <span className="font-bold text-primary shrink-0">{i + 1}.</span>
@@ -181,7 +175,7 @@ useEffect(() => {
         </div>
       </section>
 
-      {/* S3 — Cos'è */}
+      {/* SECTION 3 — Cos'è */}
       <section className="bg-muted py-20 md:py-28">
         <div className="mx-auto max-w-3xl px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold text-foreground mb-8">
@@ -201,7 +195,7 @@ useEffect(() => {
         </div>
       </section>
 
-      {/* S4 — Come funziona */}
+      {/* SECTION 4 — Come funziona */}
       <section className="bg-background py-20 md:py-28">
         <div className="mx-auto max-w-6xl px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
@@ -221,13 +215,13 @@ useEffect(() => {
               </p>
             </div>
           </div>
-          <p className="text-center italic text-muted-foreground text-sm md:text-base">
+          <p className="text-center text-muted-foreground text-sm md:text-base">
             Ogni incontro dura 60–90 minuti via Google Meet. Il ritmo tra gli incontri è tuo — decidiamo insieme.
           </p>
         </div>
       </section>
 
-      {/* S5 — Per chi è */}
+      {/* SECTION 5 — Per chi è */}
       <section className="bg-background py-20 md:py-28">
         <div className="mx-auto max-w-3xl px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
@@ -260,7 +254,7 @@ useEffect(() => {
         </div>
       </section>
 
-      {/* S6 — Cosa ricevi */}
+      {/* SECTION 6 — Cosa ricevi */}
       <section className="bg-muted py-20 md:py-28">
         <div className="mx-auto max-w-3xl px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
@@ -279,12 +273,12 @@ useEffect(() => {
           </p>
         </div>
       </section>
-      
-            <div className="text-center py-10">
-              <CtaButton variant="dark" />
-            </div>
 
-      {/* S7 — FAQ */}
+      <div className="text-center py-10">
+        <CtaButton variant="dark" />
+      </div>
+
+      {/* SECTION 7 — FAQ */}
       <section className="bg-background py-20 md:py-28">
         <div className="mx-auto max-w-3xl px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold text-primary text-center mb-3">
@@ -330,14 +324,15 @@ useEffect(() => {
         </div>
       </section>
 
-      {/* S8 — CTA finale */}
+      {/* SECTION 8 — CTA finale */}
       <section className="bg-primary text-primary-foreground py-20 md:py-28">
         <div className="mx-auto max-w-3xl px-6 text-center">
-          <p className="text-base md:text-lg mb-2">Niente corsi infiniti.</p>
-          <p className="text-base md:text-lg mb-8">Niente tutorial da 3 ore.</p>
-          <h2 className="text-3xl md:text-5xl font-extrabold mb-10">
+          <h2 className="text-3xl md:text-5xl font-extrabold mb-6">
             Solo il tuo AI? No Panico!, su misura. ⚡
           </h2>
+          <p className="text-base md:text-lg leading-relaxed mb-10">
+            Niente corsi infiniti. Niente tutorial da 3 ore.
+          </p>
           <CtaButton />
         </div>
       </section>
