@@ -70,6 +70,11 @@ const Navbar = () => {
                   onMouseEnter={() => setSprintOpen(true)}
                   onMouseLeave={() => setSprintOpen(false)}
                 >
+                <a href="https://ludivineclement.com/il-radar" className={dropdownItemClass} onClick={() => trackEvent("nav_click", { link: "il_radar", device: "desktop" })}>🎯 Il Radar</a>
+                <a href="https://ludivineclement.com/zero-caos" className={dropdownItemClass} onClick={() => trackEvent("nav_click", { link: "zero_caos", device: "desktop" })}>🧘 Zero Caos</a>
+                <a href="https://ludivineclement.com/ai-no-panico" className={dropdownItemClass} onClick={() => trackEvent("nav_click", { link: "ai_no_panico", device: "desktop" })}>🤖 AI? No Panico!</a>
+                <a href="https://ludivineclement.com/ciao-france" className={dropdownItemClass} onClick={() => trackEvent("nav_click", { link: "ciao_france", device: "desktop" })}>🇫🇷 Ciao France!</a>
+                <div className="border-t border-border/50 my-1" />
                 <a href="https://ludivineclement.com/#sprint" className={dropdownItemClass} onClick={() => trackEvent("nav_click", { link: "gli_sprint", device: "desktop" })}>Gli Sprint</a>
                 <a href="https://ludivineclement.com/#come-funziona" className={dropdownItemClass} onClick={() => trackEvent("nav_click", { link: "come_funziona", device: "desktop" })}>Come funziona</a>
                 <a href="https://ludivineclement.com/#il-metodo" className={dropdownItemClass} onClick={() => trackEvent("nav_click", { link: "il_metodo", device: "desktop" })}>Il Metodo Sprint & Spark</a>
@@ -160,6 +165,27 @@ const Navbar = () => {
                 >
                 Gli Sprint
               </p>
+              <a href="https://ludivineclement.com/il-radar" className="text-sm font-semibold text-foreground/70" 
+                onClick={() => { setMobileOpen(false); trackEvent("nav_click", { link: "il_radar", device: "mobile" }); }}
+                >
+                🎯 Il Radar
+              </a>
+              <a href="https://ludivineclement.com/zero-caos" className="text-sm font-semibold text-foreground/70" 
+                onClick={() => { setMobileOpen(false); trackEvent("nav_click", { link: "zero_caos", device: "mobile" }); }}
+                >
+                🧘 Zero Caos
+              </a>
+              <a href="https://ludivineclement.com/ai-no-panico" className="text-sm font-semibold text-foreground/70" 
+                onClick={() => { setMobileOpen(false); trackEvent("nav_click", { link: "ai_no_panico", device: "mobile" }); }}
+                >
+                🤖 AI? No Panico!
+              </a>
+              <a href="https://ludivineclement.com/ciao-france" className="text-sm font-semibold text-foreground/70" 
+                onClick={() => { setMobileOpen(false); trackEvent("nav_click", { link: "ciao_france", device: "mobile" }); }}
+                >
+                🇫🇷 Ciao France!
+              </a>
+              <div className="w-full border-t border-border/50" />
               <a href="https://ludivineclement.com/#sprint" className="text-sm font-semibold text-foreground/70" 
                 onClick={() => { setMobileOpen(false); trackEvent("nav_click", { link: "gli_sprint", device: "mobile" }); }}
                 >
