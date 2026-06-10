@@ -93,11 +93,10 @@ const IlRadar = () => {
   if (metaDesc) {
     metaDesc.setAttribute("content", "Il Radar è lo sprint di 14 giorni per capire dove stai andando, chi sono i tuoi clienti ideali, e costruire una strategia di crescita concreta. Per piccole imprese in Italia.");
   }
+  return () => {
+    document.title = "Sprint & Spark — Consulenza per Piccole Imprese in 14 Giorni | Ludivine Clement";
+  };
 }, []);
-    return () => {
-      document.title = "Sprint & Spark — Consulenza per Piccole Imprese in 14 Giorni | Ludivine Clement";
-    };
-  }, []);
 
   const faqSchema = {
     "@context": "https://schema.org",
