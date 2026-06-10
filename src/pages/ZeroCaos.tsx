@@ -88,18 +88,15 @@ const ZeroCaos = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = "Zero Caos — Organizzazione e Sistema di Lavoro in 14 Giorni | Sprint & Spark";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute(
-        "content",
-        "Zero Caos è uno sprint di 14 giorni per organizzare il tuo business: strumenti giusti, sistema connesso, routine che regge. Per piccole imprese e professionisti in Italia."
-      );
-    }
-    return () => {
-      document.title = "Sprint & Spark — Consulenza per Piccole Imprese in 14 Giorni | Ludivine Clement";
-    };
-  }, []);
+  document.title = "Zero Caos — Organizzazione e Sistema di Lavoro in 14 Giorni | Sprint & Spark";
+  const metaDesc = document.querySelector('meta[name="description"]');
+  if (metaDesc) {
+    metaDesc.setAttribute("content", "Zero Caos è lo sprint di 14 giorni per organizzare il tuo business: strumenti giusti, sistema connesso, routine che regge. Per piccole imprese e professionisti in Italia.");
+  }
+  return () => {
+    document.title = "Sprint & Spark — Consulenza per Piccole Imprese in 14 Giorni | Ludivine Clement";
+  };
+}, []);
 
   const faqSchema = {
     "@context": "https://schema.org",
