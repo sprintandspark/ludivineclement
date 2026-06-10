@@ -14,6 +14,15 @@ const Prenota = () => {
     <>
       <Navbar />
       <main className="min-h-screen bg-background">
+        {/* Back button */}
+          <div className="px-6 pt-6">
+            <button
+              onClick={() => window.history.back()}
+              className="inline-block text-sm text-primary font-semibold underline-offset-4 hover:underline"
+            >
+              ← Torna indietro
+            </button>
+          </div>
 
         {/* Header */}
         <section className="bg-primary text-white pt-32 pb-16 md:pt-40 md:pb-20 text-center px-6">
