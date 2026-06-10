@@ -12,6 +12,7 @@ import ZeroCaos from "./pages/ZeroCaos.tsx";
 import AiNoPanico from "./pages/AiNoPanico.tsx";
 import ComingSoon from "./pages/ComingSoon.tsx";
 import Prenota from "./pages/Prenota.tsx";
+import Quiz from "./pages/Quiz.tsx";
 const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/ai-no-panico" element={<AiNoPanico />} />
           <Route path="/ciao-france" element={<ComingSoon />} />
           <Route path="/prenota" element={<Prenota />} />
+          <Route path="/quiz" element={<Quiz />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
