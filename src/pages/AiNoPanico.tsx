@@ -115,7 +115,7 @@ const AiNoPanico = () => {
     "@type": "Service",
     name: "AI? No Panico!",
     description:
-      "Sessione di lavoro personalizzata in 3 incontri per capire e configurare gli strumenti IA giusti per il tuo business.",
+      "Sessione di lavoro personalizzata in 3 incontri per configurare gli strumenti IA giusti per il tuo business.",
     provider: {
       "@type": "Organization",
       name: "Sprint & Spark",
