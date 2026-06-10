@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import GlossaryTooltip from "@/components/GlossaryTooltip";
 
-const TALLY_URL = "https://tally.so/r/LZ0aQ2";
+const TALLY_URL = "https://ludivineclement.com/prenota";
 
 const quotes = [
   "Non so come presentarmi.",
