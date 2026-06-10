@@ -156,7 +156,7 @@ const ZeroCaos = () => {
       </section>
 
       {/* SECTION 2 — Il problema */}
-      <section className="bg-background py-20 md:py-28">
+      <section className="bg-background py-14 md:py-20">
         <div className="mx-auto max-w-3xl px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold text-foreground text-center mb-8">
             "Passo più tempo a rincorrere le cose che a farle."
@@ -205,7 +205,7 @@ const ZeroCaos = () => {
       </section>
 
       {/* SECTION 3 — Cos'è Zero Caos */}
-      <section className="bg-muted py-20 md:py-28">
+      <section className="bg-muted py-14 md:py-20">
         <div className="mx-auto max-w-3xl px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold text-foreground mb-8">
             Cos'è Zero Caos?
@@ -231,7 +231,7 @@ const ZeroCaos = () => {
       </section>
 
       {/* SECTION 4 — Come funziona */}
-      <section className="bg-background py-20 md:py-28">
+      <section className="bg-background py-14 md:py-20">
         <div className="mx-auto max-w-6xl px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
             Come funziona
@@ -267,7 +267,7 @@ const ZeroCaos = () => {
       </section>
 
       {/* SECTION 5 — Per chi è */}
-      <section className="bg-background py-20 md:py-28">
+      <section className="bg-background py-14 md:py-20">
         <div className="mx-auto max-w-3xl px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
             È per te se...
@@ -300,7 +300,7 @@ const ZeroCaos = () => {
       </section>
 
       {/* SECTION 6 — Cosa ricevi */}
-      <section className="bg-muted py-20 md:py-28">
+      <section className="bg-muted py-14 md:py-20">
         <div className="mx-auto max-w-3xl px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
             Alla fine dei 14 giorni
@@ -346,7 +346,7 @@ const ZeroCaos = () => {
           </div>
 
       {/* SECTION 7 — FAQ */}
-      <section className="bg-background py-20 md:py-28">
+      <section className="bg-background py-14 md:py-20">
         <div className="mx-auto max-w-3xl px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold text-primary text-center mb-3">
             Domande frequenti
@@ -392,7 +392,7 @@ const ZeroCaos = () => {
       </section>
 
       {/* SECTION 8 — CTA finale */}
-      <section className="bg-primary text-primary-foreground py-20 md:py-28">
+      <section className="bg-primary text-primary-foreground py-14 md:py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="text-3xl md:text-5xl font-extrabold mb-6">
             Pronta/o a smettere di rincorrere e iniziare a lavorare con un sistema?

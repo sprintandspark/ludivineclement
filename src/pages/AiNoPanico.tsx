@@ -151,6 +151,10 @@ const AiNoPanico = () => {
         </div>
       </section>
 
+<<<<<<< HEAD
+      {/* S2 — Il problema */}
+      <section className="bg-background py-14 md:py-20">
+=======
       {/* SECTION 2 — Il problema */}
       <section className="bg-background py-20 md:py-28">
         <div className="mx-auto max-w-3xl px-6">
@@ -175,8 +179,13 @@ const AiNoPanico = () => {
         </div>
       </section>
 
+<<<<<<< HEAD
+      {/* S3 — Cos'è */}
+      <section className="bg-muted py-14 md:py-20">
+=======
       {/* SECTION 3 — Cos'è */}
       <section className="bg-muted py-20 md:py-28">
+>>>>>>> 44c2184061faac38975cf1e7d8e972193a59de27
         <div className="mx-auto max-w-3xl px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold text-foreground mb-8">
             Non un corso. Una sessione di lavoro su misura.

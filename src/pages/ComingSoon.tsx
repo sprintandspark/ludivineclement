@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const TALLY_URL = "https://tally.so/r/LZ0aQ2";
+const TALLY_URL = "https://ludivineclement.com/prenota";
 
 const ComingSoon = () => {
   useEffect(() => {
