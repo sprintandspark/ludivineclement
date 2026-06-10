@@ -281,6 +281,16 @@ useEffect(() => {
         </div>
       </section>
 
+            {/* CTA before FAQ */}
+      <section className="bg-primary py-16 md:py-20">
+        <div className="mx-auto max-w-3xl px-6 text-center">
+          <p className="text-white text-lg font-semibold mb-6">
+            Pronta/o a iniziare? Prenota una chiamata gratuita. ⚡
+          </p>
+          <CtaButton />
+        </div>
+      </section>
+
       {/* S7 — FAQ */}
       <section className="bg-background py-20 md:py-28">
         <div className="mx-auto max-w-3xl px-6">
