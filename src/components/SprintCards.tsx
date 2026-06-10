@@ -20,7 +20,8 @@ const cards = [
     ],
     bonusLine: "1 check-in gratuito dopo 30 giorni 🤍",
     price: "€1.200",
-    cta: "Voglio il Radar →",
+    cta: "Scopri lo sprint →",
+    href: "https://ludivineclement.com/il-radar",
     bg: "bg-amber-50",
     border: "border border-amber-100",
     btnClass: "bg-accent text-accent-foreground",
@@ -41,7 +42,8 @@ const cards = [
     ],
     bonusLine: "1 check-in gratuito dopo 30 giorni 🤍",
     price: "€1.500",
-    cta: "Addio stress →",
+    cta: "Scopri lo sprint →",
+    href: "https://ludivineclement.com/zero-caos",
     bg: "bg-primary",
     border: "",
     btnClass: "bg-background text-primary",
@@ -65,6 +67,7 @@ const cards = [
     bonusLine: "1 check-in gratuito dopo 2-3 mesi 🤍",
     price: "€2.200",
     cta: "Andiamo in Francia →",
+    href: "https://ludivineclement.com/#contatti",
     bg: "bg-emerald-50",
     border: "border border-emerald-100",
     btnClass: "bg-success text-success-foreground",
@@ -88,7 +91,8 @@ const cards = [
     price: null,
     priceOld: "€250",
     priceNew: "€150",
-    cta: "Voglio capire l'IA →",
+    cta: "Scopri lo sprint →",
+    href: "https://ludivineclement.com/ai-no-panico",
     bg: "bg-[#F5F3FF]",
     border: "border border-[#7C3AED]",
     btnClass: "bg-[#7C3AED] text-white",
@@ -310,7 +314,7 @@ const SprintCards = () => {
                     </p>
                   )}
                 </div>
-                  <a href="https://ludivineclement.com/#contatti"
+                  <a href={card.href}
                 className={`mt-6 inline-block px-6 py-3 rounded-full font-bold text-sm ${card.btnClass} hover:scale-[1.02] hover:shadow-lg transition-all duration-300`}
                 onClick={() => trackEvent("cta_click", {
                   section: "sprint_cards",
