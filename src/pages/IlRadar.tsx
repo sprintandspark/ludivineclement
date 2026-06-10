@@ -73,17 +73,20 @@ const faqs = [
   },
 ];
 
-const CtaButton = ({ className = "" }: { className?: string }) => (
-  <a
+const CtaButton = ({ className = "", variant = "light" }: { className?: string, variant?: "light" | "dark" }) => (
+  
     href={TALLY_URL}
     target="_blank"
     rel="noopener noreferrer"
-    className={`inline-block rounded-full bg-background px-8 py-3.5 text-sm font-bold text-primary hover:scale-[1.02] hover:shadow-xl transition-all duration-300 ${className}`}
+    className={`inline-block rounded-full px-8 py-3.5 text-sm font-bold hover:scale-[1.02] hover:shadow-xl transition-all duration-300 ${
+      variant === "dark"
+        ? "bg-primary text-white"
+        : "bg-background text-primary"
+    } ${className}`}
   >
     Prenota una Discovery Call gratuita →
   </a>
 );
-
 const IlRadar = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
@@ -339,7 +342,7 @@ const IlRadar = () => {
         </div>
       </section>
         <div className="text-center py-10">
-          <CtaButton />
+          <CtaButton variant="dark" />
         </div>
 
       {/* SECTION 7 — FAQ */}
