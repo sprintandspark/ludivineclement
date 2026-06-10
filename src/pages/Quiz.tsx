@@ -1,0 +1,67 @@
+import { useEffect } from "react";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+
+const Quiz = () => {
+  useEffect(() => {
+    document.title = "Quiz — Trova il tuo Sprint | Sprint & Spark";
+    return () => {
+      document.title = "Sprint & Spark — Consulenza per Piccole Imprese in 14 Giorni | Ludivine Clement";
+    };
+  }, []);
+
+  return (
+    <>
+      <Navbar />
+      <main className="min-h-screen bg-background">
+
+        {/* Header */}
+        <section className="bg-primary text-white pt-32 pb-16 md:pt-40 md:pb-20 text-center px-6">
+          <h1 className="text-3xl md:text-5xl font-extrabold mb-4">
+            Trova il tuo Sprint. ⚡
+          </h1>
+          <p className="text-base md:text-lg max-w-xl mx-auto text-white/80">
+            Rispondi a 8 domande — ti dico quale sprint ha più senso per te, adesso.
+          </p>
+        </section>
+
+        {/* Quiz embed */}
+        <section className="py-16 px-6 max-w-3xl mx-auto">
+          <button
+            onClick={() => {
+              if (window.history.length > 1) {
+                window.history.back();
+              } else {
+                window.location.href = "https://ludivineclement.com";
+              }
+            }}
+            className="inline-block text-sm text-primary font-semibold underline-offset-4 hover:underline mb-8"
+          >
+            ← Torna indietro
+          </button>
+          <iframe
+            src="https://tally.so/embed/RGLB19?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+            width="100%"
+            height="800"
+            title="Quiz — Trova il tuo Sprint"
+            className="w-full border-0"
+          />
+        </section>
+
+        {/* Back to home */}
+        <section className="pb-16 text-center px-6">
+          
+            <a href="https://ludivineclement.com"
+            className="inline-block text-sm text-primary font-semibold underline-offset-4 hover:underline"
+          >
+            ← Torna alla home
+          </a>
+        </section>
+
+      </main>
+      <Footer />
+    </>
+  );
+};
+
+export default Quiz;
