@@ -27,15 +27,18 @@ const Prenota = () => {
 
         {/* Tally embed */}
         <section className="py-16 px-6 max-w-3xl mx-auto">
-          {/* Back button */}
-          <div className="px-6 pt-6">
-            <button
-              onClick={() => window.history.back()}
+         <button
+              onClick={() => {
+                if (window.history.length > 1) {
+                  window.history.back();
+                } else {
+                  window.location.href = "https://ludivineclement.com";
+                }
+              }}
               className="inline-block text-sm text-primary font-semibold underline-offset-4 hover:underline"
             >
               ← Torna indietro
             </button>
-          </div>
           <iframe
             src="https://tally.so/embed/LZ0aQ2?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
             width="100%"
