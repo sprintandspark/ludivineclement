@@ -36,7 +36,7 @@ const deliverables = [
     body: "Così ogni volta che esce qualcosa di nuovo, sai come decidere se vale il tuo tempo.",
   },
   {
-    title: "Un Loom personalizzato da rivedere quando vuoi",
+    title: "Un video personalizzato da rivedere quando vuoi",
     body: "La tua guida video su misura — non un tutorial di YouTube.",
   },
 ];
@@ -51,8 +51,9 @@ const faqs = [
     a: "Dipende dal tuo business. ChatGPT, Notion AI, Canva AI, Perplexity, Make.com — ma decidiamo insieme durante il primo incontro, in base a cosa ti serve davvero.",
   },
   {
-    q: "Come funziona il Loom personalizzato?",
+    q: "Come funziona il video personalizzato?",
     a: "Dopo l'ultimo incontro, registro un video su misura per te: ti mostro il tuo set-up, i tuoi strumenti configurati, e come usarli. Puoi riguardarlo ogni volta che ne hai bisogno.",
+
   },
   {
     q: "Quanto durano gli incontri?",
@@ -151,7 +152,7 @@ const AiNoPanico = () => {
             L'intelligenza artificiale spiegata nel modo che ha senso per te.
           </h1>
           <p className="max-w-2xl mx-auto text-base md:text-lg leading-relaxed mb-6">
-            3 incontri · personale · su misura
+            3 incontri · su misura
           </p>
           <p className="text-sm font-semibold text-primary-foreground/80 mb-10">
             €150 — Offerta lancio 🚀
@@ -164,7 +165,7 @@ const AiNoPanico = () => {
       <section className="bg-background py-20 md:py-28">
         <div className="mx-auto max-w-3xl px-6">
           <p className="italic text-foreground border-l-4 border-primary pl-4 py-1 text-lg md:text-xl mb-8">
-            "Ogni settimana esce qualcosa di nuovo. Hai già smesso di stare al passo."
+            "Ogni settimana esce qualcosa di nuovo. Ho già smesso di stare al passo."
           </p>
 
           <div className="bg-muted border-l-4 border-accent rounded-2xl p-6 md:p-8 mb-10">
@@ -220,7 +221,7 @@ const AiNoPanico = () => {
             <div className="border border-border rounded-2xl p-8 bg-background">
               <h3 className="text-xl font-bold text-primary mb-4">Incontri 2 + 3</h3>
               <p className="text-foreground leading-relaxed">
-                Torniamo su quello che hai provato — cosa ha funzionato, cosa no. Approfondiamo, aggiungiamo nuovi strumenti se serve. Al termine ricevi un Loom personalizzato: una guida video su misura per il tuo set-up, da rivedere quando vuoi.
+                Torniamo su quello che hai provato — cosa ha funzionato, cosa no. Approfondiamo, aggiungiamo nuovi strumenti se serve. Al termine ricevi un video personalizzato: una guida video su misura per il tuo set-up, da rivedere quando vuoi.
               </p>
             </div>
           </div>
