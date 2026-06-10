@@ -87,19 +87,16 @@ const CtaButton = ({ className = "" }: { className?: string }) => (
 const AiNoPanico = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  useEffect(() => {
-    document.title = "AI? No Panico! — IA su misura in 3 incontri | Sprint & Spark";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute(
-        "content",
-        "AI? No Panico! è una sessione di lavoro personalizzata in 3 incontri per capire, configurare e usare gli strumenti IA giusti per il tuo business."
-      );
-    }
-    return () => {
-      document.title = "Sprint & Spark — Consulenza per Piccole Imprese in 14 Giorni | Ludivine Clement";
-    };
-  }, []);
+useEffect(() => {
+  document.title = "AI? No Panico! — Strumenti IA su Misura per il Tuo Business | Sprint & Spark";
+  const metaDesc = document.querySelector('meta[name="description"]');
+  if (metaDesc) {
+    metaDesc.setAttribute("content", "AI? No Panico! è la sessione personalizzata in 3 incontri per configurare gli strumenti IA giusti per il tuo business. Senza corsi generici. Su misura.");
+  }
+  return () => {
+    document.title = "Sprint & Spark — Consulenza per Piccole Imprese in 14 Giorni | Ludivine Clement";
+  };
+}, []);
 
   const faqSchema = {
     "@context": "https://schema.org",
