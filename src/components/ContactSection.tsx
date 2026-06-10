@@ -11,15 +11,14 @@ const ContactSection = () => {
           Prenota una Discovery Call gratuita di 30 minuti — o scrivimi direttamente.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          
-            href="https://ludivineclement.com/prenota"
+            <a href="https://ludivineclement.com/prenota"
             onClick={() => trackEvent("cta_click", { cta_id: "contact_prenota" })}
             className="inline-block rounded-full bg-background px-8 py-3.5 text-sm font-bold text-primary hover:scale-[1.02] hover:shadow-xl transition-all duration-300"
           >
             Prenota una Discovery Call gratuita →
           </a>
           
-            href="mailto:ciao@sprintandspark.com"
+           <a href="mailto:ciao@sprintandspark.com"
             onClick={() => trackEvent("cta_click", { cta_id: "contact_email" })}
             className="inline-block rounded-full border-2 border-primary-foreground/40 px-8 py-3.5 text-sm font-bold text-primary-foreground hover:border-primary-foreground hover:scale-[1.02] transition-all duration-300"
           >
