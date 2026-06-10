@@ -76,8 +76,6 @@ const faqs = [
 const CtaButton = ({ className = "", variant = "light" }: { className?: string; variant?: string }) => (
   
     <a href={TALLY_URL}
-    target="_blank"
-    rel="noopener noreferrer"
     className={`inline-block rounded-full px-8 py-3.5 text-sm font-bold hover:scale-[1.02] hover:shadow-xl transition-all duration-300 ${
       variant === "dark" ? "bg-primary text-white" : "bg-background text-primary"
     } ${className}`}
