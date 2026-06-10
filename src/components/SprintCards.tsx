@@ -314,7 +314,7 @@ const SprintCards = () => {
                     </p>
                   )}
                 </div>
-                  <a href="https://ludivineclement.com/#contatti"
+                  <a href={card.href}
                 className={`mt-6 inline-block px-6 py-3 rounded-full font-bold text-sm ${card.btnClass} hover:scale-[1.02] hover:shadow-lg transition-all duration-300`}
                 onClick={() => trackEvent("cta_click", {
                   section: "sprint_cards",
