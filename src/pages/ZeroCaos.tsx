@@ -342,8 +342,7 @@ const ZeroCaos = () => {
           </p>
         </div>
       </section>
-
-            {/* CTA before FAQ */}
+      
            <div className="text-center py-10">
         <CtaButton variant="dark" />
           </div>
