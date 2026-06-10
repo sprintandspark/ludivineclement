@@ -78,7 +78,7 @@ const Navbar = () => {
                 <a href="https://ludivineclement.com/#sprint" className={dropdownItemClass} onClick={() => trackEvent("nav_click", { link: "gli_sprint", device: "desktop" })}>Gli Sprint</a>
                 <a href="https://ludivineclement.com/#come-funziona" className={dropdownItemClass} onClick={() => trackEvent("nav_click", { link: "come_funziona", device: "desktop" })}>Come funziona</a>
                 <a href="https://ludivineclement.com/#il-metodo" className={dropdownItemClass} onClick={() => trackEvent("nav_click", { link: "il_metodo", device: "desktop" })}>Il Metodo Sprint & Spark</a>
-                <a href="https://ludivineclement.com/#quiz" className={dropdownItemClass} onClick={() => trackEvent("nav_click", { link: "quiz", device: "desktop" })}>Quiz - Trova il tuo Sprint ⚡</a>
+                <a href="https://ludivineclement.com/quiz" className={dropdownItemClass} onClick={() => trackEvent("nav_click", { link: "quiz", device: "desktop" })}>Quiz - Trova il tuo Sprint ⚡</a>
                 </motion.div>
               )}
             </AnimatePresence>
@@ -201,7 +201,7 @@ const Navbar = () => {
                 >
                 Il Metodo Sprint & Spark
               </a>
-              <a href="https://ludivineclement.com/#quiz" className="text-sm font-semibold text-foreground/70" 
+              <a href="https://ludivineclement.com/quiz" className="text-sm font-semibold text-foreground/70" 
                 onClick={() => { setMobileOpen(false); trackEvent("nav_click", { link: "quiz", device: "mobile" }); }}
                 >
                 Quiz - Trova il tuo Sprint ⚡
@@ -233,7 +233,7 @@ const Navbar = () => {
                 >
                 Contatti
               </a>
-              <a href="https://ludivineclement.com/#contatti"
+              <a href="https://ludivineclement.com/prenota"
                 className="px-6 py-2.5 rounded-full bg-primary text-primary-foreground font-bold text-sm"
                 onClick={() => { setMobileOpen(false); trackEvent("nav_click", { link: "prenota_call_cta", device: "mobile" }); }}
               >
