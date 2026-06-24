@@ -25,7 +25,7 @@ const Footer = () => (
           Glossario
         </Link>
       </div>
-      <span>P.IVA: in registrazione</span>
+        <span>P.IVA: 18610121008</span>
       <div className="flex gap-4">
         <a href="https://www.linkedin.com/in/ludivine-clement/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-foreground transition-colors"
           onClick={() => trackEvent("footer_click", { link: "linkedin" })}>
