@@ -38,7 +38,6 @@ const QuizSection = () => {
           data-tally-src="https://tally.so/embed/RGLB19?alignLeft=1&transparentBackground=0&dynamicHeight=1"
           loading="lazy"
           width="100%"
-          height="auto"
           frameBorder="0"
           marginHeight={0}
           marginWidth={0}
