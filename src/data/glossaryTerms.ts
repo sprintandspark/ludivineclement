@@ -35,6 +35,13 @@ export const glossaryTerms = [
     when: "Si usa per avere una visione d'insieme rapida e prendere decisioni senza perdersi nei dettagli.",
   },
   {
+  term: "Deliverable",
+  italian: "consegnabile / risultato finale",
+  definition: "Un deliverable è qualcosa di concreto che viene prodotto e consegnato al termine di un lavoro. Non un'idea, non un piano — qualcosa che puoi aprire, leggere, usare.",
+  example: "Come ordinare una torta dal pasticcere: non paghi per la conversazione sul gusto del ripieno. Paghi per la torta. Quella è il deliverable.",
+  when: "Si usa quando si vuole essere chiari su cosa viene consegnato concretamente — e distinguerlo dal processo che ci ha portato fin lì.",
+},
+  {
     term: "Discovery call",
     italian: "chiamata conoscitiva",
     definition: "La chiamata gratuita di 30 minuti prima dello sprint. Serve a capire se c'è il giusto fit e quale sprint ha più senso adesso — per te.",
