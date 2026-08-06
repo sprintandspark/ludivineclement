@@ -7,7 +7,7 @@ const sections = [
       <>
         <p>Il titolare del trattamento dei dati personali è:</p>
         <p><strong>Ludivine Clement</strong></p>
-        <p>Email: <a href="mailto:go.ludivineclement@gmail.com" className="text-primary underline">go.ludivineclement@gmail.com</a></p>
+        <p>Email: <a href="mailto:ciao@sprintandspark.com" className="text-primary underline">ciao@sprintandspark.com</a></p>
         <p>(P.IVA: in fase di registrazione)</p>
       </>
     ),
@@ -84,7 +84,7 @@ const sections = [
           <li><strong>Opposizione</strong> — opporti al trattamento dei tuoi dati</li>
           <li><strong>Revoca del consenso</strong> — revocare il consenso in qualsiasi momento senza pregiudizio</li>
         </ul>
-        <p>Per esercitare i tuoi diritti scrivi a: <a href="mailto:go.ludivineclement@gmail.com" className="text-primary underline">go.ludivineclement@gmail.com</a></p>
+        <p>Per esercitare i tuoi diritti scrivi a: <a href="mailto:ciao@sprintandspark.com" className="text-primary underline">ciao@sprintandspark.com</a></p>
         <p>Risponderemo entro 30 giorni.</p>
       </>
     ),
