@@ -56,13 +56,6 @@ export const glossaryTerms = [
     when: "Si usa in networking, fiere, presentazioni spontanee, bio sui social — ogni volta che hai pochissimo tempo per fare una prima impressione che vale.",
   },
   {
-    term: "Flusso di lavoro",
-    italian: "workflow",
-    definition: "La sequenza di passi che segui ogni volta che fai qualcosa nel business. Mapparlo significa capire dove si perde tempo e dove le cose si rompono.",
-    example: "Come una ricetta: se non la scrivi, ogni volta che cucini quel piatto ti ricordi gli ingredienti a metà strada — e qualcosa manca sempre.",
-    when: "Si usa quando vuoi rendere un processo più chiaro, più veloce o delegabile a qualcun altro.",
-  },
-  {
     term: "Follow-Up",
     italian: "ricontatto",
     definition: "Il contatto successivo al primo — dopo una riunione, un preventivo, una fiera. È il gesto più semplice e più trascurato nel business. La maggior parte delle vendite si chiude al follow-up, non al primo contatto.",
@@ -215,6 +208,13 @@ export const glossaryTerms = [
     definition: "L'evento che fa partire un'automazione. Se il sistema è il motore, il trigger è la chiave di accensione.",
     example: "Come il sensore della luce del corridoio: non accendi tu la luce ogni volta che passi. Passi — e la luce si accende da sola. Il tuo passaggio è il trigger.",
     when: "Si usa nella logica delle automazioni per definire cosa fa scattare un'azione.",
+  },
+  {
+    term: "Workflow",
+    italian: "Flusso di lavoro",
+    definition: "La sequenza di passi che segui ogni volta che fai qualcosa nel business. Mapparlo significa capire dove si perde tempo e dove le cose si rompono.",
+    example: "Come una ricetta: se non la scrivi, ogni volta che cucini quel piatto ti ricordi gli ingredienti a metà strada — e qualcosa manca sempre.",
+    when: "Si usa quando vuoi rendere un processo più chiaro, più veloce o delegabile a qualcun altro.",
   },
 ];
 
