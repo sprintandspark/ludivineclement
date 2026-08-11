@@ -26,12 +26,14 @@ const AccordionItem = ({
         >
           {item.term}
         </span>
-        <span
-          className="italic font-normal"
-          style={{ fontSize: "13px", color: "#64748B" }}
-        >
-          (it. {item.italian})
-        </span>
+        {item.italian && (
+          <span
+            className="italic font-normal"
+            style={{ fontSize: "13px", color: "#64748B" }}
+          >
+            (it. {item.italian})
+          </span>
+        )}
       </h2>
       <ChevronDown
         size={20}
