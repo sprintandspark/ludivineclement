@@ -15,7 +15,6 @@ export const glossaryTerms = [
   },
   {
     term: "Automazione",
-    italian: "automazione",
     definition: "Quando uno strumento digitale fa automaticamente qualcosa che prima facevi a mano — come inviare un'email di benvenuto o aggiornare un registro clienti.",
     example: "Come la moka sul fuoco: la metti su, fai altro, e quando è pronta il caffè è già lì. Non devi stare a guardare.",
     when: "Si usa quando hai azioni ripetitive che potresti delegare a uno strumento, così liberi tempo per il lavoro che conta.",
@@ -70,22 +69,20 @@ export const glossaryTerms = [
     when: "Si usa per capire dove si perdono i potenziali clienti e dove concentrare gli sforzi per convertirne di più.",
   },
   {
-    term: "Gestionale clienti",
-    italian: "CRM — Customer Relationship Management",
+    term: "CRM — Customer Relationship Management",
+    italian: "Gestionale clienti",
     definition: "Uno strumento digitale dove tieni traccia di tutti i tuoi clienti, le conversazioni, le trattative e lo stato di ogni relazione. Spesso chiamato CRM (Customer Relationship Management) — non solo un foglio Excel.",
     example: "Come un'agenda intelligente: non solo ricorda i nomi, ma sa anche quando hai parlato l'ultima volta, cosa si è detto e qual è il passo successivo. Apri e sai esattamente dove sei rimasta con ognuno.",
     when: "Si usa quando hai più clienti di quanti riesci a tenere a mente e non puoi permetterti di perdere il filo di una trattativa.",
   },
   {
     term: "IA (Intelligenza Artificiale)",
-    italian: "intelligenza artificiale",
     definition: "Tecnologie che elaborano informazioni, generano contenuti e svolgono compiti complessi in modo autonomo. Non sostituisce il tuo cervello — lo amplifica. Usata bene, ti fa risparmiare ore ogni settimana. Ignorata, rischi di restare indietro.",
     example: "ChatGPT che scrive la prima bozza della tua newsletter. Gemini che riassume un documento di 40 pagine in 2 minuti. Claude che risponde alle tue domande di strategia. Canva AI che genera immagini per i tuoi post. Lovable che costruisce un sito web dal nulla. Strumenti diversi, stesso obiettivo: farti lavorare meglio, non di più. 😊⚡",
     when: "Si usa ogni volta che parli di strumenti digitali che \"imparano\" dai dati — da ChatGPT a Canva AI, da Gemini a Lovable. Se uno strumento fa cose che prima richiedevano ore di lavoro umano, probabilmente c'è dell'IA dentro.",
   },
   {
     term: "Integrazione",
-    italian: "integrazione",
     definition: "Quando due strumenti digitali sono collegati e si passano informazioni automaticamente, senza che tu debba fare niente.",
     example: "Come i tubi dell'acqua in casa: non porti l'acqua a mano dalla fonte alla cucina. Apri il rubinetto e arriva. L'integrazione è il tubo tra i tuoi strumenti.",
     when: "Si usa per eliminare passaggi manuali tra strumenti diversi e far fluire le informazioni senza interruzioni.",
@@ -106,7 +103,6 @@ export const glossaryTerms = [
   },
   {
     term: "Manuale Operativo",
-    italian: "manuale operativo",
     definition: "Il documento consegnato a fine sprint Zero Caos — il manuale su misura che descrive come funziona il tuo business, quali strumenti usi e come li usi.",
     example: "Come le istruzioni IKEA del tuo business: qualcuno che non sa nulla di te dovrebbe poter capire come funziona tutto — e tu dovresti poterci tornare tra sei mesi senza aver dimenticato niente.",
     when: "Si usa quando vuoi che il tuo business funzioni in modo prevedibile — anche se sei stanca, di corsa o stai delegando.",
@@ -120,7 +116,6 @@ export const glossaryTerms = [
   },
   {
     term: "Notifica",
-    italian: "notifica",
     definition: "Un avviso automatico che uno strumento ti manda quando succede qualcosa — una nuova prenotazione, un pagamento ricevuto, un messaggio in arrivo.",
     example: "Come il campanello di casa: non stai alla finestra ad aspettare che qualcuno arrivi. Fai altro, e quando suona, sai che è il momento di andare ad aprire.",
     when: "Si usa per essere avvisata in tempo reale senza dover controllare ogni strumento manualmente.",
@@ -133,8 +128,8 @@ export const glossaryTerms = [
     when: "Si usa per sistematizzare ciò che funziona, così il tuo business non dipende solo da te ogni singolo giorno.",
   },
   {
-    term: "Posizionamento",
-    italian: "positioning",
+    term: "Positioning",
+    italian: "posizionamento",
     definition: "Come ti distingui da chi fa cose simili a te. Cosa ti rende unica e perché qualcuno dovrebbe scegliere te — non un'altra.",
     example: "Due caffè, stesso prezzo: uno è il bar sotto casa, l'altro è lo specialty coffee con la storia del produttore sulla lavagna. Stessa bevanda, posizionamento completamente diverso.",
     when: "Si usa quando devi decidere come presentarti, cosa comunicare e a chi rivolgerti — per non essere solo un'altra opzione.",
@@ -148,14 +143,12 @@ export const glossaryTerms = [
   },
   {
     term: "Routine",
-    italian: "routine",
     definition: "Una sequenza di azioni che ripeti regolarmente — ogni giorno, ogni settimana, ogni mese — per mandare avanti il business in modo prevedibile senza doverci pensare ogni volta.",
     example: "Come lavarsi i denti: non decidi ogni mattina se farlo o come farlo. È automatico, richiede zero energia mentale — e funziona proprio per questo.",
     when: "Si usa per liberare energia mentale dalle cose operative e concentrarla su quello che conta davvero.",
   },
   {
     term: "Sistema",
-    italian: "sistema",
     definition: "Un insieme di strumenti e abitudini che lavorano insieme ogni settimana, così non devi ricominciare da zero ogni volta e il business non dipende solo da te.",
     example: "Come l'impianto elettrico di una casa: non ci pensi, non lo vedi — ma se funziona bene, tutto il resto funziona. Se manca, stai sempre a cercare le candele.",
     when: "Si usa quando vuoi che il business funzioni in modo autonomo, anche quando sei occupata su altro.",
@@ -176,8 +169,8 @@ export const glossaryTerms = [
   },
   {
     term: "Stack",
-    italian: "insieme di strumenti digitali",
-    definition: "L'insieme degli strumenti digitali che usi per mandare avanti il business. Il tuo stack è personale — non esiste uno stack giusto per tutti.",
+    italian: "insieme di strumenti",
+    definition: "L'insieme degli strumenti che usi per mandare avanti il business. Il tuo stack è personale — non esiste uno stack giusto per tutti.",
     example: "Come la borsa di una professionista: ognuna ha la sua — chi non esce senza agenda fisica, chi fa tutto da telefono. L'importante è che funzioni per te, non che sia uguale a quella di qualcun altro.",
     when: "Si usa quando parli degli strumenti che compongono il tuo flusso di lavoro digitale.",
   },
