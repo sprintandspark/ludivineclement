@@ -10,6 +10,13 @@ const Quiz = () => {
       });
     }
     document.title = "Quiz — Trova il tuo Sprint | Sprint & Spark";
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://ludivineclement.com/quiz');
     return () => {
       document.title = "Sprint & Spark — Consulenza per Piccole Imprese in 14 Giorni | Ludivine Clement";
     };
