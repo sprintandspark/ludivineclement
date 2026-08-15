@@ -4,6 +4,11 @@ import Footer from "@/components/Footer";
 
 const Prenota = () => {
   useEffect(() => {
+    if (typeof (window as any).gtag !== 'undefined') {
+      (window as any).gtag('config', 'G-VKZQQZT1D2', {
+        'page_path': window.location.pathname
+      });
+    }
     document.title = "Prenota una Discovery Call | Sprint & Spark";
     return () => {
       document.title = "Sprint & Spark — Consulenza per Piccole Imprese in 14 Giorni | Ludivine Clement";
