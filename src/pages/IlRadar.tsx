@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import GlossaryTooltip from "@/components/GlossaryTooltip";
+import { trackEvent } from "@/lib/analytics";
 
 const TALLY_URL = "https://ludivineclement.com/prenota";
 
@@ -73,9 +74,10 @@ const faqs = [
   },
 ];
 
-const CtaButton = ({ className = "", variant = "light" }: { className?: string; variant?: string }) => (
+const CtaButton = ({ className = "", variant = "light", section = "hero" }: { className?: string; variant?: string; section?: "hero" | "mid_page" | "final" }) => (
   
     <a href={TALLY_URL}
+    onClick={() => trackEvent("cta_click", { section, page: "il_radar" })}
     className={`inline-block rounded-full px-8 py-3.5 text-sm font-bold hover:scale-[1.02] hover:shadow-xl transition-all duration-300 ${
       variant === "dark" ? "bg-primary text-white" : "bg-background text-primary"
     } ${className}`}
@@ -88,6 +90,11 @@ const IlRadar = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   useEffect(() => {
+    if (typeof (window as any).gtag !== 'undefined') {
+    (window as any).gtag('config', 'G-VKZQQZT1D2', {
+      'page_path': window.location.pathname
+    });
+  }
   document.title = "Il Radar — Strategia di Crescita in 14 Giorni | Sprint & Spark";
   const metaDesc = document.querySelector('meta[name="description"]');
   if (metaDesc) {
@@ -340,7 +347,7 @@ const IlRadar = () => {
       </section>
       
         <div className="text-center py-10">
-          <CtaButton variant="dark" />
+          <CtaButton variant="dark" section="mid_page" />
         </div>
 
       {/* SECTION 7 — FAQ */}
@@ -398,7 +405,7 @@ const IlRadar = () => {
           <p className="text-base md:text-lg leading-relaxed mb-10">
             14 giorni. Niente paroloni. Solo il tuo Radar, su misura. ⚡
           </p>
-          <CtaButton />
+          <CtaButton section="final" />
         </div>
       </section>
 
