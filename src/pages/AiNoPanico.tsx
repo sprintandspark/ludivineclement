@@ -95,6 +95,13 @@ const AiNoPanico = () => {
       });
     }
     document.title = "AI? No Panico! — Strumenti IA su Misura per il Tuo Business | Sprint & Spark";
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://ludivineclement.com/il-radar'); // no trailing slash — match sitemap exactly, one line per page with its own URL
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute("content", "AI? No Panico! è la sessione personalizzata in 3 incontri per configurare gli strumenti IA giusti per il tuo business. Senza corsi generici. Su misura.");
