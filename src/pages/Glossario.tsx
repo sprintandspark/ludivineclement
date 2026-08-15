@@ -88,6 +88,13 @@ const Glossario = () => {
 
   useEffect(() => {
     document.title = "Glossario di Business | Sprint & Spark — Ludivine Clement";
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://ludivineclement.com/glossario');
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute("content", "Cos'è un funnel? Cosa significa KPI? Dal funnel al posizionamento, dalla discovery call allo stack: 30 termini di business spiegati in italiano con esempi concreti. Senza paroloni.");
