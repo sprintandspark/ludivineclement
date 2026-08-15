@@ -10,6 +10,13 @@ const Prenota = () => {
       });
     }
     document.title = "Prenota una Discovery Call | Sprint & Spark";
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://ludivineclement.com/prenota')
     return () => {
       document.title = "Sprint & Spark — Consulenza per Piccole Imprese in 14 Giorni | Ludivine Clement";
     };
