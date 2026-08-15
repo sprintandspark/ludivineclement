@@ -96,6 +96,13 @@ const ZeroCaos = () => {
     });
   }
   document.title = "Zero Caos — Organizzazione e Sistema di Lavoro in 14 Giorni | Sprint & Spark";
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://ludivineclement.com/zero-caos');
   const metaDesc = document.querySelector('meta[name="description"]');
   if (metaDesc) {
     metaDesc.setAttribute("content", "Zero Caos è lo sprint di 14 giorni per organizzare il tuo business: strumenti giusti, sistema connesso, routine che regge. Per piccole imprese e professionisti in Italia.");
