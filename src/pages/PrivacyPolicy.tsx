@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const sections = [
   {
@@ -111,7 +112,16 @@ const sections = [
   },
 ];
 
-const PrivacyPolicy = () => (
+const PrivacyPolicy = () => {
+  useEffect(() => {
+    if (typeof (window as any).gtag !== 'undefined') {
+      (window as any).gtag('config', 'G-VKZQQZT1D2', {
+        'page_path': window.location.pathname
+      });
+    }
+  }, []);
+
+  return (
   <div className="min-h-screen bg-background">
     <div className="mx-auto max-w-3xl px-6 py-12 md:py-20">
       <Link
@@ -139,6 +149,7 @@ const PrivacyPolicy = () => (
       </div>
     </div>
   </div>
-);
+  );
+};
 
 export default PrivacyPolicy;
