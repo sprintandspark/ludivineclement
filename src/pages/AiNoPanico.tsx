@@ -101,7 +101,7 @@ const AiNoPanico = () => {
       canonical.setAttribute('rel', 'canonical');
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute('href', 'https://ludivineclement.com/il-radar'); // no trailing slash — match sitemap exactly, one line per page with its own URL
+    canonical.setAttribute('href', 'https://ludivineclement.com/il-radar');
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute("content", "AI? No Panico! è la sessione personalizzata in 3 incontri per configurare gli strumenti IA giusti per il tuo business. Senza corsi generici. Su misura.");
