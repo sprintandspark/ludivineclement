@@ -52,7 +52,7 @@ const Quiz = () => {
             ← Torna indietro
           </button>
           <iframe
-            src="https://tally.so/embed/RGLB19?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+            src="https://tally.so/embed/kd8GyR?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
             width="100%"
             height="800"
             title="Quiz — Trova il tuo Sprint"

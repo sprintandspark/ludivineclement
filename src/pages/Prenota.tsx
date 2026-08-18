@@ -52,7 +52,7 @@ const Prenota = () => {
               ← Torna indietro
             </button>
           <iframe
-              src="https://tally.so/embed/LZ0aQ2?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+              src="https://tally.so/embed/kd8GyR?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
               width="100%"
               title="Discovery Call — Sprint & Spark"
               className="w-full border-0"
