@@ -198,7 +198,7 @@ const Newsletter = () => {
             href="https://ludivineclement.com"
             className="inline-block text-sm text-primary font-semibold underline-offset-4 hover:underline"
           >
-            ← Torna alla home
+            ← Torna indietro
           </a>
         </section>
       </main>
