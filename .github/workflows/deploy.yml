@@ -30,6 +30,7 @@ jobs:
           mkdir -p dist/ciao-france && cp dist/index.html dist/ciao-france/index.html
           mkdir -p dist/prenota && cp dist/index.html dist/prenota/index.html
           mkdir -p dist/quiz && cp dist/index.html dist/quiz/index.html
+          mkdir -p dist/newsletter && cp dist/index.html dist/newsletter/index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
