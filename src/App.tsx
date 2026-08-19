@@ -13,6 +13,7 @@ import AiNoPanico from "./pages/AiNoPanico.tsx";
 import ComingSoon from "./pages/ComingSoon.tsx";
 import Prenota from "./pages/Prenota.tsx";
 import Quiz from "./pages/Quiz.tsx";
+import Newsletter from "./pages/Newsletter.tsx";
 const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
