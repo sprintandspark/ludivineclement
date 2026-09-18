@@ -57,7 +57,7 @@ const AboutSection = () => (
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="flex items-center justify-center order-first md:order-last"
+          className="flex items-center justify-center order-first md:order-last w-64 h-80 md:w-80 md:h-96"
         >
           <img src="/about-photo.jpg" alt="Ludivine Clement" className="w-full h-full object-cover object-top rounded-2xl" />
         </motion.div>
