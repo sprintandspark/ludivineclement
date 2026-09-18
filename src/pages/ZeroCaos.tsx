@@ -197,7 +197,7 @@ const ZeroCaos = () => {
             La verità è che
           </p>
 
-          <div className="bg-muted border-l-4 border-accent rounded-2xl p-6 md:p-8 mb-10">
+          <div className="border-l-4 border-accent rounded-2xl p-6 md:p-8 mb-10">
             <p className="text-xl md:text-2xl font-bold text-foreground leading-snug">
               Il problema non è la disciplina. Il problema è che nessuno ti ha mai costruito un sistema intorno a come lavori tu.
             </p>

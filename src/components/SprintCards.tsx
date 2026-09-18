@@ -72,6 +72,7 @@ const cards = [
     border: "border border-emerald-100",
     btnClass: "bg-success text-success-foreground",
     badge: "💎 Premium",
+    badgeClass: "bg-[#E5397E] text-white",
     featured: false,
   },
   {
@@ -97,6 +98,7 @@ const cards = [
     border: "border border-[#7C3AED]",
     btnClass: "bg-[#7C3AED] text-white",
     badge: "🚀 Offerta lancio — solo 3 posti a €150",
+    badgeClass: "bg-[#E5397E] text-white",
     featured: false,
   },
 ];
@@ -217,7 +219,7 @@ const SprintCards = () => {
                 }`}
               >
                 {card.badge && (
-                  <span className="absolute top-6 right-6 px-3 py-1 rounded-full bg-background text-primary text-xs font-bold">
+                  <span className={`absolute top-6 right-6 px-3 py-1 rounded-full text-xs font-bold ${card.badgeClass || "bg-background text-primary"}`}>
                     {card.badge}
                   </span>
                 )}
