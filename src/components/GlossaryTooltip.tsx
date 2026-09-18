@@ -80,7 +80,7 @@ const GlossaryTooltip = ({ term, children, variant = "default" }: Props) => {
         top: position.top,
         left: position.left,
         width: "288px",
-        backgroundColor: "#FFFFFF",
+        backgroundColor: "#FBF4E6",
         borderColor: "#E2E8F0",
         border: "1px solid #E2E8F0",
         borderRadius: "12px",

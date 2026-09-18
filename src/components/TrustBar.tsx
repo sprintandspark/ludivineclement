@@ -7,7 +7,7 @@ const stats = [
 ];
 
 const TrustBar = () => (
-  <section className="border-y border-border/50 bg-muted/50">
+  <section className="border-y border-border/50">
     <div className="mx-auto max-w-6xl px-6 py-6">
       <motion.div
         initial={{ opacity: 0 }}
