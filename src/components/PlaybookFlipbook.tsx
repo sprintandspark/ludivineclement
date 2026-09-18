@@ -2,12 +2,13 @@ import { useEffect, useRef, useState } from "react";
 
 interface PlaybookFlipbookProps {
   pages: string[];
+  maxWidth?: number;
 }
 
 const AUTOPLAY_MS = 3000;
 const ANIMATION_MS = 600;
 
-const PlaybookFlipbook = ({ pages }: PlaybookFlipbookProps) => {
+const PlaybookFlipbook = ({ pages, maxWidth = 600 }: PlaybookFlipbookProps) => {
   const total = pages.length;
   const [current, setCurrent] = useState(0);
   const [bottomSrc, setBottomSrc] = useState(pages[0] ?? "");
@@ -127,7 +128,7 @@ const PlaybookFlipbook = ({ pages }: PlaybookFlipbookProps) => {
     topInstantTransform ?? (turning ? undefined : "rotateY(0deg) scaleX(1)");
 
   return (
-    <div style={{ width: "100%", maxWidth: 600, margin: "0 auto" }}>
+    <div style={{ width: "100%", maxWidth, margin: "0 auto" }}>
       <div
         onMouseEnter={stopAutoplay}
         onMouseLeave={restartAutoplay}
