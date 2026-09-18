@@ -212,7 +212,7 @@ const IlRadar = () => {
       </section>
 
       {/* SECTION 3 — Cos'è Il Radar */}
-      <section className="bg-muted py-14 md:py-20">
+      <section className="py-14 md:py-20">
         <div className="mx-auto max-w-3xl px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold text-foreground mb-8">
             Cos'è Il Radar?
@@ -305,7 +305,7 @@ const IlRadar = () => {
       </section>
 
       {/* SECTION 6 — Cosa ricevi */}
-      <section className="bg-muted py-14 md:py-20">
+      <section className="py-14 md:py-20">
         <div className="mx-auto max-w-3xl px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
             Alla fine dei 14 giorni

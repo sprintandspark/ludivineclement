@@ -171,7 +171,7 @@ const AiNoPanico = () => {
           <h2 className="text-3xl md:text-4xl font-extrabold text-foreground text-center mb-8">
             "Ogni settimana esce qualcosa di nuovo. Ho già smesso di stare al passo."
           </h2>
-          <div className="bg-muted border-l-4 border-accent rounded-2xl p-6 md:p-8 mb-10">
+          <div className="border-l-4 border-accent rounded-2xl p-6 md:p-8 mb-10">
             <p className="text-xl md:text-2xl font-bold text-foreground leading-snug">
               Non è che sei indietro. È che nessuno te lo ha mai spiegato nel modo giusto.
             </p>
@@ -188,7 +188,7 @@ const AiNoPanico = () => {
       </section>
 
       {/* SECTION 3 — Cos'è */}
-      <section className="bg-muted py-14 md:py-20">
+      <section className="py-14 md:py-20">
         <div className="mx-auto max-w-3xl px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold text-foreground mb-8">
             Non un corso. Una sessione di lavoro su misura.
@@ -267,7 +267,7 @@ const AiNoPanico = () => {
       </section>
 
       {/* SECTION 6 — Cosa ricevi */}
-      <section className="bg-muted py-14 md:py-20">
+      <section className="py-14 md:py-20">
         <div className="mx-auto max-w-3xl px-6">
           <h2 className="text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
             Cosa ricevi
