@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import headshot from "@/assets/ludivine-headshot.jpeg";
 import GlossaryTooltip from "@/components/GlossaryTooltip";
 
 const badges = [
@@ -58,13 +57,9 @@ const AboutSection = () => (
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="flex items-center justify-center order-first md:order-last"
+          className="flex items-center justify-center order-first md:order-last w-64 h-80 md:w-80 md:h-96"
         >
-          <img
-            src={headshot}
-            alt="Ludivine Clement"
-            className="w-64 h-auto md:w-80 rounded-[16px] object-cover shadow-lg"
-          />
+          <img src="/about-photo.jpg" alt="Ludivine Clement" className="w-full h-full object-cover object-top rounded-2xl" />
         </motion.div>
       </div>
     </div>
