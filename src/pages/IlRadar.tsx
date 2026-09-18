@@ -190,7 +190,7 @@ const IlRadar = () => {
             La risposta, quando ci lavoriamo insieme, arriva sempre in fretta:
           </p>
 
-          <div className="border-l-4 border-accent rounded-2xl p-6 md:p-8 mb-10">
+          <div className="border border-accent rounded-2xl p-6 md:p-8 mb-10">
             <p className="text-xl md:text-2xl font-bold text-foreground leading-snug">
               Il problema non è come vendi. Il problema è che non hai ancora definito tre cose che vengono prima.
             </p>
