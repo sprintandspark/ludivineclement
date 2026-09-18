@@ -319,9 +319,19 @@ const IlRadar = () => {
               <p className="text-foreground leading-relaxed">
                 Un documento personalizzato con la tua strategia commerciale, i tuoi canali, il tuo sistema settimanale, e un piano per i prossimi 90 giorni.
               </p>
-              {/* Playbook mockup image placeholder */}
-              <div className="mt-6 h-48 md:h-64 border-2 border-dashed border-border rounded-xl flex items-center justify-center text-muted-foreground text-sm">
-                Playbook mockup image placeholder
+              <div className="mt-6 flex justify-center">
+                <PlaybookFlipbook
+                  maxWidth={300}
+                  pages={[
+                    "/playbook/il-radar/Cover.png",
+                    "/playbook/il-radar/Indice.png",
+                    "/playbook/il-radar/Sprint_Information.png",
+                    "/playbook/il-radar/02___Chi_sei.png",
+                    "/playbook/il-radar/03a___La_Diagnosi.png",
+                    "/playbook/il-radar/04b___Il_tuo_cliente_ideale_-_Come_comunicare.png",
+                    "/playbook/il-radar/05a___Il_tuo_messaggio.png",
+                  ]}
+                />
               </div>
             </div>
             <div className="bg-background border border-border rounded-2xl p-6 md:p-8">
@@ -344,26 +354,6 @@ const IlRadar = () => {
           <p className="text-center text-lg md:text-xl font-semibold text-foreground">
             La vera misura del mio lavoro è quanto sei autonoma/o dopo. ⚡
           </p>
-        </div>
-      </section>
-
-      {/* SECTION 6b — Anteprima Playbook */}
-      <section className="py-14 md:py-20">
-        <div className="mx-auto max-w-3xl px-6">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
-            Ecco come si presenta il tuo Playbook
-          </h2>
-          <PlaybookFlipbook
-            pages={[
-              "/playbook/il-radar/Cover.png",
-              "/playbook/il-radar/Indice.png",
-              "/playbook/il-radar/Sprint_Information.png",
-              "/playbook/il-radar/02___Chi_sei.png",
-              "/playbook/il-radar/03a___La_Diagnosi.png",
-              "/playbook/il-radar/04b___Il_tuo_cliente_ideale_-_Come_comunicare.png",
-              "/playbook/il-radar/05a___Il_tuo_messaggio.png",
-            ]}
-          />
         </div>
       </section>
 
