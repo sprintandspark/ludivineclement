@@ -64,13 +64,13 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.2, ease: [0.2, 1, 0.3, 1] }}
             className="hidden md:flex items-center justify-center"
           >
-            <div
-              className="w-[340px] h-[340px] lg:w-[400px] lg:h-[400px] rounded-full border border-dashed border-primary/40"
-              style={{
-                background:
-                  "radial-gradient(circle at 30% 40%, hsl(243 75% 59% / 0.15), hsl(38 92% 50% / 0.1) 70%, transparent)",
-              }}
-            />
+            <div className="w-[340px] h-[340px] lg:w-[400px] lg:h-[400px] rounded-full border border-dashed border-primary/40">
+              <img
+                src="/hero-photo.png"
+                alt="Ludivine Clement"
+                className="w-full h-full object-cover object-top rounded-full"
+              />
+            </div>
           </motion.div>
         </div>
       </div>
