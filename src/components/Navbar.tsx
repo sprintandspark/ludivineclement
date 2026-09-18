@@ -2,7 +2,6 @@
 import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-import logo from "@/assets/logo.png";
 import { trackEvent } from "@/lib/analytics";
 
 const Navbar = () => {
@@ -43,7 +42,8 @@ const Navbar = () => {
     >
       <div className="mx-auto w-full max-w-6xl px-6 flex items-center justify-between">
         <a href="https://ludivineclement.com" className="flex items-center">
-          <img src={logo} alt="Ludivine Clement" style={{ height: "90px", width: "auto" }} />        </a>
+          <img src="/logo.png" alt="Sprint & Spark" className="h-10 w-auto" />
+        </a>
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
