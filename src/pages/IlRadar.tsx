@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import GlossaryTooltip from "@/components/GlossaryTooltip";
+import PlaybookFlipbook from "@/components/PlaybookFlipbook";
 import { trackEvent } from "@/lib/analytics";
 
 const TALLY_URL = "https://ludivineclement.com/prenota";
@@ -345,7 +346,27 @@ const IlRadar = () => {
           </p>
         </div>
       </section>
-      
+
+      {/* SECTION 6b — Anteprima Playbook */}
+      <section className="py-14 md:py-20">
+        <div className="mx-auto max-w-3xl px-6">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
+            Ecco come si presenta il tuo Playbook
+          </h2>
+          <PlaybookFlipbook
+            pages={[
+              "/playbook/il-radar/Cover.png",
+              "/playbook/il-radar/Indice.png",
+              "/playbook/il-radar/Sprint_Information.png",
+              "/playbook/il-radar/02___Chi_sei.png",
+              "/playbook/il-radar/03a___La_Diagnosi.png",
+              "/playbook/il-radar/04b___Il_tuo_cliente_ideale_-_Come_comunicare.png",
+              "/playbook/il-radar/05a___Il_tuo_messaggio.png",
+            ]}
+          />
+        </div>
+      </section>
+
         <div className="text-center py-10">
           <CtaButton variant="dark" section="mid_page" />
         </div>

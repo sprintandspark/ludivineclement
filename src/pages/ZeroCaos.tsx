@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import GlossaryTooltip from "@/components/GlossaryTooltip";
+import PlaybookFlipbook from "@/components/PlaybookFlipbook";
 import { trackEvent } from "@/lib/analytics";
 
 const TALLY_URL = "https://ludivineclement.com/prenota";
@@ -354,7 +355,18 @@ const ZeroCaos = () => {
           </p>
         </div>
       </section>
-      
+
+      {/* SECTION 6b — Anteprima Playbook */}
+      <section className="py-14 md:py-20">
+        <div className="mx-auto max-w-3xl px-6">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-foreground text-center mb-12">
+            Ecco come si presenta il tuo Playbook
+          </h2>
+          <PlaybookFlipbook pages={[]} />
+          {/* TODO: add Zero Caos playbook pages */}
+        </div>
+      </section>
+
            <div className="text-center py-10">
         <CtaButton variant="dark" section="mid_page" />
           </div>
